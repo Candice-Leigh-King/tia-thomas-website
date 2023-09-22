@@ -60,7 +60,7 @@
   <section class="grid-center padded-sides recent-blog-background-color">
     <h2 class="col-12 center recent-blog-background-color">{{item.heading}}</h2>
     <div class="blog-loop blog-masonry">
-        {% for post in site.posts limit:3 %}
+        {% for post in site.posts limit:9 %}
         <div class="masonry-item ">
             <a class="padded "href="{{post.url}}">
               <div class="hover-container" style="background-image:url('{{post.blog_image}}')">
