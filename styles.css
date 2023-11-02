@@ -993,7 +993,9 @@ footer {
 
 .hidden {display: none;}
 
-
+.mob-show{
+  display: none; 
+}
 
 /* Smaller than laptop */
 @media(max-width:768px) {
