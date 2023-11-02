@@ -536,7 +536,7 @@
     }
 
     #content-blocks-1 .heading-container {
-            background: rgba(0.8667, 0.7804, 0.7569, 0.2); /* Use rgba to set the background color with opacity */
+            background: rgba(221, 199, 193, 0.4); /* Use rgba to set the background color with opacity */
             padding: 20px; /* Adjust the padding as needed */
             display: inline-block; /* Makes the container size fit the content (the heading) */
         }
@@ -551,7 +551,7 @@
     #content-blocks-1 .author-about{
         margin: 1rem;
         margin-bottom: 2rem;
-        height: 15rem;
+        /* height: 15rem; */
 
     }
 
@@ -602,7 +602,49 @@
     #content-blocks-1 a:hover{
         color: white;
     }
+    #content-blocks-1 p{
+        line-height: 1.2;
+    }
+    #content-blocks-1 .grid-link{
+        text-align: center;
+        display: inherit;
+    }
 
+    #content-blocks-1 .container{
+        position: relative;
+        display: inherit;
+
+    }
+
+    #content-blocks-1 .container .grid-link{
+        width: 5rem; /* Adjust the dimensions as needed */
+        height: 20rem; /* Adjust the dimensions as needed */
+        background-color: rgba(221, 199, 193, 0.4); /* Background color for the Instagram icon/image */
+        text-align: center;
+        line-height: 100px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    #content-blocks-1 .container .overlay-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none; /* Initially hidden */
+        background-color: rgba(0, 0, 0, 0.7); /* Background color for overlay with opacity */
+        color: white;
+        text-align: center;
+        line-height: 10rem;
+        font-size: 20px;
+        transition: opacity 0.3s; /* Smooth transition effect */
+        }
+
+        #content-blocks-1 .container:hover .overlay-text {
+        display: block; /* Show the overlay on hover */
+        }
 
     /* Media Queries */
 @media(max-width: 1024px){
@@ -613,16 +655,32 @@
     
 }
 
-@media(max-width: 750px){
+@media(max-width: 768px){
+
+    #content-blocks-1 .blog-hero-bg{
+        padding-bottom: 11rem;
+
+    }
     
 }
 
 @media(max-width: 660px){
+
+    #content-blocks-1 .bg-author {
+        margin-top: -20%;
+    }
+
+    #content-blocks-1 h1 
+    {
+        font-size: 2rem;
+    }
     
 }
 
-@media(max-width: 500px){
-    
+@media(max-width: 550px){
+    #content-blocks-1 .bg-author {
+        margin-top: 0%;
+    }
 }
 
 @media(max-width: 450px){
@@ -640,35 +698,41 @@
 </style>
 
 <section id="content-blocks-1">
-    <section class = "grid padded-sides padded" id="">
+    <section class = "grid-center padded-sides padded" id="">
 
-        <div class = "col-7 bg-image blog-hero-bg padded-s grid">
-            <div class ="col-7 margin-top-2 heading-container margin-left-2">
+        <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid">
+            <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
                 <h1>3 things to take to Bali, Indonesia</h1>
             </div>
             
 
         </div>
 
-        <div class = "col-5 grid-center">
-            <div class = "col-8 bg-author grid-center padded">
-                <div class = "col-6 author-image bg-image ">
+        <div class = "col-5_sm-12-center grid-center">
+            <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
+                <div class = "col-6_md-10_sm-7_xs-5 author-image bg-image ">
 
                 </div>
-                <div class = "col-8 center author-about">
+                <div class = "col-8_md-10_xs-5 center author-about">
                     <p>Hey! I am Tia - a full time traveller on a mission to explore as much of this world as possible! I love adventure, authentic travel experiences and learning from cultures all over the world. <a>Read more</a></p>
                 </div>
             </div>
-
-            <div class = "col-8 grid-center-spaceAround blog-hero-grid-section margin-top-1">
-                <div class = "col-5 bg-image blog-hero-grid-1 ">
-                </div>
-                <div class = "col-5 bg-image blog-hero-grid-2 ">
-                </div>
-                <div class = "col-5 bg-image blog-hero-grid-3 ">
-                </div>
-                <div class = "col-5 bg-image blog-hero-grid-4">
-                </div>
+            
+            <div class = "col-8_sm-6-middle_xs-12 grid-center-spaceAround blog-hero-grid-section margin-top-1 xs-hide">
+                <!-- <div class = "col-12 grid-center container"> -->
+                    <!-- <a href = "https://www.instagram.com/candy_and_the_king/" class = "grid-link grid-center col-12"> -->
+                        <div class = "col-5 bg-image blog-hero-grid-1 ">
+                        </div>
+                        <div class = "col-5 bg-image blog-hero-grid-2 ">
+                        </div>
+                        <div class = "col-5 bg-image blog-hero-grid-3 ">
+                        </div>
+                        <div class = "col-5 bg-image blog-hero-grid-4">
+                        </div>
+                    <!-- </a> -->
+                <!-- <p class = "overlay-text">Follow me</p>     -->
+                <!-- </div> -->
+                
             </div>
             
         </div>
@@ -727,6 +791,10 @@
         /* background-image: url('/images/europe-map.png'); */
     }
 
+    #content-blocks-3 .bg-map img{
+        width: 70%;
+    }
+
     #content-blocks-3 .travel-guide-banner-bg{
         background-image: url('/images/media-kit-collab.jpg');
         padding-bottom: 40rem;
@@ -739,7 +807,7 @@
 
     #content-blocks-3 .info-1,
     #content-blocks-3 .info-2{
-        height: 20rem;
+        /* height: 20rem; */
 
     }
 
@@ -771,29 +839,104 @@
         /* Media Queries */
 @media(max-width: 1024px){
 
+    #content-blocks-3 span {
+        font-size: 8rem;
+    }
+    #content-blocks-3 .travel-guide-heading {
+        translate: -2% 71%;
+    }
+
+    #content-blocks-3 .bg-map img{
+        width: 100%;
+    }
+
+    #content-blocks-3  .icon img {
+        top: 10px;
+        left: 0px;
+    }
+
+    #content-blocks-3 .icon img:last-child {
+        left: 10px;
+        top: 15px;
+    }
 }
 
 @media(max-width: 990px){
     
 }
 
-@media(max-width: 750px){
+@media(max-width: 768px){
+    #content-blocks-3 .travel-guide-banner-bg {
+        padding-bottom: 25rem;
+        margin-left: 37%;
+        margin-top: -61%;
+    }
+    #content-blocks-3 .bg-map img {
+        margin-top: -50%;
+        margin-right: -92%;
+    }
+
+    #content-blocks-3 .icon img {
+        top: -10px;
+        left: 71px;
+    }
     
+    #content-blocks-3 .icon img:last-child {
+        left: 80px;
+        top: -5px;
+    }
 }
 
 @media(max-width: 660px){
     
 }
 
-@media(max-width: 500px){
+@media(max-width: 550px){
+
+    #content-blocks-3 span {
+            font-size: 6rem;
+        }
+     #content-blocks-3   .travel-guide-banner-bg {
+        margin-top: -90%;
+    }
     
 }
 
 @media(max-width: 450px){
+
+    #content-blocks-3 .travel-guide-banner-bg {
+    padding-bottom: 20rem;
+}
     
 }
 
 @media(max-width: 400px){
+    #content-blocks-3 span {
+    font-size: 4rem;
+}
+
+#content-blocks-3 .travel-guide-banner-bg {
+    padding-bottom: 10rem;
+    margin-top: -78%;
+    translate: 0 -41%;
+    z-index: -1;
+}
+
+#content-blocks-3 .info-blocks{
+    margin-top: -32%;
+}
+
+#content-blocks-3 .icon img {
+    top: -18px;
+    left: 129px;
+}
+
+#content-blocks-3 .icon img:last-child {
+    left: 143px;
+    top: -13px;
+}
+
+
     
 }
 
@@ -809,32 +952,32 @@
             <h1>Travel in <br> <span>Europe</span></h1>
         </div>
         <div class = "col-12 grid">
-            <div class = "col-4 bg-map bg-image center">
-                <img src = "/images/europe-map.png" width = "70%">
+            <div class = "col-4_md-3 bg-map bg-image center">
+                <img src = "/images/europe-map.png" >
             </div>
-            <div class = "col-8 grid">
-                <div class = "col-6 bg-image travel-guide-banner-bg">
+            <div class = "col-8_md-9_sm-11_xs-12 grid">
+                <div class = "col-6_md-7 bg-image travel-guide-banner-bg">
                 </div>
 
-                <div class = "col-6">
-                    <div class = "info-1 grid padded">
-                        <div class = "col-4 icon center">
+                <div class = "col-6_md-5_sm-12 grid info-blocks">
+                    <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
+                        <div class = "col-4_md-5 icon center">
                             <img src="/images/beige-blob.png" width="80%">
                             <img src="/images/light-bulb.png"  width="60%">
 
                         </div>
-                        <div class = "col-8-bottom text">
+                        <div class = "col-8-bottom_md-12 text">
                             <h2>Did you know?</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta alias praesentium, illum dolore iure magni debitis error quo voluptate, ut perspiciatis fugit atque beatae officiis voluptatum ex sit omnis.</p>
                         </div>
 
                     </div>
-                    <div class = "info-2 grid padded">
-                        <div class = "col-4 icon">
+                    <div class = "col-12_sm-6_xs-12 info-2 grid-center padded">
+                        <div class = "col-4_md-5 icon">
                             <img src="/images/white-blob.png" width="80%">
                             <img src="/images/compass.png"  width="60%">
                         </div>
-                        <div class = "col-8-bottom text">
+                        <div class = "col-8-bottom_md-12 text">
                             <h2>Did you know?</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta alias praesentium, illum dolore iure magni debitis error quo voluptate, ut perspiciatis fugit atque beatae officiis voluptatum ex sit omnis.</p>
                         </div>
@@ -871,6 +1014,22 @@
         color: black;
 
     }
+    #content-blocks-5 li{
+        margin: 0;
+        text-align: left;
+    }
+    #content-blocks-5 a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        margin-bottom: 0.8rem;
+        transition: 0.7s all;
+    }
+
+    #content-blocks-5 a:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
 
     #content-blocks-5 hr{
         border: 2px solid white;
@@ -888,6 +1047,8 @@
     }
 
 
+
+
     /* Media Queries */
     @media(max-width: 1024px){
 
@@ -897,7 +1058,11 @@
     
 }
 
-@media(max-width: 750px){
+@media(max-width: 768px){
+
+    #content-blocks-5 .icon-left {
+    margin-top: 38%;
+}
     
 }
 
@@ -906,6 +1071,11 @@
 }
 
 @media(max-width: 500px){
+
+    #content-blocks-5  .icon-right {
+    margin-right: 4%;
+    margin-top: -60%;
+}
     
 }
 
@@ -925,16 +1095,16 @@
 
 <section class = " padded-sides" id="content-blocks-5">
     <section  class = "padded bg-colour padded-sides-lg grid" id="">
-        <div class = "col-6">
+        <div class = "col-6_xs-12">
             <h2>Contents: </h2>
             <hr>
             <div class = "padded-sides-lg list">
-                    <ol><li>Item 1 lorem lalalala</li><li>Item 2 lorem lalalala</li><li>Item 3 lorem lalalala</li><li>Item 4 lorem lalalala</li><li>Item 5 lorem lalalala</li><li>Item 6 lorem lalalala</li><li>Item 7 lorem lalalala</li><li>Item 8 lorem lalalala</li><li>Item 8 lorem lalalala</li><li>Item 8 lorem lalalala</li><li>Item 8 lorem lalalala</li></ol>
+                    <ol><li><a href = "#">Item 1 lorem lalalala</a></li><li><a href = "#">Item 2 lorem lalalala</a></li><li><a href = "#">Item 3 lorem lalalala</a></li><li><a href = "#">Item 4 lorem lalalala</a></li><li><a href = "#">Item 5 lorem lalalala</a></li><li><a href = "#">Item 6 lorem lalalala</a></li><li><a href = "#">Item 7 lorem lalalala</a></li><li><a href = "#">Item 8 lorem lalalala</a></li><li><a href = "#">Item 9 lorem lalalala</a></li><li><a href = "#">Item 10 lorem lalalala</a></li><li><a href = "#">Item 11 lorem lalalala</a></li></ol>
             </div>
             
         </div>
 
-        <div class = "col-6">
+        <div class = "col-6_xs-12">
             <div class = "right icon-right">
                 <img src = "/images/Stamp-1.png" width = "20%">
             </div>

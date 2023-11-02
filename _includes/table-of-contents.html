@@ -8,6 +8,22 @@
         color: {{item.heading-color}};
 
     }
+    #content-blocks-{{forloop.index0}} li{
+        margin: 0;
+        text-align: left;
+    }
+    #content-blocks-{{forloop.index0}} a{
+        text-decoration: none;
+        color: {{item.link-color}};
+        display: inline-block;
+        margin-bottom: 0.8rem;
+        transition: 0.7s all;
+    }
+
+    #content-blocks-{{forloop.index0}} a:hover{
+        color: {{item.link-hover-color}};
+        border-bottom: 1px solid {{item.link-hover-color}};
+    }
 
     #content-blocks-{{forloop.index0}} hr{
         border: 2px solid {{item.line-color}};
@@ -25,6 +41,8 @@
     }
 
 
+
+
     /* Media Queries */
     @media(max-width: 1024px){
 
@@ -34,7 +52,11 @@
     
 }
 
-@media(max-width: 750px){
+@media(max-width: 768px){
+
+    #content-blocks-{{forloop.index0}} .icon-left {
+    margin-top: 38%;
+}
     
 }
 
@@ -43,6 +65,11 @@
 }
 
 @media(max-width: 500px){
+
+    #content-blocks-{{forloop.index0}}  .icon-right {
+    margin-right: 4%;
+    margin-top: -60%;
+}
     
 }
 
@@ -62,7 +89,7 @@
 
 <section class = " padded-sides" id="content-blocks-{{forloop.index0}}">
     <section  class = "padded bg-colour padded-sides-lg grid" id="{{item.content-block-link}}">
-        <div class = "col-6">
+        <div class = "col-6_xs-12">
             <h2>{{item.heading}}</h2>
             <hr>
             <div class = "padded-sides-lg list">
@@ -71,7 +98,7 @@
             
         </div>
 
-        <div class = "col-6">
+        <div class = "col-6_xs-12">
             <div class = "right icon-right">
                 <img src = "{{item.right-icon_image}}" width = "20%">
             </div>
