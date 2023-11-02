@@ -1,8 +1,38 @@
+dropdown:
+  link: 
+    textarea_html: <p class = "left"><a href="#">Destinations</a></p>
+  section-1:
+    link: 
+      textarea_html: <p><h2><a href = "#">Asia</a></h2></p>
+    cities:
+      textarea_html: >-
+        <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+  section-2:
+    link: 
+      textarea_html: <p><h2><a href = "#">Africa</a></h2></p>
+    cities:
+      textarea_html: >-
+        <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+  section-3:
+    link: 
+      textarea_html: <p><h2><a href = "#">Middle East</a></h2></p>
+    cities:
+      textarea_html: >-
+        <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+  section-4:
+    link: 
+      textarea_html: <p><h2><a href = "#">Europe</a></h2></p>
+    cities:
+      textarea_html: >-
+        <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+  section-5:
+    link: 
+      textarea_html: <p><h2><a href = "#">Central and South America</a></h2></p>
+    cities:
+      textarea_html: >-
+        <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
 textarea_html: >-
-  <p><a href="/blog-categories/blogs">blogs</a></p>
-  <p><a href="/#services">services</a></p><p><a
-  href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a
-  href="/#contact">contact</a></p>
+  <p><a href="#" class = "header-nav">About</a></p><p><a href="#" class = "header-nav">Travel Resources</a></p>
 colors:
   hamburger-color: '#ffffff'
   background-color: '#859f9f'
@@ -18,7 +48,7 @@ border-radius:
   bottom-left-corner: 0%
   bottom-right-corner: 0%
 fonts:
-  link-font: Shrikhand, cursive;
+  link-font: Hoves Medium;
 social-link-colors:
   icon-color: '#859f9f'
   background-color: '#ffffff'

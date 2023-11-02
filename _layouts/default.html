@@ -55,7 +55,7 @@ layout: connect-tree
       header nav{
         text-align: center;
       }
-      .header-nav{
+      .header-nav p{
         display: inline-block;
         text-transform: uppercase;
         font-family: Hoves Medium;
@@ -108,7 +108,7 @@ layout: connect-tree
       }
 
 
-      .dropdown-content h2{
+      .dropdown-content h2 p a{
         font-size: 2rem;
         font-family: Hoves Medium;
         text-align: left;
@@ -151,25 +151,17 @@ layout: connect-tree
       <nav class="col-9-middle mob-hide">
         
         <div class="dropdown header-nav" id="destinations-dropdown">
-          <a href="#" class = "">Destinations
-          </a>
+          {{site.data.navigation.dropdown.link.textarea_html}}
           <div class="dropdown-content padded-s" id="dropdown-content">
             <div class = "grid">
             <!-- Div one -->
             <div class = "col-6">
               <!-- Asia -->
               <div>
-                <h2><a href = "#">Asia</a></h2>
+                {{site.data.navigation.dropdown.section-1.link.textarea_html}}
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p>
-                  <p>Cambodia</p>
-                  <p>Georgia</p>
-                  <p>India</p>
-                  <p>Indonesia</p>
-                  <p>Laos</p>
-                  <p>Malaysia</p>
-                  <p>Myanam</p>
+                  {{site.data.navigation.dropdown.section-1.cities.textarea_html}}
                 </div>
               </div>
               
@@ -177,34 +169,20 @@ layout: connect-tree
               <!-- Africa -->
 
               <div>
-                <h2><a href = "#">Africa</a></h2>
+                {{site.data.navigation.dropdown.section-2.link.textarea_html}}
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p>
-                  <p>Cambodia</p>
-                  <p>Georgia</p>
-                  <p>India</p>
-                  <p>Indonesia</p>
-                  <p>Laos</p>
-                  <p>Malaysia</p>
-                  <p>Myanam</p>
+                  {{site.data.navigation.dropdown.section-2.cities.textarea_html}}
                 </div>
               </div>
 
               <!-- Middle East -->
 
               <div>
-                <h2><a href = "#">Middle East</a></h2>
+                {{site.data.navigation.dropdown.section-3.link.textarea_html}}
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p>
-                  <p>Cambodia</p>
-                  <p>Georgia</p>
-                  <p>India</p>
-                  <p>Indonesia</p>
-                  <p>Laos</p>
-                  <p>Malaysia</p>
-                  <p>Myanam</p>
+                  {{site.data.navigation.dropdown.section-3.cities.textarea_html}}
                 </div>
               </div>
 
@@ -215,17 +193,10 @@ layout: connect-tree
 
               <!-- Europe -->
               <div>
-                <h2><a href = "#">Europe</a></h2>
+                {{site.data.navigation.dropdown.section-4.link.textarea_html}}
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p>
-                  <p>Cambodia</p>
-                  <p>Georgia</p>
-                  <p>India</p>
-                  <p>Indonesia</p>
-                  <p>Laos</p>
-                  <p>Malaysia</p>
-                  <p>Myanam</p>
+                  {{site.data.navigation.dropdown.section-4.cities.textarea_html}}
                 </div>
               </div>
 
@@ -233,17 +204,10 @@ layout: connect-tree
               <!-- Central & South America -->
 
               <div>
-                <h2><a href = "#">Central & South America</a></h2>
+                {{site.data.navigation.dropdown.section-5.link.textarea_html}}
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p>
-                  <p>Cambodia</p>
-                  <p>Georgia</p>
-                  <p>India</p>
-                  <p>Indonesia</p>
-                  <p>Laos</p>
-                  <p>Malaysia</p>
-                  <p>Myanam</p>
+                  {{site.data.navigation.dropdown.section-5.cities.textarea_html}}
                 </div>
               </div>
               
@@ -254,8 +218,7 @@ layout: connect-tree
           </div>  
           
         </div>
-        <a href="#" class = "header-nav">About</a>
-        <a href="#" class = "header-nav">Travel Resources</a>
+        {{site.data.navigation.textarea_html}}
       </nav>
 
       <!-- Mobile Nav -->
