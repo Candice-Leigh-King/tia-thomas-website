@@ -711,7 +711,7 @@ header
   position: fixed;
   top: 0;
   right:0;
-  left:600px;
+  left:768px;
   bottom: 10;
   padding: 30% 10% 10% 10%;
   z-index: 10;
@@ -1010,7 +1010,7 @@ footer {
     top: 24px;
     font-size: 2rem;
     }
-  .mobile-menu {left: 400px;}  
+  /* .mobile-menu {left: 400px;}   */
   
   .medium-image
     {margin-bottom: -0rem;}

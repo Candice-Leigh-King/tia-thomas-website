@@ -129,6 +129,15 @@ layout: connect-tree
         background-color: none !important;
         color: #fff;
       }
+
+
+
+
+      /* Media Queries */
+
+      @media(max-width: 990px){
+        .header-nav{font-size: 1.2rem;}
+  }
     </style>
     <header class = "grid">
 
@@ -139,7 +148,7 @@ layout: connect-tree
 
       <!-- Desktop Nav -->
 
-      <nav class="col-9-middle">
+      <nav class="col-9-middle mob-hide">
         
         <div class="dropdown header-nav" id="destinations-dropdown">
           <a href="#" class = "">Destinations
@@ -249,9 +258,40 @@ layout: connect-tree
         <a href="#" class = "header-nav">Travel Resources</a>
       </nav>
 
-      <!-- Dropdown content -->
-
       <!-- Mobile Nav -->
+
+      <nav class = "col-9 right mob-show grid-right">
+        <p class=" col-3 fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
+        </p>
+      </nav>
+
+      <!-- Hidden -->
+
+      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url('{{site.data.colors.navigation-colors.navigation-background_image}}'); z-index: 100;">
+        <p class="cross exit right col-12"> ╳
+        </p>
+        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-image: url('{{site.data.colors.navigation-colors.navigation-arch-background_image}}');">
+         
+          <div class=" col-12 grid-center  ">
+            <a href="/" class="logo center grow col-12-middle exit"> 
+              <img src="{{site.data.general.basics.logo_image}}" alt="{{site.data.general.basics.logo-alt}}" />
+            </a>
+            <div class="col-12 padded-sides text-med exit navigation-links">
+              <p>{{site.data.navigation.textarea_html}}</p>
+            </div>
+            <div class=" col-6_xs-9 grid-center navigation-socials">
+              <a class="padded-s" href="{{site.data.general.social-links.instagram}}"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
+              <a class="padded-s" href="{{site.data.general.social-links.tiktok}}"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
+              <a class="padded-s" href="{{site.data.general.social-links.facebook}}"><span class="iconify" data-icon="brandico:facebook"></span></a>
+              <a class="padded-s" href="{{site.data.general.social-links.youtube}}"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
+
+          </div>
+            
+           </div>
+        </div>
+      </nav>
+
+
     </header>
    
 
