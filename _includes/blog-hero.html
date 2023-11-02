@@ -6,9 +6,15 @@
         line-height: 1.1;
     }
 
+    #content-blocks-{{forloop.index0}} .heading-container {
+            background: {{item.heading-background}}; /* Use rgba to set the background color with opacity */
+            padding: 20px; /* Adjust the padding as needed */
+            display: inline-block; /* Makes the container size fit the content (the heading) */
+        }
+
     #content-blocks-{{forloop.index0}} .author-image{
         border-radius: 20rem;
-        background-image: url('/images/media-kit-isopure.jpg');
+        background-image: url('{{item.author_image}}');
         padding-bottom: 4rem;
 
     }
@@ -22,17 +28,23 @@
 
     #content-blocks-{{forloop.index0}} .blog-hero-grid-1{
         margin-right: 0.5%;
+        margin-top: 2%;
+        background-image: url('{{item.blog-hero-grid-1_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-2{
         margin-left: 0.5%;
+        margin-top: 2%;
+        background-image: url('{{item.blog-hero-grid-2_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-3{
         margin-top: 1%;
         margin-right: 0.5%;
+        background-image: url('{{item.blog-hero-grid-3_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-4{
         margin-top: 1%;
         margin-left: 0.5%;
+        background-image: url('{{item.blog-hero-grid-4_image}}');
     }
 
     /* #content-blocks-{{forloop.index0}} .blog-hero-grid-section{
@@ -41,17 +53,69 @@
     
     #content-blocks-{{forloop.index0}} .blog-hero-bg{
         padding-bottom: 35rem;
-
+        background-image: url('{{item.banner_image}}');
 
     }
+
+    #content-blocks-{{forloop.index0}} .bg-author{
+        width: 99%;
+        background-color: {{item.author-background-color}};
+        
+    }
+
+    #content-blocks-{{forloop.index0}} a{
+        display: block;
+        margin-bottom: 1rem;
+        color: {{item.link-color}};
+        transition: 0.7s all;
+    }
+
+    #content-blocks-{{forloop.index0}} a:hover{
+        color: {{item.link-hover-color}};
+    }
+
+
+    /* Media Queries */
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 750px){
+    
+}
+
+@media(max-width: 660px){
+    
+}
+
+@media(max-width: 500px){
+    
+}
+
+@media(max-width: 450px){
+    
+}
+
+@media(max-width: 400px){
+    
+}
+
+@media(max-width: 350px){
+    
+}
+
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
     <section class = "grid padded-sides padded" id="{{item.content-block-link}}">
 
-        <div class = "col-7 bg-image blog-hero-bg padded-s bg-temporary grid">
-            <div class ="col-7 margin-top-2 margin-left-2">
-                <h1>3 things to take to Bali, Indonesia</h1>
+        <div class = "col-7 bg-image blog-hero-bg padded-s grid">
+            <div class ="col-7 margin-top-2 heading-container margin-left-2">
+                <h1>{{item.heading}}</h1>
             </div>
             
 
@@ -63,21 +127,18 @@
 
                 </div>
                 <div class = "col-8 center author-about">
-                    <p>
-                        Hey! I am Tia - a full time traveller on a mission to explore as much of this world as possible! I love adventure, authentic travel experiences and learning from cultures all over the world. 
-                        <a style = "display: block; text-align: center; margin-bottom: 1rem;">Read more</a>
-                    </p>
+                    {{item.textarea_html}}
                 </div>
             </div>
 
-            <div class = "col-8 grid-center blog-hero-grid-section">
-                <div class = "col-5 bg-image blog-hero-grid-1 bg-temporary">
+            <div class = "col-8 grid-center-spaceAround blog-hero-grid-section margin-top-1">
+                <div class = "col-5 bg-image blog-hero-grid-1 ">
                 </div>
-                <div class = "col-5 bg-image blog-hero-grid-2  bg-temporary">
+                <div class = "col-5 bg-image blog-hero-grid-2 ">
                 </div>
-                <div class = "col-5 bg-image blog-hero-grid-3  bg-temporary">
+                <div class = "col-5 bg-image blog-hero-grid-3 ">
                 </div>
-                <div class = "col-5 bg-image blog-hero-grid-4  bg-temporary">
+                <div class = "col-5 bg-image blog-hero-grid-4">
                 </div>
             </div>
             

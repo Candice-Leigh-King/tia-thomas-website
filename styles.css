@@ -28,14 +28,16 @@ font-family: 'Shrikhand', cursive;*/
 
 /* Temporary styles */
 
-div, section{
+/* div, section{
   border: 1px solid red;
 }
 
 a, h1{
   border: 1px solid blue;
 }
-  
+
+img{ border: 1px solid purple;}
+   */
 * 
   {
   padding: 0;
@@ -172,6 +174,7 @@ a, h1{
   .padded-s {padding: 3%;}
   .padded-xs {padding: 1%;}
   .no-margin {margin: 0;}
+  .margin-top-1{ margin-top: 1rem;}
   .margin-top-2{ margin-top: 2rem;}
   .margin-left-2{ margin-left: 2rem;}
 
@@ -192,9 +195,7 @@ a, h1{
   background-size: cover;
   background-position: center;
 }
-.bg-temporary{
-  background-image: url('/images/through-the-lyns-content.jpeg');
-}
+
 
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 

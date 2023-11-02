@@ -535,6 +535,12 @@
         line-height: 1.1;
     }
 
+    #content-blocks-1 .heading-container {
+            background: rgba(0.8667, 0.7804, 0.7569, 0.2); /* Use rgba to set the background color with opacity */
+            padding: 20px; /* Adjust the padding as needed */
+            display: inline-block; /* Makes the container size fit the content (the heading) */
+        }
+
     #content-blocks-1 .author-image{
         border-radius: 20rem;
         background-image: url('/images/media-kit-isopure.jpg');
@@ -551,17 +557,23 @@
 
     #content-blocks-1 .blog-hero-grid-1{
         margin-right: 0.5%;
+        margin-top: 2%;
+        background-image: url('/images/through-the-lyns-content.jpeg');
     }
     #content-blocks-1 .blog-hero-grid-2{
         margin-left: 0.5%;
+        margin-top: 2%;
+        background-image: url('/images/through-the-lyns-content.jpeg');
     }
     #content-blocks-1 .blog-hero-grid-3{
         margin-top: 1%;
         margin-right: 0.5%;
+        background-image: url('/images/through-the-lyns-content.jpeg');
     }
     #content-blocks-1 .blog-hero-grid-4{
         margin-top: 1%;
         margin-left: 0.5%;
+        background-image: url('/images/through-the-lyns-content.jpeg');
     }
 
     /* #content-blocks-1 .blog-hero-grid-section{
@@ -570,16 +582,68 @@
     
     #content-blocks-1 .blog-hero-bg{
         padding-bottom: 35rem;
-
+        background-image: url('/images/through-the-lyns-content.jpeg');
 
     }
+
+    #content-blocks-1 .bg-author{
+        width: 99%;
+        background-color: #ddc7c1;
+        
+    }
+
+    #content-blocks-1 a{
+        display: block;
+        margin-bottom: 1rem;
+        color: black;
+        transition: 0.7s all;
+    }
+
+    #content-blocks-1 a:hover{
+        color: white;
+    }
+
+
+    /* Media Queries */
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 750px){
+    
+}
+
+@media(max-width: 660px){
+    
+}
+
+@media(max-width: 500px){
+    
+}
+
+@media(max-width: 450px){
+    
+}
+
+@media(max-width: 400px){
+    
+}
+
+@media(max-width: 350px){
+    
+}
+
 </style>
 
 <section id="content-blocks-1">
     <section class = "grid padded-sides padded" id="">
 
-        <div class = "col-7 bg-image blog-hero-bg padded-s bg-temporary grid">
-            <div class ="col-7 margin-top-2 margin-left-2">
+        <div class = "col-7 bg-image blog-hero-bg padded-s grid">
+            <div class ="col-7 margin-top-2 heading-container margin-left-2">
                 <h1>3 things to take to Bali, Indonesia</h1>
             </div>
             
@@ -592,21 +656,18 @@
 
                 </div>
                 <div class = "col-8 center author-about">
-                    <p>
-                        Hey! I am Tia - a full time traveller on a mission to explore as much of this world as possible! I love adventure, authentic travel experiences and learning from cultures all over the world. 
-                        <a style = "display: block; text-align: center; margin-bottom: 1rem;">Read more</a>
-                    </p>
+                    <p>Hey! I am Tia - a full time traveller on a mission to explore as much of this world as possible! I love adventure, authentic travel experiences and learning from cultures all over the world. <a>Read more</a></p>
                 </div>
             </div>
 
-            <div class = "col-8 grid-center blog-hero-grid-section">
-                <div class = "col-5 bg-image blog-hero-grid-1 bg-temporary">
+            <div class = "col-8 grid-center-spaceAround blog-hero-grid-section margin-top-1">
+                <div class = "col-5 bg-image blog-hero-grid-1 ">
                 </div>
-                <div class = "col-5 bg-image blog-hero-grid-2  bg-temporary">
+                <div class = "col-5 bg-image blog-hero-grid-2 ">
                 </div>
-                <div class = "col-5 bg-image blog-hero-grid-3  bg-temporary">
+                <div class = "col-5 bg-image blog-hero-grid-3 ">
                 </div>
-                <div class = "col-5 bg-image blog-hero-grid-4  bg-temporary">
+                <div class = "col-5 bg-image blog-hero-grid-4">
                 </div>
             </div>
             
@@ -618,65 +679,132 @@
         <span class="cms-editor-button"></span>
       <style>
 
-    #content-blocks-2 h1{
+    #content-blocks-2 .background-color
+      {background-color: ;}
+
+</style> 
+<section id="content-blocks-2">
+<section class="space-block background-color"></section>
+</section>
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[3]">
+        <span class="cms-editor-button"></span>
+      <style>
+
+    #content-blocks-3 .travel-guide{
+
+        margin-top: -10%;
+    }
+    #content-blocks-3 h1{
      line-height: 1.1;
      font-family: Hoves Thin;
      color: black;
     }
 
-    #content-blocks-2 .info-1 h2{
+    #content-blocks-3 .info-1 h2{
         font-family: Hoves Medium;
         font-size: 2rem;
         color: black;
     }
-    #content-blocks-2 .info-2 h2{
+    #content-blocks-3 .info-2 h2{
         font-family: Hoves Medium;
         font-size: 2rem;
         color: black;
     }
 
-    #content-blocks-2 p{
+    #content-blocks-3 p{
         line-height: 1.1;
     }
-    #content-blocks-2 span{
+    #content-blocks-3 span{
         font-family: Hoves Bold Outline ;
         text-transform: uppercase;
         border-bottom: 3px solid #ddc7c1;
         font-size: 10rem;
     }
 
-    #content-blocks-2 .bg-map{
+    #content-blocks-3 .bg-map{
         margin-top: 15rem;
         /* background-image: url('/images/europe-map.png'); */
     }
 
-    #content-blocks-2 .travel-guide-banner-bg{
+    #content-blocks-3 .travel-guide-banner-bg{
         background-image: url('/images/media-kit-collab.jpg');
         padding-bottom: 40rem;
         border-radius: 20rem 20rem 0 0;
     }
 
-    #content-blocks-2 .travel-guide-heading{
+    #content-blocks-3 .travel-guide-heading{
         translate: 20% 80%;
     }
 
-    #content-blocks-2 .info-1,
-    #content-blocks-2 .info-2{
+    #content-blocks-3 .info-1,
+    #content-blocks-3 .info-2{
         height: 20rem;
 
     }
 
-    #content-blocks-2 .info-1{
+    #content-blocks-3 .info-1{
         background-color: white;
     }
 
-    #content-blocks-2 .info-2{
+    #content-blocks-3 .info-2{
         background-color: #DDC7C1;
     }
+
+    #content-blocks-3  .icon {
+      position: relative;
+    }
+
+    #content-blocks-3  .icon img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    #content-blocks-3  .icon img:last-child {
+      z-index: 2;
+      left: 30px; /* Adjust left position to layer the second image to the right */
+      top: 30px; /* Adjust top position to layer the second image lower */
+    }
+
+        /* Media Queries */
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 750px){
+    
+}
+
+@media(max-width: 660px){
+    
+}
+
+@media(max-width: 500px){
+    
+}
+
+@media(max-width: 450px){
+    
+}
+
+@media(max-width: 400px){
+    
+}
+
+@media(max-width: 350px){
+    
+}
+
 </style>
 
-<section id="content-blocks-2">
-    <section  class = "padded grid" id="">
+<section id="content-blocks-3">
+    <section  class = "padded-sides grid travel-guide" id="">
         <div class = "col-7 travel-guide-heading">
             <h1>Travel in <br> <span>Europe</span></h1>
         </div>
@@ -690,8 +818,9 @@
 
                 <div class = "col-6">
                     <div class = "info-1 grid padded">
-                        <div class = "col-4 icon">
-                            
+                        <div class = "col-4 icon center">
+                            <img src="/images/beige-blob.png" width="80%">
+                            <img src="/images/light-bulb.png"  width="60%">
 
                         </div>
                         <div class = "col-8-bottom text">
@@ -702,7 +831,8 @@
                     </div>
                     <div class = "info-2 grid padded">
                         <div class = "col-4 icon">
-
+                            <img src="/images/white-blob.png" width="80%">
+                            <img src="/images/compass.png"  width="60%">
                         </div>
                         <div class = "col-8-bottom text">
                             <h2>Did you know?</h2>
@@ -717,37 +847,83 @@
     </section>
 </section>
     
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[3]">
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[4]">
         <span class="cms-editor-button"></span>
       <style>
-    #content-blocks-3 .bg-colour{
+
+    #content-blocks-4 .background-color
+      {background-color: ;}
+
+</style> 
+<section id="content-blocks-4">
+<section class="space-block background-color"></section>
+</section>
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[5]">
+        <span class="cms-editor-button"></span>
+      <style>
+    #content-blocks-5 .bg-colour{
         background-color: #DDC7C1;
     }
 
-    #content-blocks-3 h2{
+    #content-blocks-5 h2{
         font-family: Hoves Regular;
         color: black;
 
     }
 
-    #content-blocks-3 hr{
+    #content-blocks-5 hr{
         border: 2px solid white;
         width: 12rem;
         margin-top: -0.5rem;
         margin-left: 0.4rem;
     }
 
-    #content-blocks-3 .icon-right{
+    #content-blocks-5 .icon-right{
         margin-right: -18%;
     }
 
-    #content-blocks-3 .icon-left{
+    #content-blocks-5 .icon-left{
         margin-top: 15%;
     }
 
+
+    /* Media Queries */
+    @media(max-width: 1024px){
+
+}
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 750px){
+    
+}
+
+@media(max-width: 660px){
+    
+}
+
+@media(max-width: 500px){
+    
+}
+
+@media(max-width: 450px){
+    
+}
+
+@media(max-width: 400px){
+    
+}
+
+@media(max-width: 350px){
+    
+}
+
 </style>
 
-<section class = " padded-sides" id="content-blocks-3">
+<section class = " padded-sides" id="content-blocks-5">
     <section  class = "padded bg-colour padded-sides-lg grid" id="">
         <div class = "col-6">
             <h2>Contents: </h2>

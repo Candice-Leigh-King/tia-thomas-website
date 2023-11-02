@@ -1,5 +1,9 @@
 <style>
 
+    #content-blocks-{{forloop.index0}} .travel-guide{
+
+        margin-top: -10%;
+    }
     #content-blocks-{{forloop.index0}} h1{
      line-height: 1.1;
      font-family: Hoves Thin;
@@ -55,10 +59,61 @@
     #content-blocks-{{forloop.index0}} .info-2{
         background-color: {{item.info-block-2.background-color}};
     }
+
+    #content-blocks-{{forloop.index0}}  .icon {
+      position: relative;
+    }
+
+    #content-blocks-{{forloop.index0}}  .icon img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    #content-blocks-{{forloop.index0}}  .icon img:last-child {
+      z-index: 2;
+      left: 30px; /* Adjust left position to layer the second image to the right */
+      top: 30px; /* Adjust top position to layer the second image lower */
+    }
+
+        /* Media Queries */
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 750px){
+    
+}
+
+@media(max-width: 660px){
+    
+}
+
+@media(max-width: 500px){
+    
+}
+
+@media(max-width: 450px){
+    
+}
+
+@media(max-width: 400px){
+    
+}
+
+@media(max-width: 350px){
+    
+}
+
 </style>
 
 <section id="content-blocks-{{forloop.index0}}">
-    <section  class = "padded grid" id="{{item.content-block-link}}">
+    <section  class = "padded-sides grid travel-guide" id="{{item.content-block-link}}">
         <div class = "col-7 travel-guide-heading">
             <h1>{{item.heading}} <br> <span>{{item.country}}</span></h1>
         </div>
@@ -72,8 +127,9 @@
 
                 <div class = "col-6">
                     <div class = "info-1 grid padded">
-                        <div class = "col-4 icon">
-                            
+                        <div class = "col-4 icon center">
+                            <img src="/images/beige-blob.png" width="80%">
+                            <img src="/images/light-bulb.png"  width="60%">
 
                         </div>
                         <div class = "col-8-bottom text">
@@ -84,7 +140,8 @@
                     </div>
                     <div class = "info-2 grid padded">
                         <div class = "col-4 icon">
-
+                            <img src="/images/white-blob.png" width="80%">
+                            <img src="/images/compass.png"  width="60%">
                         </div>
                         <div class = "col-8-bottom text">
                             <h2>{{item.info-block-2.heading}}</h2>
