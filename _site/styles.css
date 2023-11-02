@@ -1,4 +1,4 @@
-Brand notes
+/* Brand notes */
 
 /* COLORS
 dark blue = #859F9F
@@ -26,6 +26,15 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Shrikhand', cursive;*/
 
+/* Temporary styles */
+
+div, section{
+  border: 1px solid red;
+}
+
+a, h1{
+  border: 1px solid blue;
+}
   
 * 
   {
@@ -53,6 +62,34 @@ font-family: 'Shrikhand', cursive;*/
   src: url(/fonts/cyrene.otf);
   }
 
+
+  /* TT HOVES FONT */
+
+  @font-face 
+  {
+  font-family: Hoves Bold Outline;
+  src: url(/fonts/TT-Hoves-Pro-Bold-Outline-Trial.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Hoves Medium;
+  src: url(/fonts/TT-Hoves-Pro-Trial-Medium.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Hoves Regular;
+  src: url(/fonts/TT-Hoves-Pro-Trial-Regular.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Hoves Thin;
+  src: url(/fonts/TT-Hoves-Pro-Trial-Thin.ttf);
+  }
+
+  /* La Obrige */
 @font-face 
   {
   font-family: La Obrige;
@@ -121,6 +158,7 @@ font-family: 'Shrikhand', cursive;*/
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem;  }
   .padded-sides {padding: 0% 5%;}
+  .padded-sides-lg {padding: 0% 10%;}
   .padded-right {padding-right: 5%;}
   .padded-top-botton-left {padding: 5% 0% 5% 5%;}
   .padded-bottom {padding-bottom: 5%; }
@@ -134,6 +172,8 @@ font-family: 'Shrikhand', cursive;*/
   .padded-s {padding: 3%;}
   .padded-xs {padding: 1%;}
   .no-margin {margin: 0;}
+  .margin-top-2{ margin-top: 2rem;}
+  .margin-left-2{ margin-left: 2rem;}
 
   
 .dark-bg      {  background-color: #CE967A;     }
@@ -148,7 +188,13 @@ font-family: 'Shrikhand', cursive;*/
   min-height: 101vh;
   }
 
-
+.bg-image{
+  background-size: cover;
+  background-position: center;
+}
+.bg-temporary{
+  background-image: url('/images/through-the-lyns-content.jpeg');
+}
 
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 
@@ -476,6 +522,7 @@ font-family: 'Shrikhand', cursive;*/
   min-height: 10rem;
   }
 
+
 .space-block {padding-top: 5%;}
 
 .social-share
@@ -638,7 +685,7 @@ header
 
 .logo-home img
   { 
-  max-width: 5rem;
+  max-height: 5rem;
   padding-top: 20px;
   }
 
@@ -1142,4 +1189,4 @@ footer {
   .yt {padding: 5px 10px;}
 
   } /* end media query */
-  
+}

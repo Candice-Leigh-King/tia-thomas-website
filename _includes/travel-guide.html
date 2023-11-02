@@ -1,0 +1,100 @@
+<style>
+
+    #content-blocks-{{forloop.index0}} h1{
+     line-height: 1.1;
+     font-family: Hoves Thin;
+     color: {{item.heading-color}};
+    }
+
+    #content-blocks-{{forloop.index0}} .info-1 h2{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        color: {{item.info-block-1.heading-color}};
+    }
+    #content-blocks-{{forloop.index0}} .info-2 h2{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        color: {{item.info-block-2.heading-color}};
+    }
+
+    #content-blocks-{{forloop.index0}} p{
+        line-height: 1.1;
+    }
+    #content-blocks-{{forloop.index0}} span{
+        font-family: Hoves Bold Outline ;
+        text-transform: uppercase;
+        border-bottom: 3px solid {{item.line-color}};
+        font-size: 10rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .bg-map{
+        margin-top: 15rem;
+        /* background-image: url('/images/europe-map.png'); */
+    }
+
+    #content-blocks-{{forloop.index0}} .travel-guide-banner-bg{
+        background-image: url('{{item.country_image}}');
+        padding-bottom: 40rem;
+        border-radius: 20rem 20rem 0 0;
+    }
+
+    #content-blocks-{{forloop.index0}} .travel-guide-heading{
+        translate: 20% 80%;
+    }
+
+    #content-blocks-{{forloop.index0}} .info-1,
+    #content-blocks-{{forloop.index0}} .info-2{
+        height: 20rem;
+
+    }
+
+    #content-blocks-{{forloop.index0}} .info-1{
+        background-color: {{item.info-block-1.background-color}};
+    }
+
+    #content-blocks-{{forloop.index0}} .info-2{
+        background-color: {{item.info-block-2.background-color}};
+    }
+</style>
+
+<section id="content-blocks-{{forloop.index0}}">
+    <section  class = "padded grid" id="{{item.content-block-link}}">
+        <div class = "col-7 travel-guide-heading">
+            <h1>{{item.heading}} <br> <span>{{item.country}}</span></h1>
+        </div>
+        <div class = "col-12 grid">
+            <div class = "col-4 bg-map bg-image center">
+                <img src = "{{item.map_image}}" width = "70%">
+            </div>
+            <div class = "col-8 grid">
+                <div class = "col-6 bg-image travel-guide-banner-bg">
+                </div>
+
+                <div class = "col-6">
+                    <div class = "info-1 grid padded">
+                        <div class = "col-4 icon">
+                            
+
+                        </div>
+                        <div class = "col-8-bottom text">
+                            <h2>{{item.info-block-1.heading}}</h2>
+                            <p>{{item.info-block-1.textarea_html}}</p>
+                        </div>
+
+                    </div>
+                    <div class = "info-2 grid padded">
+                        <div class = "col-4 icon">
+
+                        </div>
+                        <div class = "col-8-bottom text">
+                            <h2>{{item.info-block-2.heading}}</h2>
+                            <p>{{item.info-block-1.textarea_html}}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>

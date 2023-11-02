@@ -1,0 +1,86 @@
+<style>
+
+    #content-blocks-{{forloop.index0}} h1 
+    {
+        font-family: Hoves Bold Outline;
+        line-height: 1.1;
+    }
+
+    #content-blocks-{{forloop.index0}} .author-image{
+        border-radius: 20rem;
+        background-image: url('/images/media-kit-isopure.jpg');
+        padding-bottom: 4rem;
+
+    }
+
+    #content-blocks-{{forloop.index0}} .author-about{
+        margin: 1rem;
+        margin-bottom: 2rem;
+        height: 15rem;
+
+    }
+
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-1{
+        margin-right: 0.5%;
+    }
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-2{
+        margin-left: 0.5%;
+    }
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-3{
+        margin-top: 1%;
+        margin-right: 0.5%;
+    }
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-4{
+        margin-top: 1%;
+        margin-left: 0.5%;
+    }
+
+    /* #content-blocks-{{forloop.index0}} .blog-hero-grid-section{
+        height: 5rem;
+    } */
+    
+    #content-blocks-{{forloop.index0}} .blog-hero-bg{
+        padding-bottom: 35rem;
+
+
+    }
+</style>
+
+<section id="content-blocks-{{forloop.index0}}">
+    <section class = "grid padded-sides padded" id="{{item.content-block-link}}">
+
+        <div class = "col-7 bg-image blog-hero-bg padded-s bg-temporary grid">
+            <div class ="col-7 margin-top-2 margin-left-2">
+                <h1>3 things to take to Bali, Indonesia</h1>
+            </div>
+            
+
+        </div>
+
+        <div class = "col-5 grid-center">
+            <div class = "col-8 bg-author grid-center padded">
+                <div class = "col-6 author-image bg-image ">
+
+                </div>
+                <div class = "col-8 center author-about">
+                    <p>
+                        Hey! I am Tia - a full time traveller on a mission to explore as much of this world as possible! I love adventure, authentic travel experiences and learning from cultures all over the world. 
+                        <a style = "display: block; text-align: center; margin-bottom: 1rem;">Read more</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class = "col-8 grid-center blog-hero-grid-section">
+                <div class = "col-5 bg-image blog-hero-grid-1 bg-temporary">
+                </div>
+                <div class = "col-5 bg-image blog-hero-grid-2  bg-temporary">
+                </div>
+                <div class = "col-5 bg-image blog-hero-grid-3  bg-temporary">
+                </div>
+                <div class = "col-5 bg-image blog-hero-grid-4  bg-temporary">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</section>

@@ -17,6 +17,26 @@ $(document).ready(function() {
 
 			// end hamburger menu
 
+// Dropdown content menu 
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const dropdownLink = document.getElementById("destinations-dropdown");
+			const dropdownContent = document.getElementById("dropdown-content");
+		
+			dropdownLink.addEventListener("mouseenter", function () {
+			dropdownContent.style.display = "block"; // Display the dropdown immediately on hover
+			});
+		
+			dropdownLink.addEventListener("mouseleave", function () {
+			// Add a delay before hiding the dropdown
+			setTimeout(function () {
+				dropdownContent.style.display = "none";
+			}, 300); // Adjust the delay time (in milliseconds) as needed
+			});
+		});
+
+
+
 			$(document).ready(function(){
 					$('.one-time').slick({
 			dots: true,

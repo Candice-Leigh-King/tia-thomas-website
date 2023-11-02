@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Meta Data -->
+      <meta charset="utf-8" />
+      <!-- Viewport meta tag -->
+      <meta name="viewport" content="width=device-width" />
+
+      <!-- Meta data for SEO purposes. -->
+      <title>  </title>
+
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+
+      <!-- meta data to tell the browser that your devide is responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="robots" content="index, follow" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+      <!--  Social media sharing META Tags -->
+      <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:image" content="" />
+      <meta property="og:url" content="" />
+      <meta name="twitter:card" content="" />
+      <meta name="og:site_name" content="" />
+
+      <!-- twitter card -->
+      <meta name="twitter:card" content="" />
+      <meta name="twitter:description" content="" />
+      <meta name="twitter:title" content="" />
+      <meta name="twitter:site" content="" />
+      <meta name="twitter:creator" content="" />
+      <meta name="twitter:image:alt" content="" />
+
+      <!-- link to browser icon tag -->
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+      <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico" />
+      <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
+      <link rel="manifest" href="/site.webmanifest" />
+
+      <!-- GOOGLE FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Condensed:wght@300&family=Belleza&family=Kaushan+Script&family=Montserrat:wght@300;400&family=Oooh+Baby&family=Playfair+Display&family=Quicksand&family=Raleway&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:ital,wght@1,300;1,400;1,500;1,600&family=Shrikhand&display=swap" rel="stylesheet" />
+
+    <!-- iconify icons -->
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+    
+    
+    
+   
+
+    
+
+      <!-- Gridlex -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+      <!-- fanceybox gallery -->
+      <link rel="stylesheet" href="/css/jquery.fancybox.min.css" />
+
+
+
+      <link rel="stylesheet" href="/slick/slick.css" />
+      <link rel="stylesheet" href="/slick/slick-theme.css" />
+
+      <!-- styles -->
+      <link rel="stylesheet" href="/styles.css" />
+      <style>
+        :root {
+
+          /* --------------NAVIGATION------------ */
+        
+          --hamburgerColor: #ffffff;
+          --backgroundColor: #859f9f;
+          --textareaBackgroundColor: #bccaca;
+          --BorderColor: #ffffff;
+          --topLeftCorner: 100%;
+          --topRightCorner: 100%;
+          --bottomLeftCorner: 0%;
+          --bottomRightCorner: 0%;
+          --linkColor: #2f3031;
+          --linkFont: Shrikhand, cursive;;
+          --HoverLinkColor: #ffffff;
+          --iconColor: #859f9f;
+          --navSocialsBorderTopRight: 0px;
+          --navSocialsBorderTopLeft: 100px;
+          --navSocialsBorderBottomRight: 100px;
+          --navSocialsBorderBottomLeft: 0px;
+          --iconBackgroundColor: #ffffff;
+          --iconBorderColor: #d2966d;
+          --iconHoverColor: #d2966d;
+          --exitColor: #2f3031;
+          --exitHoverColor: #ffffff;
+
+          /* -------------FOOTER----------- */
+          --footerBackgroundColor: #FFFFFF;
+          --footerBorderColor: #D2966D;
+          --socialIconsBackgroundColor: #D2966D;
+          --subfooterHoverColor: #859F9F;
+          --subfooterFont: Raleway, sans-serif;
+
+          --editor-panel-zindex: 90;
+      
+          
+        }
+
+        /* --------NAVIGTION--------- */
+
+        .hamburger-color {color: var(--hamburgerColor);}
+        .navigation-background-color {background-color: var(--backgroundColor);}
+        .textarea-background-color 
+          {
+          background-color: var(--textareaBackgroundColor);
+          border: 4px solid var(--BorderColor);
+          border-top-left-radius: var(--topLeftCorner);
+          border-top-right-radius: var(--topRightCorner);
+          border-bottom-left-radius: var(--bottomLeftCorner);
+          border-bottom-right-radius: var(--bottomRightCorner);
+          }
+          
+        .navigation-links a
+          {
+          color: var(--linkColor);
+          font-family: var(--linkFont);
+          } 
+
+        .navigation-links a:hover {color: var(--HoverLinkColor);} 
+
+        .navigation-socials  
+          {
+          background-color: var(--iconBackgroundColor);
+          border: 1px solid var(--iconBorderColor);
+          }
+          
+        .navigation-socials a { color: var(--iconColor);} 
+        .navigation-socials a:hover   {color:var(--iconHoverColor);}
+        .navigation-socials
+          {
+          border-top-right-radius: var(--navSocialsBorderTopRight);
+          border-top-left-radius:  var(--navSocialsBorderTopLeft);
+          border-bottom-left-radius:  var(--navSocialsBorderBottomLeft);
+          border-bottom-right-radius:  var(--navSocialsBorderBottomRight);
+          }  
+
+        .exit {color: var(--exitColor);}
+
+        .exit:hover {color: var(--exitHoverColor);}
+        
+        .fixed-socials 
+          {
+          background-color: var(--iconBackgroundColor);
+          border-top: 1px solid var(--iconBorderColor);
+          border-left: 1px solid var(--iconBorderColor);
+          border-bottom: 1px solid var(--iconBorderColor);
+          }
+
+        .fixed-socials a {color: var(--iconColor);}  
+
+        .fixed-socials a:hover 
+          {color:var(--iconHoverColor);}
+
+        /* ----------FOOTER---------- */
+
+        .footer-background-color 
+          {
+          background-color: var(--footerBackgroundColor);
+          border-top: 1px solid var(--footerBorderColor);
+          }
+
+        .social-icons-color a 
+          {
+          color: var(--footerBackgroundColor);
+          background-color: var(--socialIconsBackgroundColor);
+          border: solid var(--socialIconsBackgroundColor);
+          }
+        
+        .social-icons-color a:hover
+          {
+          color: var(--socialIconsBackgroundColor);
+          background-color: transparent;
+          border: solid var(--socialIconsBackgroundColor);
+          }
+
+        .built {background-color: var(--footerBackgroundColor);}
+
+        .built a 
+          {
+          color: var(--socialIconsBackgroundColor);
+          font-family: var(--subfooterFont);
+          }
+
+        .built p 
+          {
+          color: var(--socialIconsBackgroundColor);
+          font-family: var(--subfooterFont);
+          }
+
+        .built a:hover {color: var(--subfooterHoverColor);}
+
+        </style>
+  </head>
+
+  <style>
+
+    .connect-tree {background-color: ;}
+  
+    .top-image-border {border: 2.5px solid ;}
+  
+    .bottom-image-border {border: 2.5px solid ;}
+  
+    .padded {padding: 5%;}
+  
+    .connect-tree 
+      {
+      background-size: cover;
+      background-position: center;
+      }
+  
+    .connect-tree .connect-tree-image 
+      {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 100%;
+      }
+  
+    .connect-tree-links p
+      {padding: 3%;  }
+  
+    .connect-tree-links a:hover
+      {background-color: transparent;}
+  
+  
+    .connect-tree-links a 
+      {
+      padding: .8rem 2rem .6rem;
+      border-radius: 100px;
+      border: 2.5px solid ;
+      background-color: ;
+      color: ;
+      font-family: ;
+      }
+  
+    .connect-tree-links a:hover 
+      {
+      color: ;
+      border: 2.5px solid ;
+      }
+  
+  </style>
+
+  <body>
+
+    <!-- <header class="grid-center">
+      <div class=" col-11 center mob-hide" style="z-index: 100;">
+        <a href="/" class="logo-home center "> 
+          <img src="/images/logo.png" alt="Through the Lyns Logo" /></a>
+      </div>
+      <p class=" col-1-middle fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
+      </p>
+      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url(''); z-index: 100;">
+        <p class="cross exit right col-12"> ╳
+        </p>
+        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-image: url('');">
+         
+          <div class=" col-12 grid-center  ">
+            <a href="/" class="logo center grow col-12-middle exit"> 
+              <img src="/images/logo.png" alt="Through the Lyns Logo" />
+            </a>
+            <div class="col-12 padded-sides text-med exit navigation-links">
+              <p><p><a href="/blog-categories/blogs">blogs</a></p> <p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p></p>
+            </div>
+            <div class=" col-6_xs-9 grid-center navigation-socials">
+              <a class="padded-s" href="https://www.instagram.com/candy_and_the_king/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
+              <a class="padded-s" href="//www.tiktok.com/@candy_and_the_king"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
+              <a class="padded-s" href="https://www.facebook.com/candy.and.the.king/"><span class="iconify" data-icon="brandico:facebook"></span></a>
+              <a class="padded-s" href="https://www.youtube.com/c/candyandtheking"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
+
+          </div>
+            
+           </div>
+        </div>
+      </nav>
+    </header> -->
+    <style>
+      header{
+        position: relative;
+        z-index: 100;
+      }
+      .logo{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+      }
+      header h1{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        text-align: center;
+        color: black;
+      }
+
+      header nav{
+        text-align: center;
+      }
+      .header-nav{
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: Hoves Medium;
+        font-size: 1.5rem;
+        color: black;
+        margin: 2% 3%;
+        padding: 0.2% 2%;
+        transition: 0.7s all;
+      }
+
+      .header-nav:hover{
+        border-radius: 5rem;
+        background-color: #DDC7C1;
+        color: black;
+      }
+
+      /* Hide the dropdown content by default */
+      header nav .dropdown .dropdown-content {
+        display: none;
+        top: 6rem;
+        position: absolute;
+        left: 3rem;
+        background-color: #DDC7C1;
+        width: 90%;
+        z-index: 1;
+        border-radius: 2rem;
+        transition: display 0.3s ease-in-out;
+      }
+
+
+
+      /* Show the dropdown content when hovering over the parent */
+      header .dropdown:hover .dropdown-content {
+        display: block;
+        width: 90%;
+      }
+
+      .dropdown-content .countries{
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+      .dropdown-content .countries p{
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5% 2%;
+        margin: 1%;
+        transition: 0.7s all;
+        
+
+      }
+
+
+      .dropdown-content h2{
+        font-size: 2rem;
+        font-family: Hoves Medium;
+        text-align: left;
+      
+
+      }
+
+      .dropdown-content hr{
+        border: 1px solid #f2e9e7;
+        width: 90%;
+        margin-top: -0.5rem
+      }
+      header .dropdown-content h2 a{
+        transition: 0.7s all
+      }
+
+      header .dropdown-content h2 a:hover{
+        background-color: none !important;
+        color: #fff;
+      }
+    </style>
+    <header class = "grid">
+
+      <!-- Logo -->
+      <div class = "col-3 logo">
+        <h1> TEE Travels</h1>
+      </div>
+
+      <!-- Desktop Nav -->
+
+      <nav class="col-9-middle">
+        
+        <div class="dropdown header-nav" id="destinations-dropdown">
+          <a href="#" class = "">Destinations
+            <div class="dropdown-content padded-s" id="dropdown-content">
+              <div class = "grid">
+              <!-- Div one -->
+              <div class = "col-6">
+                <!-- Asia -->
+                <div>
+                  <h2><a href = "#">Asia</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+                
+  
+                <!-- Africa -->
+  
+                <div>
+                  <h2><a href = "#">Africa</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+                <!-- Middle East -->
+  
+                <div>
+                  <h2><a href = "#">Middle East</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+              </div>
+  
+                <!-- Div 2 -->
+              <div class = "col-6">
+  
+                <!-- Europe -->
+                <div>
+                  <h2><a href = "#">Europe</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+  
+                <!-- Central & South America -->
+  
+                <div>
+                  <h2><a href = "#">Central & South America</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+              </div>
+  
+            </div>  
+
+          </a>
+          
+          
+        </div>
+        <a href="#" class = "header-nav">About</a>
+        <a href="#" class = "header-nav">Travel Resources</a>
+      </nav>
+
+      <!-- Dropdown content -->
+
+      <!-- Mobile Nav -->
+    </header>
+   
+
+    
+
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[0]">
+        <span class="cms-editor-button"></span>
+      <style>
+
+    #content-blocks-0 .background-color
+      {background-color: ;}
+
+</style> 
+<section id="content-blocks-0">
+<section class="space-block background-color"></section>
+</section>
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[1]">
+        <span class="cms-editor-button"></span>
+      <style>
+
+    #content-blocks-1 h1 
+    {
+        font-family: Hoves Bold Outline;
+        line-height: 1.1;
+    }
+
+    #content-blocks-1 .author-image{
+        border-radius: 20rem;
+        background-image: url('/images/media-kit-isopure.jpg');
+        padding-bottom: 4rem;
+
+    }
+
+    #content-blocks-1 .author-about{
+        margin: 1rem;
+        margin-bottom: 2rem;
+        height: 15rem;
+
+    }
+
+    #content-blocks-1 .blog-hero-grid-1{
+        margin-right: 0.5%;
+    }
+    #content-blocks-1 .blog-hero-grid-2{
+        margin-left: 0.5%;
+    }
+    #content-blocks-1 .blog-hero-grid-3{
+        margin-top: 1%;
+        margin-right: 0.5%;
+    }
+    #content-blocks-1 .blog-hero-grid-4{
+        margin-top: 1%;
+        margin-left: 0.5%;
+    }
+
+    /* #content-blocks-1 .blog-hero-grid-section{
+        height: 5rem;
+    } */
+    
+    #content-blocks-1 .blog-hero-bg{
+        padding-bottom: 35rem;
+
+
+    }
+</style>
+
+<section id="content-blocks-1">
+    <section class = "grid padded-sides padded" id="">
+
+        <div class = "col-7 bg-image blog-hero-bg padded-s bg-temporary grid">
+            <div class ="col-7 margin-top-2 margin-left-2">
+                <h1>3 things to take to Bali, Indonesia</h1>
+            </div>
+            
+
+        </div>
+
+        <div class = "col-5 grid-center">
+            <div class = "col-8 bg-author grid-center padded">
+                <div class = "col-6 author-image bg-image ">
+
+                </div>
+                <div class = "col-8 center author-about">
+                    <p>
+                        Hey! I am Tia - a full time traveller on a mission to explore as much of this world as possible! I love adventure, authentic travel experiences and learning from cultures all over the world. 
+                        <a style = "display: block; text-align: center; margin-bottom: 1rem;">Read more</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class = "col-8 grid-center blog-hero-grid-section">
+                <div class = "col-5 bg-image blog-hero-grid-1 bg-temporary">
+                </div>
+                <div class = "col-5 bg-image blog-hero-grid-2  bg-temporary">
+                </div>
+                <div class = "col-5 bg-image blog-hero-grid-3  bg-temporary">
+                </div>
+                <div class = "col-5 bg-image blog-hero-grid-4  bg-temporary">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</section>
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[2]">
+        <span class="cms-editor-button"></span>
+      <style>
+
+    #content-blocks-2 h1{
+     line-height: 1.1;
+     font-family: Hoves Thin;
+     color: black;
+    }
+
+    #content-blocks-2 .info-1 h2{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        color: black;
+    }
+    #content-blocks-2 .info-2 h2{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        color: black;
+    }
+
+    #content-blocks-2 p{
+        line-height: 1.1;
+    }
+    #content-blocks-2 span{
+        font-family: Hoves Bold Outline ;
+        text-transform: uppercase;
+        border-bottom: 3px solid #ddc7c1;
+        font-size: 10rem;
+    }
+
+    #content-blocks-2 .bg-map{
+        margin-top: 15rem;
+        /* background-image: url('/images/europe-map.png'); */
+    }
+
+    #content-blocks-2 .travel-guide-banner-bg{
+        background-image: url('/images/media-kit-collab.jpg');
+        padding-bottom: 40rem;
+        border-radius: 20rem 20rem 0 0;
+    }
+
+    #content-blocks-2 .travel-guide-heading{
+        translate: 20% 80%;
+    }
+
+    #content-blocks-2 .info-1,
+    #content-blocks-2 .info-2{
+        height: 20rem;
+
+    }
+
+    #content-blocks-2 .info-1{
+        background-color: white;
+    }
+
+    #content-blocks-2 .info-2{
+        background-color: #DDC7C1;
+    }
+</style>
+
+<section id="content-blocks-2">
+    <section  class = "padded grid" id="">
+        <div class = "col-7 travel-guide-heading">
+            <h1>Travel in <br> <span>Europe</span></h1>
+        </div>
+        <div class = "col-12 grid">
+            <div class = "col-4 bg-map bg-image center">
+                <img src = "/images/europe-map.png" width = "70%">
+            </div>
+            <div class = "col-8 grid">
+                <div class = "col-6 bg-image travel-guide-banner-bg">
+                </div>
+
+                <div class = "col-6">
+                    <div class = "info-1 grid padded">
+                        <div class = "col-4 icon">
+                            
+
+                        </div>
+                        <div class = "col-8-bottom text">
+                            <h2>Did you know?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta alias praesentium, illum dolore iure magni debitis error quo voluptate, ut perspiciatis fugit atque beatae officiis voluptatum ex sit omnis.</p>
+                        </div>
+
+                    </div>
+                    <div class = "info-2 grid padded">
+                        <div class = "col-4 icon">
+
+                        </div>
+                        <div class = "col-8-bottom text">
+                            <h2>Did you know?</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta alias praesentium, illum dolore iure magni debitis error quo voluptate, ut perspiciatis fugit atque beatae officiis voluptatum ex sit omnis.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[3]">
+        <span class="cms-editor-button"></span>
+      <style>
+    #content-blocks-3 .bg-colour{
+        background-color: #DDC7C1;
+    }
+
+    #content-blocks-3 h2{
+        font-family: Hoves Regular;
+        color: black;
+
+    }
+
+    #content-blocks-3 hr{
+        border: 2px solid white;
+        width: 12rem;
+        margin-top: -0.5rem;
+        margin-left: 0.4rem;
+    }
+
+    #content-blocks-3 .icon-right{
+        margin-right: -18%;
+    }
+
+    #content-blocks-3 .icon-left{
+        margin-top: 15%;
+    }
+
+</style>
+
+<section class = " padded-sides" id="content-blocks-3">
+    <section  class = "padded bg-colour padded-sides-lg grid" id="">
+        <div class = "col-6">
+            <h2>Contents: </h2>
+            <hr>
+            <div class = "padded-sides-lg list">
+                    <ol><li>Item 1 lorem lalalala</li><li>Item 2 lorem lalalala</li><li>Item 3 lorem lalalala</li><li>Item 4 lorem lalalala</li><li>Item 5 lorem lalalala</li><li>Item 6 lorem lalalala</li><li>Item 7 lorem lalalala</li><li>Item 8 lorem lalalala</li><li>Item 8 lorem lalalala</li><li>Item 8 lorem lalalala</li><li>Item 8 lorem lalalala</li></ol>
+            </div>
+            
+        </div>
+
+        <div class = "col-6">
+            <div class = "right icon-right">
+                <img src = "/images/Stamp-1.png" width = "20%">
+            </div>
+            <div class = "left icon-left">
+                <img src = "/images/Stamp-2.png" width = "60%">
+            </div>
+        </div>
+
+
+    </section>
+</section>
+
+    
+
+    <footer class="grid-center center padded-top footer-background-color featured-bg">
+      <div class="col-12 social-icons-color socials">
+        <a href="https://www.instagram.com/candy_and_the_king/" class="margin ig"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
+        <a href="https://www.facebook.com/candy.and.the.king/" class="margin fb "><span class="iconify" data-icon="brandico:facebook"></span></a>
+        <a href="//www.tiktok.com/@candy_and_the_king" class="margin tt"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
+        <a href="https://www.youtube.com/c/candyandtheking" class="margin yt "><span class="iconify" data-icon="dashicons:youtube"></span></a>
+      </div>
+    </footer>
+
+
+    <div class="col-12-middle center built ">
+      <p> 
+        <a href="https://www.kingcode.uk" class="padded-sides"> Website by King Code </a><a href="/" class="padded-right"> © Website for Content Creators</a>
+      </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <script src="/js/slick.js" type="text/javascript"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+
+
+      <script src="/main.js" type="text/javascript"></script>
+      <script src="/slick/slick.min.js"></script>
+  </div></body>
+
+</html>

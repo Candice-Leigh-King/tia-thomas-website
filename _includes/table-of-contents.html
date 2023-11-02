@@ -1,0 +1,51 @@
+<style>
+    #content-blocks-{{forloop.index0}} .bg-colour{
+        background-color: {{item.background-color}};
+    }
+
+    #content-blocks-{{forloop.index0}} h2{
+        font-family: Hoves Regular;
+        color: {{item.heading-color}};
+
+    }
+
+    #content-blocks-{{forloop.index0}} hr{
+        border: 2px solid {{item.line-color}};
+        width: 12rem;
+        margin-top: -0.5rem;
+        margin-left: 0.4rem;
+    }
+
+    #content-blocks-{{forloop.index0}} .icon-right{
+        margin-right: -18%;
+    }
+
+    #content-blocks-{{forloop.index0}} .icon-left{
+        margin-top: 15%;
+    }
+
+</style>
+
+<section class = " padded-sides" id="content-blocks-{{forloop.index0}}">
+    <section  class = "padded bg-colour padded-sides-lg grid" id="{{item.content-block-link}}">
+        <div class = "col-6">
+            <h2>{{item.heading}}</h2>
+            <hr>
+            <div class = "padded-sides-lg list">
+                    {{item.textarea_html}}
+            </div>
+            
+        </div>
+
+        <div class = "col-6">
+            <div class = "right icon-right">
+                <img src = "{{item.right-icon_image}}" width = "20%">
+            </div>
+            <div class = "left icon-left">
+                <img src = "{{item.left-icon_image}}" width = "60%">
+            </div>
+        </div>
+
+
+    </section>
+</section>

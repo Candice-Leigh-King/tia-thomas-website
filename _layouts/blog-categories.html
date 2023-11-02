@@ -1,0 +1,43 @@
+--- 
+layout: default 
+--- 
+
+<style>
+      .blog-navigation{
+            margin-top: 5% !important;
+        }
+
+
+        .blog-navigation a{
+        display: inline-block;
+        font-family: Hoves Medium;
+        margin: 1%;
+        padding: 1% 3%;
+        transition: 0.7s all
+        }
+
+        .blog-navigation a:hover{
+            background-color: #f2e9e7;
+            border-radius: 2rem;
+            color: black;
+
+        }
+</style>
+
+<section class = "grid-center center padded">
+    <nav class = "col-8-center grid-center blog-navigation">
+        <a href = "/blog-categories/asia">Asia</a>
+        <a href = "/blog-categories/africa">Africa</a>
+        <a href = "/blog-categories/middle-east">Middle East</a>
+        <a href = "/blog-categories/europe">Europe</a>
+        <a href = "/blog-categories/central-and-south">Central & South America</a>
+    </nav>
+</section>
+
+{{content}}
+
+{% for item in page.content-blocks %}
+<div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[{{ forloop.index0 }}]">
+    <span class="cms-editor-button"></span>
+  {% include {{item._section-type}}.html %}
+{% endfor %}

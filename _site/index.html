@@ -259,7 +259,7 @@
 
   <body>
 
-    <header class="grid-center">
+    <!-- <header class="grid-center">
       <div class=" col-11 center mob-hide" style="z-index: 100;">
         <a href="/" class="logo-home center "> 
           <img src="/images/logo.png" alt="Through the Lyns Logo" /></a>
@@ -289,6 +289,226 @@
            </div>
         </div>
       </nav>
+    </header> -->
+    <style>
+      header{
+        position: relative;
+        z-index: 100;
+      }
+      .logo{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+      }
+      header h1{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        text-align: center;
+        color: black;
+      }
+
+      header nav{
+        text-align: center;
+      }
+      .header-nav{
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: Hoves Medium;
+        font-size: 1.5rem;
+        color: black;
+        margin: 2% 3%;
+        padding: 0.2% 2%;
+        transition: 0.7s all;
+      }
+
+      .header-nav:hover{
+        border-radius: 5rem;
+        background-color: #DDC7C1;
+        color: black;
+      }
+
+      /* Hide the dropdown content by default */
+      header nav .dropdown .dropdown-content {
+        display: none;
+        top: 6rem;
+        position: absolute;
+        left: 3rem;
+        background-color: #DDC7C1;
+        width: 90%;
+        z-index: 1;
+        border-radius: 2rem;
+        transition: display 0.3s ease-in-out;
+      }
+
+
+
+      /* Show the dropdown content when hovering over the parent */
+      header .dropdown:hover .dropdown-content {
+        display: block;
+        width: 90%;
+      }
+
+      .dropdown-content .countries{
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+      .dropdown-content .countries p{
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5% 2%;
+        margin: 1%;
+        transition: 0.7s all;
+        
+
+      }
+
+
+      .dropdown-content h2{
+        font-size: 2rem;
+        font-family: Hoves Medium;
+        text-align: left;
+      
+
+      }
+
+      .dropdown-content hr{
+        border: 1px solid #f2e9e7;
+        width: 90%;
+        margin-top: -0.5rem
+      }
+      header .dropdown-content h2 a{
+        transition: 0.7s all
+      }
+
+      header .dropdown-content h2 a:hover{
+        background-color: none !important;
+        color: #fff;
+      }
+    </style>
+    <header class = "grid">
+
+      <!-- Logo -->
+      <div class = "col-3 logo">
+        <h1> TEE Travels</h1>
+      </div>
+
+      <!-- Desktop Nav -->
+
+      <nav class="col-9-middle">
+        
+        <div class="dropdown header-nav" id="destinations-dropdown">
+          <a href="#" class = "">Destinations
+            <div class="dropdown-content padded-s" id="dropdown-content">
+              <div class = "grid">
+              <!-- Div one -->
+              <div class = "col-6">
+                <!-- Asia -->
+                <div>
+                  <h2><a href = "#">Asia</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+                
+  
+                <!-- Africa -->
+  
+                <div>
+                  <h2><a href = "#">Africa</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+                <!-- Middle East -->
+  
+                <div>
+                  <h2><a href = "#">Middle East</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+              </div>
+  
+                <!-- Div 2 -->
+              <div class = "col-6">
+  
+                <!-- Europe -->
+                <div>
+                  <h2><a href = "#">Europe</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+  
+                <!-- Central & South America -->
+  
+                <div>
+                  <h2><a href = "#">Central & South America</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+              </div>
+  
+            </div>  
+
+          </a>
+          
+          
+        </div>
+        <a href="#" class = "header-nav">About</a>
+        <a href="#" class = "header-nav">Travel Resources</a>
+      </nav>
+
+      <!-- Dropdown content -->
+
+      <!-- Mobile Nav -->
     </header>
    
 
@@ -453,158 +673,11 @@
       <style>
   #content-blocks-3 .hover-container .hover-image:hover 
   {
-  box-shadow: inset 0px 0px 0px 4px #efebe6;
-  box-sizing: border-box;
-  } 
-    
-  #content-blocks-3 .border-hover-image 
-   { 
-   box-shadow: inset 0px 0px 0px 4px #ffffff;
-   box-sizing: border-box;
-   border-top-left-radius: 100%;
-   border-top-right-radius: 100%;
-   border-bottom-left-radius: 100%;
-   border-bottom-right-radius: 100%;
-   }
-
-  #content-blocks-3 .border-mob 
-    {border: 4px solid #ffffff;}
-
-  #content-blocks-3 .hover-container 
-   {background-color: #efebe6;}
-
-  #content-blocks-3 .hover-container-mobile 
-   {background-color: #efebe6;}
-  
-  #content-blocks-3 .hover-container-mobile p 
-   {font-family: Poppins, sans-serif;}
-
-  #content-blocks-3 .top-hover-overlay 
-   {background-color: rgba(133, 159, 159, 0.5);}
-  
-  #content-blocks-3 .hover-text-color:hover {color: #2f3031;}
-
-  #content-blocks-3 .on-mobile-text-color {color: #2f3031;} 
-
-  #content-blocks-3 .hover-overlay:hover {background-color: #efebe6;}
-
-  #content-blocks-3 .heading-color 
-   {color: #ffffff;}
-
-  #content-blocks-3 .heading-font 
-   {font-family: Shrikhand, cursive;}
-
-  #content-blocks-3 .textarea-color 
-   {colors: ;}
-
-  #content-blocks-3 .textarea-font 
-   {font-family: Poppins, sans-serif;}
-  
-  #content-blocks-3 .subheading-color
-   {color: #2f3031;}
-
-  #content-blocks-3 .subheading-font
-   {font-family: Shrikhand, cursive;}
-   
-  #content-blocks-3 .button-color:hover
-   {
-   background-color: #d2966d;
-   color: #2f3031;
-   } 
-
-  #content-blocks-3 .link-background-color   
-    {
-    background-color: #d2966d;
-    color: #2f3031;
-    }
-
-@media(max-width:768px) 
-  {
-    #content-blocks-3 .border-hover-image 
-      {
-      border-top-left-radius: 100%;
-      border-top-right-radius: 100%;
-      border-bottom-left-radius: 100%;
-      border-bottom-right-radius: 100%;
-      }  
-  }
-
-@media(max-width:576px) 
-  {
-    #content-blocks-3 .border-hover-image 
-      {
-      border-top-left-radius: 100%;
-      border-top-right-radius: 100%;
-      border-bottom-left-radius: 100%;
-      border-bottom-right-radius: 100%;
-      } 
-  }
-  
-  
-</style>
-
-<section id="content-blocks-3" class="center fig-and-zuko">
-  <div id="services" class="grid">
-    <div class="col-6_sm-12">
-      <div class="hover-container" style="background-image:url('/images/through-the-lyns-content.jpeg')">
-        <div class="top-hover-overlay">
-          <div class="hover-inner">
-            <h2 class="heading-color heading-font"> Services </h2>
-            <p class="textarea-color textarea-font padded"> </p> 
-              <a href="" class=" button-color"> <b></b></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-6_sm-12 mob-hide ">
-      <div class="hover-container padded">
-        <div class="hover-image radius inner-border border-hover-image " style="background-image:url('/images/content-creators-website-template.jpg'); ">
-          <div class="hover-overlay  hover-text-color ">
-            <div class="hover-inner">
-              <h3 class="subheading-font"> Photography </h3>
-              <p class="textarea-font padded"> This content block is perfect to showcase your services. It can also be used as an about section, a call to action (CTA) or to redirect to any page you'd like. 
-
-You also have creative freedom here to turn this circle into a square, rectangle, oval, etc.! Change the border color, remove the border. It's up to you.</p> 
-                <a href="/#contact" class="button-color"> <b>ENQUIRE</b></a>
-            </div>
-          </div>
-        </div> 
-      </div>
-    </div>
-    <div class="col-6_sm-12-middle desktop-hide">
-      <div class="hover-container-mobile padded">
-        <div class="hover-image radius border-mob" style="background-image:url('/images/content-creators-website-template.jpg'); ">
-          <div class="container-color radius grid-middle">
-            <h3 class="col-12 subheading-font subheading-color padded"> Photography  
-              <p class="col-12 padded textarea-font centered read-more-button" data-target="read-more-section-2-3"> Read <span></span>
-              </p>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="read-more" class=" col-12 hover-container-mobile padded desktop-hide" >
-      <p class="hidden on-mobile-text-color  read-more-section" id="read-more-section-2-3" data-section="read-more-section-2-3">This content block is perfect to showcase your services. It can also be used as an about section, a call to action (CTA) or to redirect to any page you'd like. 
-
-You also have creative freedom here to turn this circle into a square, rectangle, oval, etc.! Change the border color, remove the border. It's up to you.<br>
-        <a href="/#contact" class="button-color link-background-color"> <b>ENQUIRE</b></a>
-      </p>
-    </div>
-  </div>    
-</section>
-
-
-    
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[4]">
-        <span class="cms-editor-button"></span>
-      <style>
-  #content-blocks-4 .hover-container .hover-image:hover 
-  {
   box-shadow: inset 0px 0px 0px 4px #ffffff;
   box-sizing: border-box;
   } 
     
-  #content-blocks-4 .border-hover-image 
+  #content-blocks-3 .border-hover-image 
    { 
    box-shadow: inset 0px 0px 0px 4px #ffffff;
    box-sizing: border-box;
@@ -615,59 +688,59 @@ You also have creative freedom here to turn this circle into a square, rectangle
    }
  
 
-  #content-blocks-4 .border-mob 
+  #content-blocks-3 .border-mob 
     {border: 4px solid #ffffff;}
 
 
-  #content-blocks-4 .hover-container 
+  #content-blocks-3 .hover-container 
    {background-color: #ffffff;}
 
-   #content-blocks-4 .hover-container hover 
+   #content-blocks-3 .hover-container hover 
    {background-color:#efebe6;}
 
-  #content-blocks-4 .hover-container-mobile 
+  #content-blocks-3 .hover-container-mobile 
    {background-color: #ffffff;}
   
-  #content-blocks-4 .hover-container-mobile p 
+  #content-blocks-3 .hover-container-mobile p 
    {font-family: Poppins, sans-serif;}
 
-  #content-blocks-4 .textarea-font 
+  #content-blocks-3 .textarea-font 
    {font-family: Poppins, sans-serif;}
 
-  #content-blocks-4 .hover-image a
+  #content-blocks-3 .hover-image a
    {font-family: Poppins, sans-serif;}
 
-  #content-blocks-4 .top-hover-overlay 
+  #content-blocks-3 .top-hover-overlay 
    {background-color: rgba(210, 150, 109, 0.5);}
   
-  #content-blocks-4 .hover-text-color:hover {color: #2f3031;}
+  #content-blocks-3 .hover-text-color:hover {color: #2f3031;}
 
-  #content-blocks-4 .hover-overlay:hover {background-color: #efebe6;}
+  #content-blocks-3 .hover-overlay:hover {background-color: #efebe6;}
 
-  #content-blocks-4 .on-mobile-text-color {color: #2f3031;}
+  #content-blocks-3 .on-mobile-text-color {color: #2f3031;}
 
-  #content-blocks-4 .heading-color 
+  #content-blocks-3 .heading-color 
     {color: #ffffff;}
 
-  #content-blocks-4 .heading-font 
+  #content-blocks-3 .heading-font 
     {font-family: Shrikhand, cursive;}
 
-  #content-blocks-4 .textarea-color 
+  #content-blocks-3 .textarea-color 
     {color: ;}
   
-  #content-blocks-4 .subheading-color
+  #content-blocks-3 .subheading-color
     {color: #2f3031;}
 
-  #content-blocks-4 .subheading-font
+  #content-blocks-3 .subheading-font
     {font-family: Shrikhand, cursive;}
    
-  #content-blocks-4 .button-color:hover
+  #content-blocks-3 .button-color:hover
    {
    background-color: #d2966d;
    color: #2f3031;
    }
 
-  #content-blocks-4 .link-background-color   
+  #content-blocks-3 .link-background-color   
    {
    background-color: #d2966d;
    color: #2f3031;
@@ -675,7 +748,7 @@ You also have creative freedom here to turn this circle into a square, rectangle
  
 @media(max-width:768px) 
   {
-    #content-blocks-4 .border-hover-image
+    #content-blocks-3 .border-hover-image
       {
       border-top-left-radius: 0%;
       border-top-right-radius: 0%;
@@ -686,7 +759,7 @@ You also have creative freedom here to turn this circle into a square, rectangle
 
 @media(max-width:576px) 
   {
-    #content-blocks-4 .border-hover-image
+    #content-blocks-3 .border-hover-image
       {
       border-top-left-radius: 0%;
       border-top-right-radius: 0%;
@@ -697,7 +770,7 @@ You also have creative freedom here to turn this circle into a square, rectangle
 
 </style>
 
-<section id="content-blocks-4" class="center fig-and-zuko">
+<section id="content-blocks-3" class="center fig-and-zuko">
     <div id="" class="grid">
       <div class="col-6_sm-12 mob-hide">
         <div class="hover-container padded">
@@ -719,7 +792,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
           <div class="hover-image border-mob" style="background-image:url('/images/creators-website-template.webp'); ">
             <div class="container-color grid-middle">
               <h3 class="col-12 subheading-font subheading-color padded"> Blogging  
-                <p class="col-12 subheading-font subheading-color padded centered read-more-button" data-target="read-more-section-1-4">Read <span></span>
+                <p class="col-12 subheading-font subheading-color padded centered read-more-button" data-target="read-more-section-1-3">Read <span></span>
                 </p>
               </h3>
             </div>
@@ -727,7 +800,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
         </div>
       </div>
       <div class="col-12 hover-container-mobile padded desktop-hide" >
-        <p class="hidden on-mobile-text-color textarea-font read-more-section" id="read-more-section-1-4" data-section="read-more-section-1-4"> Use this block if you have more than 1 service that you'd like to showcase. You can also use it to add text and images to other pages.
+        <p class="hidden on-mobile-text-color textarea-font read-more-section" id="read-more-section-1-3" data-section="read-more-section-1-3"> Use this block if you have more than 1 service that you'd like to showcase. You can also use it to add text and images to other pages.
 
 You also have creative freedom to turn this square into a circle, rectangle, oval, etc.! Change the border color, remove the border. It's up to you.<br>
           <a href="/#contact" class=" button-color link-background-color"> <b>ENQUIRE</b></a>
@@ -752,7 +825,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
             <div class="hover-image" style="background-image:url('/images/through-the-lyns.jpeg'); ">
               <div class="container-color grid-middle">
                 <h3 class="col-12 subheading-font subheading-color padded"> Influencer Marketing  
-                  <p class="col-12 subheading-font subheading-color padded centered read-more-button" data-target="read-more-section-2-4">Read <span></span>
+                  <p class="col-12 subheading-font subheading-color padded centered read-more-button" data-target="read-more-section-2-3">Read <span></span>
                   </p>
                 </h3>
               </div>
@@ -760,7 +833,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
           </div>
         </div>
         <div class="col-12 hover-container-mobile padded desktop-hide" >
-          <p class="hidden on-mobile-text-color textarea-font read-more-section" id="read-more-section-2-4" data-section="read-more-section-2-4"> You don't only have the option to add text to this block, you can also change the color of the opacity color of the image (on this demo for the desktop version, the opacity is orange). You can also make it 100% transparent if you'd like. <br>
+          <p class="hidden on-mobile-text-color textarea-font read-more-section" id="read-more-section-2-3" data-section="read-more-section-2-3"> You don't only have the option to add text to this block, you can also change the color of the opacity color of the image (on this demo for the desktop version, the opacity is orange). You can also make it 100% transparent if you'd like. <br>
             <a href="#contact" class=" button-color link-background-color"> <b>ENQUIRE</b></a>
           </p>
           
@@ -769,32 +842,32 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
     </div>    
   </section>
     
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[5]">
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[4]">
         <span class="cms-editor-button"></span>
       <style>
 
-    #content-blocks-5 .background-color
+    #content-blocks-4 .background-color
       {background-color: #BCCACA;}
 
 </style> 
-<section id="content-blocks-5">
+<section id="content-blocks-4">
 <section class="space-block background-color"></section>
 </section>
     
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[6]">
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[5]">
         <span class="cms-editor-button"></span>
       <style>
-  #content-blocks-6 .background-color {background-color: #BCCACA;}
+  #content-blocks-5 .background-color {background-color: #BCCACA;}
 
-  #content-blocks-6 .textarea-color a {color: #d2966d;}
+  #content-blocks-5 .textarea-color a {color: #d2966d;}
 
-  #content-blocks-6 .textarea-color a:hover {color: #859f9f;}
+  #content-blocks-5 .textarea-color a:hover {color: #859f9f;}
 
-  #content-blocks-6 .textarea-color {color: #2f3031;}
+  #content-blocks-5 .textarea-color {color: #2f3031;}
 
-  #content-blocks-6 .textarea-font {font-family: Poppins, sans-serif;}
+  #content-blocks-5 .textarea-font {font-family: Poppins, sans-serif;}
 
-  #content-blocks-6 .top-line-color 
+  #content-blocks-5 .top-line-color 
     {
     border-bottom: none;
     border-left: none;
@@ -802,7 +875,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
     border-top: 4px solid #e2e8e8;
     }
 
-  #content-blocks-6 .left-line-color 
+  #content-blocks-5 .left-line-color 
     {
     border-bottom: none;
     border-right: none;
@@ -810,47 +883,47 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
     border-left: solid 4px #e2e8e8;
     } 
   
-  #content-blocks-6 .subheading-color 
+  #content-blocks-5 .subheading-color 
     {color: #e2e8e8;}
 
-  #content-blocks-6 .subheading-font {font-family: Brushwell;}
+  #content-blocks-5 .subheading-font {font-family: Brushwell;}
 
-  #content-blocks-6 h1 
+  #content-blocks-5 h1 
   {
   font-size: 3.5rem;
   color: #e2e8e8;
   font-family: Brushwell;
   }
 
-  #content-blocks-6 h2 
+  #content-blocks-5 h2 
   {
   font-size: 3rem;
   color: #e2e8e8;
   font-family: Brushwell;
   }
 
-  #content-blocks-6 h3 
+  #content-blocks-5 h3 
   {
   font-size: 2.5rem;
   color: #e2e8e8;
   font-family: Brushwell;
   }
 
-  #content-blocks-6 h4 
+  #content-blocks-5 h4 
   {
   font-size: 2rem;
   color: #e2e8e8;
   font-family: Brushwell;
   }
 
-  #content-blocks-6 h5 
+  #content-blocks-5 h5 
   {
   font-size: 1.5rem;
   color: #e2e8e8;
   font-family: Brushwell;
   }
 
-  #content-blocks-6 h6 
+  #content-blocks-5 h6 
   {
   font-size: 1rem;
   color: #e2e8e8;
@@ -859,29 +932,29 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
 
   @media(max-width:576px) 
   {
-    #content-blocks-6 h1 
+    #content-blocks-5 h1 
     {font-size: 3rem;}
 
-    #content-blocks-6 h2 
+    #content-blocks-5 h2 
     {font-size: 2.5rem;}
 
-    #content-blocks-6 h3 
+    #content-blocks-5 h3 
     {font-size: 2rem;}
 
-    #content-blocks-6 h4 
+    #content-blocks-5 h4 
     {font-size: 1.5rem;}
 
-    #content-blocks-6 h5 
+    #content-blocks-5 h5 
     {font-size: 1rem;}
 
-    #content-blocks-6 h6 
+    #content-blocks-5 h6 
     {font-size: 0.9rem;}
   }
 
   
 </style>
 
-<section id="content-blocks-6">
+<section id="content-blocks-5">
   <section id="about" class="grid-middle textarea-content-block padded-sides background-color">
     <div class="col-8_sm-12 left textarea-color textarea-font reveal padded-sides fade-left">
       <p class=" "><p>Use this block to tell your audience more about you. Be descriptive and make sure your personality shines through your writing. You also want to <strong>write the way you talk</strong> so that your website comes across more personal which builds relationship and trust.</p><p>In this block, you can add links, add headings, subheadings,&nbsp;<em>italics</em> and <strong>bold text. </strong>You can also added<strong>&nbsp;</strong>quotes, bulleted list and numbered lists.</p><p>Use this block throughout your website if you wish for an about section, story section, mission and/or vision statement or in any way you please!</p></p>
@@ -896,199 +969,24 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
   </section>
 </section>
     
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[7]">
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[6]">
         <span class="cms-editor-button"></span>
       <style>
-  #content-blocks-7 .carousel-background-color 
-    {background-color: #bccaca;}
-
-  #content-blocks-7 .heading-color 
-    {color: #ffffff;}
-
-  #content-blocks-7 .heading-font 
-    {font-family: Shrikhand, cursive;}
-    
-
-  #content-blocks-7 .textarea-background-color 
-    {background-color: #ffffff;}
-
-  #content-blocks-7 .carousel-border-color
-    {
-    border: 4px solid #859f9f;
-    border-top-left-radius: 400px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 400px;
-    }
-
-  #content-blocks-7 .text-color 
-    {color: #2f3031;}
-
-  #content-blocks-7 .text-color a {color: #859f9f;}
-
-  #content-blocks-7 .text-color a:hover {color: #FFFFFF;}
-
-  #content-blocks-7 .text-font
-    {font-family: Poppins, sans-serif;}
-
-  #content-blocks-7 .carousel-symbols-color
-    {color: #859f9f;}
-
-  #content-blocks-7 .carousel-subheading-color 
-    {color: #2f3031;}
-
-  #content-blocks-7 .carousel-subheading-font 
-    {font-family: Brushwell;}
-
-  #content-blocks-7 h1 
-   {
-   font-size: 3.5rem;
-   font-family: Shrikhand, cursive;
-   color: #ffffff;
-   }
-
-  #content-blocks-7 h2 
-   {
-   font-size: 3rem;
-   font-family: Shrikhand, cursive;
-   color: #ffffff;
-   }
-
-  #content-blocks-7 h3 
-   {
-   font-size: 2.5rem;
-   font-family: Shrikhand, cursive;
-   color: #ffffff;
-   }
-
-  #content-blocks-7 h4 
-   {
-   font-size: 2rem;
-   font-family: Shrikhand, cursive;
-   color: #ffffff;
-   }
-
-  #content-blocks-7 h5 
-   {
-   font-size: 1.5rem;
-   font-family: Shrikhand, cursive;
-   color: #ffffff;
-   }
-
-  #content-blocks-7 h6 
-   {
-   font-size: 1rem;
-   font-family: Shrikhand, cursive;
-   color: #ffffff;
-   }
-
-@media(max-width:768px) 
-  {
-    #content-blocks-7 .carousel-border-color
-    {
-    border: 4px solid #859f9f;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 200px;
-    } 
-  }
-
-@media(max-width:576px) 
-  {
-  #content-blocks-7 .carousel-border-color
-    {
-    border-top-left-radius: 100px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 100px;
-    } 
-
-  #content-blocks-7 h1 
-    {font-size: 3rem;}
-
-  #content-blocks-7 h2 
-    {font-size: 2.5rem;}
-
-  #content-blocks-7 h3 
-    {font-size: 2rem;}
-
-  #content-blocks-7 h4 
-    {font-size: 1.5rem;}
-
-  #content-blocks-7 h5 
-    {font-size: 1rem;}
-
-  #content-blocks-7 h6 
-    {font-size: 0.9rem;}
-  }
-
- 
-</style>
-
-<section id="content-blocks-7">
-  <section class="grid-center padded carousel-background-color banner" style="background-image: url('');">
-    <div class="col-12 padded-bottom" id="reviews">
-      <h2 class="heading-color center heading-font">Reviews</h2>
-    </div>
-    <div class=" grid col-9_sm-11 padded-sides one-time">
-      
-      <div class="grid-center col-12 radius-leaf carousel-border-color textarea-background-color centered">
-        <div class="grid-center padded ">
-          <div class = "col-9_xs-12 padded text-color text-font ">
-            <p class="text-color text-font"><p>This is an amazing template to use for someone like me who is new to having a website! Candy and Jonty are super helpful and supportive and helped me to look like a real pro!!</p> <br />
-              <span class="carousel-symbols-color"> ★★★★★ </span>
-            </p>
-            <p class="centered carousel-subheading-font carousel-subheading-color"> Arielle Wizman, @ariellewizman </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="grid-center col-12 radius-leaf carousel-border-color textarea-background-color centered">
-        <div class="grid-center padded ">
-          <div class = "col-9_xs-12 padded text-color text-font ">
-            <p class="text-color text-font"><p>This content block is most suitable for reviews. However, if you have something else in mind for this carousel you are more than able to do so.</p> <br />
-              <span class="carousel-symbols-color"> ★★★★★ </span>
-            </p>
-            <p class="centered carousel-subheading-font carousel-subheading-color"> Subheading, name, or leave it blank </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="grid-center col-12 radius-leaf carousel-border-color textarea-background-color centered">
-        <div class="grid-center padded ">
-          <div class = "col-9_xs-12 padded text-color text-font ">
-            <p class="text-color text-font"><p>Candy and Jonty took my website to another level</p><p>I turned my hobby into a business which meant I needed to upgrade my website. In search of doing so, I found The Kings and decided to have them build me a custom-made website because I wanted my website to stick out from all the rest of the websites.</p><p>I gave them an idea of what I wanted and they created a website more than I could have envisioned (and may I add that they did so in so little time). I'm absolutely in love with the results.</p><p>Besides being so professional, Jonty and Candy are very kind, and patient, and are continuously available to answer any question I have even after the website handover.</p> <br />
-              <span class="carousel-symbols-color"> ★★★★★ </span>
-            </p>
-            <p class="centered carousel-subheading-font carousel-subheading-color"> - Elizabeth Savyon, @our.whereabouts </p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-</section>
-
-    
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[8]">
-        <span class="cms-editor-button"></span>
-      <style>
-  #content-blocks-8 .gallery 
+  #content-blocks-6 .gallery 
     {background-color:#ffffff;}
 
-  #content-blocks-8 .heading-color
+  #content-blocks-6 .heading-color
     {color: #859f9f;}
 
-  #content-blocks-8 .heading-font
+  #content-blocks-6 .heading-font
     {font-family: Shrikhand, cursive;} 
   
-  #content-blocks-8 .square 
+  #content-blocks-6 .square 
     {border: 4px solid #ffffff;}
 
 </style>
 
-<section id="content-blocks-8" class="center">
+<section id="content-blocks-6" class="center">
   <section id="gallery" class="padded-gallery grid-center gallery ">
       <h2 class="col-12_sm-12 heading-color heading-font centered padded-top"> Gallery </h2>
     
@@ -1107,20 +1005,20 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
     </section>
   </section>  
     
-    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[9]">
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[7]">
         <span class="cms-editor-button"></span>
       <style>
 
-  #content-block-9 .form-background-color
+  #content-block-7 .form-background-color
    {background-color: #ffffff;}
  
-  #content-block-9 .form-heading-color
+  #content-block-7 .form-heading-color
    {color: #859f9f;}
  
-  #content-block-9 .form-heading-font
+  #content-block-7 .form-heading-font
    {font-family: Shrikhand, cursive;;}
  
-   #content-block-9 .form-border-color
+   #content-block-7 .form-border-color
    {
    border: solid 4px #859f9f;
    border-top-left-radius: 0px;
@@ -1131,7 +1029,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
  
    @media(max-width:768px) 
    {
-     #content-block-9 .form-border-color
+     #content-block-7 .form-border-color
        {
        border-top-left-radius: 0px;
        border-top-right-radius: 150px;
@@ -1142,7 +1040,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
  
  @media(max-width:576px) 
    {
-     #content-block-9 .carousel-border-color
+     #content-block-7 .carousel-border-color
      {
      border-top-left-radius: 0px;
      border-top-right-radius: 150px;
@@ -1151,119 +1049,119 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
      } 
    }
  
-  #content-block-9 .textarea-background-color
+  #content-block-7 .textarea-background-color
    {background-color: #ffffff;}
  
-  #content-block-9 .form-subheading-font
+  #content-block-7 .form-subheading-font
    {font-family: Poppins, sans-serif;}
  
-  #content-block-9 .form-subheading-color
+  #content-block-7 .form-subheading-color
    {color: #d2966d;}
  
  
-  #content-block-9 .input-text 
+  #content-block-7 .input-text 
    {border-bottom: solid 2px #859f9f; 
    }
   
-  #content-block-9 .dropdown
+  #content-block-7 .dropdown
   {background-color: #ffffff;} ;}
  
-   #content-block-9 .input-text:focus 
+   #content-block-7 .input-text:focus 
    {border-bottom: solid 2px #d2966d; }
 
 
   
    /* Chrome/Opera/Safari */
-  #content-block-9 input::-webkit-input-placeholder 
+  #content-block-7 input::-webkit-input-placeholder 
    { 
    color: #859f9f;
    font-family: Poppins, sans-serif;
    }
  
    /* Chrome/Opera/Safari */
-  #content-block-9 input::-webkit-input-placeholder:focus 
+  #content-block-7 input::-webkit-input-placeholder:focus 
    {border-bottom: solid 2px #d2966d; }
  
    /* Firefox 19+ */
-  #content-block-9 input::-moz-placeholder 
+  #content-block-7 input::-moz-placeholder 
      {color: #859f9f;}
  
-  #content-block-9 input::-moz-placeholder:focus
+  #content-block-7 input::-moz-placeholder:focus
    {border-bottom: solid 2px #d2966d; }
  
    /* IE 10+ */
-  #content-block-9 input::-ms-input-placeholder 
+  #content-block-7 input::-ms-input-placeholder 
      {
      color: #859f9f;
      font-family: Poppins, sans-serif;
      }
  
-  #content-block-9 input::-ms-input-placeholder:focus
+  #content-block-7 input::-ms-input-placeholder:focus
    {border-bottom: solid 2px #d2966d; }  
  
    /* Firefox 18- */
-  #content-block-9 input::-moz-placeholder 
+  #content-block-7 input::-moz-placeholder 
      {
      color: #859f9f;
      font-family: Poppins, sans-serif;
      }
    
-   #content-block-9 input::-moz-placeholder:focus 
+   #content-block-7 input::-moz-placeholder:focus 
      {border-bottom: solid 2px #d2966d; }
  
-  #content-block-9 input::-moz-placeholder
+  #content-block-7 input::-moz-placeholder
    {
    color: #859f9f;
    font-family: Poppins, sans-serif;
    }
   
-  #content-block-9 input::placeholder:focus
+  #content-block-7 input::placeholder:focus
      {border-bottom: solid 2px #d2966d; }
  
-  #content-block-9 input::placeholder 
+  #content-block-7 input::placeholder 
      {
      color: #859f9f;
      font-family: Poppins, sans-serif;
      }
  
-  #content-block-9 input, textarea, select, option
+  #content-block-7 input, textarea, select, option
      {
      color: #859f9f;
      font-family: Poppins, sans-serif;
      }
    
-  #content-block-9  input:focus, textarea:focus,
+  #content-block-7  input:focus, textarea:focus,
      {border-bottom: 2px solid #d2966d;}
  
-  #content-block-9 textarea::placeholder 
+  #content-block-7 textarea::placeholder 
    {
    color: #859f9f;
    font-family: Poppins, sans-serif;
    }
  
-  #content-block-9 .button-text-color
+  #content-block-7 .button-text-color
    {
    color: #ffffff;
    font-family: Poppins, sans-serif;
    }
  
-  #content-block-9 .button-font 
+  #content-block-7 .button-font 
    {font-family: Poppins, sans-serif;} 
  
-  #content-block-9 .button-text-color:hover
+  #content-block-7 .button-text-color:hover
    {color: #d2966d;}
  
-  #content-block-9 .button-color
+  #content-block-7 .button-color
    {
    background-color: #d2966d;
    border: 1px solid #d2966d;
    }
  
-  #content-block-9 .button-color:hover
+  #content-block-7 .button-color:hover
    {background-color: transparent;}
  </style>
  
- <section id="content-block-9"> 
+ <section id="content-block-7"> 
    <section id="contact" class="padded grid-center form-background-color banner" style="background-image: url('');">
      <h2 class="reveal form-heading-color form-heading-font  fade-up">Work with me</h2>
      <form method="post" action="/success.html" class="enquiry col-12 grid-center capped-width">
@@ -1342,7 +1240,7 @@ You also have creative freedom to turn this square into a circle, rectangle, ova
         <a href="https://www.kingcode.uk" class="padded-sides"> Website by King Code </a><a href="/" class="padded-right"> © Website for Content Creators</a>
       </p>
     </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
       <script src="/js/slick.js" type="text/javascript"></script>
 

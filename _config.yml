@@ -28,6 +28,13 @@ collections:
  products:
    enabled: true
    output: true
+categories:
+- asia
+- africa
+- middle-east
+- europe 
+- central-and-south
+
 
 _inputs:
   textarea_html:

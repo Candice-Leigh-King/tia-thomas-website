@@ -259,7 +259,7 @@
 
   <body>
 
-    <header class="grid-center">
+    <!-- <header class="grid-center">
       <div class=" col-11 center mob-hide" style="z-index: 100;">
         <a href="/" class="logo-home center "> 
           <img src="/images/logo.png" alt="Through the Lyns Logo" /></a>
@@ -289,132 +289,537 @@
            </div>
         </div>
       </nav>
+    </header> -->
+    <style>
+      header{
+        position: relative;
+        z-index: 100;
+      }
+      .logo{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+      }
+      header h1{
+        font-family: Hoves Medium;
+        font-size: 2rem;
+        text-align: center;
+        color: black;
+      }
+
+      header nav{
+        text-align: center;
+      }
+      .header-nav{
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: Hoves Medium;
+        font-size: 1.5rem;
+        color: black;
+        margin: 2% 3%;
+        padding: 0.2% 2%;
+        transition: 0.7s all;
+      }
+
+      .header-nav:hover{
+        border-radius: 5rem;
+        background-color: #DDC7C1;
+        color: black;
+      }
+
+      /* Hide the dropdown content by default */
+      header nav .dropdown .dropdown-content {
+        display: none;
+        top: 6rem;
+        position: absolute;
+        left: 3rem;
+        background-color: #DDC7C1;
+        width: 90%;
+        z-index: 1;
+        border-radius: 2rem;
+        transition: display 0.3s ease-in-out;
+      }
+
+
+
+      /* Show the dropdown content when hovering over the parent */
+      header .dropdown:hover .dropdown-content {
+        display: block;
+        width: 90%;
+      }
+
+      .dropdown-content .countries{
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+      .dropdown-content .countries p{
+        display: inline-block;
+        font-size: 1rem;
+        padding: 0.5% 2%;
+        margin: 1%;
+        transition: 0.7s all;
+        
+
+      }
+
+
+      .dropdown-content h2{
+        font-size: 2rem;
+        font-family: Hoves Medium;
+        text-align: left;
+      
+
+      }
+
+      .dropdown-content hr{
+        border: 1px solid #f2e9e7;
+        width: 90%;
+        margin-top: -0.5rem
+      }
+      header .dropdown-content h2 a{
+        transition: 0.7s all
+      }
+
+      header .dropdown-content h2 a:hover{
+        background-color: none !important;
+        color: #fff;
+      }
+    </style>
+    <header class = "grid">
+
+      <!-- Logo -->
+      <div class = "col-3 logo">
+        <h1> TEE Travels</h1>
+      </div>
+
+      <!-- Desktop Nav -->
+
+      <nav class="col-9-middle">
+        
+        <div class="dropdown header-nav" id="destinations-dropdown">
+          <a href="#" class = "">Destinations
+            <div class="dropdown-content padded-s" id="dropdown-content">
+              <div class = "grid">
+              <!-- Div one -->
+              <div class = "col-6">
+                <!-- Asia -->
+                <div>
+                  <h2><a href = "#">Asia</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+                
+  
+                <!-- Africa -->
+  
+                <div>
+                  <h2><a href = "#">Africa</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+                <!-- Middle East -->
+  
+                <div>
+                  <h2><a href = "#">Middle East</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+              </div>
+  
+                <!-- Div 2 -->
+              <div class = "col-6">
+  
+                <!-- Europe -->
+                <div>
+                  <h2><a href = "#">Europe</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+  
+  
+                <!-- Central & South America -->
+  
+                <div>
+                  <h2><a href = "#">Central & South America</a></h2>
+                  <hr>
+                  <div class = "countries">
+                    <p>Bali</p>
+                    <p>Cambodia</p>
+                    <p>Georgia</p>
+                    <p>India</p>
+                    <p>Indonesia</p>
+                    <p>Laos</p>
+                    <p>Malaysia</p>
+                    <p>Myanam</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+              </div>
+  
+            </div>  
+
+          </a>
+          
+          
+        </div>
+        <a href="#" class = "header-nav">About</a>
+        <a href="#" class = "header-nav">Travel Resources</a>
+      </nav>
+
+      <!-- Dropdown content -->
+
+      <!-- Mobile Nav -->
     </header>
    
 
     <style>
-    .blog-background-color
+      .blog-navigation{
+            margin-top: 5% !important;
+        }
+
+
+        .blog-navigation a{
+        display: inline-block;
+        font-family: Hoves Medium;
+        margin: 1%;
+        padding: 1% 3%;
+        transition: 0.7s all
+        }
+
+        .blog-navigation a:hover{
+            background-color: #f2e9e7;
+            border-radius: 2rem;
+            color: black;
+
+        }
+</style>
+
+<section class = "grid-center center padded">
+    <nav class = "col-8-center grid-center blog-navigation">
+        <a href = "/blog-categories/asia">Asia</a>
+        <a href = "/blog-categories/africa">Africa</a>
+        <a href = "/blog-categories/middle-east">Middle East</a>
+        <a href = "/blog-categories/europe">Europe</a>
+        <a href = "/blog-categories/central-and-south">Central & South America</a>
+    </nav>
+</section>
+
+
+
+
+<div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[0]">
+    <span class="cms-editor-button"></span>
+  <style>
+
+    #content-blocks-0 .background-color
       {background-color: ;}
 
-    .blog-hover-overlay:hover 
-     {background-color: rgba(210, 150, 109, 0.5);}
+</style> 
+<section id="content-blocks-0">
+<section class="space-block background-color"></section>
+</section>
 
-    .bump 
+<div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[1]">
+    <span class="cms-editor-button"></span>
+  <style>
+
+    #content-blocks-1 .recent-blog-background-color
+      {background-color: ;}
+
+    #content-blocks-1 .blog-hover-overlay-color:hover 
+     {background-color: ;}
+
+     #content-blocks-1 .bump 
      {
-     background-color: #BCCACA;
-     border-top: solid 4px white;
-     border-left: solid 4px white;
+     background-color: ;
+     border-top: solid 4px ;
+     border-left: solid 4px ;
      }
     
-    p
+    #content-blocks-1 p
     {
-    font-family: Raleway, sans-serif;
-    color: white;
+    font-family: ;
+    color: ;
     }
   
         
-    h2 
+    #content-blocks-1 h2
     {
     font-size: 3rem;
-    font-family: Shrikhand, cursive;
-    color: #859f9f;
+    font-family: ;
+    color: ;
     }
   
-    h3 
+    #content-blocks-1 h3 
     {
     font-size: 2rem;
-    font-family: Shrikhand, cursive;
-    color: white;
+    font-family: ;
+    color: ;
     }
     
-    h5
+    #content-blocks-1  h5
     {
     font-size: 2rem;
-    font-family: Brushwell;
+    font-family: ;
     }
 
-    .blog-hover-overlay:hover
+    #content-blocks-1 .blog-hover-overlay-color:hover
     {
-    color: white;
+    color: ;
     }
 
     
     @media(max-width:576px) 
     {
     
-      h3
+    #content-blocks-1 h3
       {
       font-size: 1.9rem;
       }
     }
+ </style>   
 
-  </style> 
-<section class="blog-background-color">
-  <section class="grid padded-top">
-    <h2 class="brown-text col-12 centered center padded">All Blogs</h2>
-  </section>
+<section id="content-blocks-1">
+  <section class="grid-center padded-sides recent-blog-background-color">
+    <h2 class="col-12 center recent-blog-background-color"></h2>
+    <div class="blog-loop blog-masonry">
+        
+        <div class="masonry-item ">
+            <a class="padded "href="/2021/12/02/bloggers-website-template.html">
+              <div class="hover-container" style="background-image:url('/images/blog/van-life.png')">
+                <div class="blog-hover-overlay blog-hover-overlay-color">
+                  <div class="hover-inner center">
+                    <h5 class="">Read More → </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="bump left">
+                <h3 class="no-margin"> The Underground Vans </h3>
+                <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service.</p>
+                <p class="">↟↟↟</p>
+                <p class="date">Candy and the King</p>
+            </div>
+            </a>
+          </div>
+        
+        <div class="masonry-item ">
+            <a class="padded "href="/2021/12/02/blog-template-for-creators.html">
+              <div class="hover-container" style="background-image:url('/images/blog/tips-for-working-online.png')">
+                <div class="blog-hover-overlay blog-hover-overlay-color">
+                  <div class="hover-inner center">
+                    <h5 class="">Read More → </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="bump left">
+                <h3 class="no-margin"> Tips for working online </h3>
+                <p>It's so easy to get distracted while traveling! Here are 8 tips that'll help you be more productive.</p>
+                <p class="">↟↟↟</p>
+                <p class="date">Candy and the King</p>
+            </div>
+            </a>
+          </div>
+        
+        <div class="masonry-item ">
+            <a class="padded "href="/2021/12/02/blog-website-for-creators.html">
+              <div class="hover-container" style="background-image:url('/images/blog/digital-nomad.png')">
+                <div class="blog-hover-overlay blog-hover-overlay-color">
+                  <div class="hover-inner center">
+                    <h5 class="">Read More → </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="bump left">
+                <h3 class="no-margin"> The best blog for creators </h3>
+                <p>Finally! A blog website template that caters for all the business needs of creators and influencers. </p>
+                <p class="">↟↟↟</p>
+                <p class="date">Candy and the King</p>
+            </div>
+            </a>
+          </div>
+        
+      </div>
+  </section>    
+</section>
+  
+
+
     
-  <section class="padded-sides grid-center">
-    <div class="blog-loop blog-masonry padded-1">
-      
-      <div class="masonry-item ">
-        <a class="padded "href="/2021/12/02/bloggers-website-template.html">
-          <div class="hover-container" style="background-image:url('/images/blog/van-life.png')">
-            <div class="blog-hover-overlay">
-              <div class="hover-inner center">
-                <h5 class=""> Read More → </h5>
-              </div>
-            </div>
-          </div>
-          <div class="bump left">
-            <h3 class="no-margin"> The Underground Vans </h3>
-            <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service.</p>
-            <p class="">↟↟↟</p>
-            <p class="date">Candy and the King</p>
-        </div>
-        </a>
-      </div>
-      
-      <div class="masonry-item ">
-        <a class="padded "href="/2021/12/02/blog-template-for-creators.html">
-          <div class="hover-container" style="background-image:url('/images/blog/tips-for-working-online.png')">
-            <div class="blog-hover-overlay">
-              <div class="hover-inner center">
-                <h5 class=""> Read More → </h5>
-              </div>
-            </div>
-          </div>
-          <div class="bump left">
-            <h3 class="no-margin"> Tips for working online </h3>
-            <p>It's so easy to get distracted while traveling! Here are 8 tips that'll help you be more productive.</p>
-            <p class="">↟↟↟</p>
-            <p class="date">Candy and the King</p>
-        </div>
-        </a>
-      </div>
-      
-      <div class="masonry-item ">
-        <a class="padded "href="/2021/12/02/blog-website-for-creators.html">
-          <div class="hover-container" style="background-image:url('/images/blog/digital-nomad.png')">
-            <div class="blog-hover-overlay">
-              <div class="hover-inner center">
-                <h5 class=""> Read More → </h5>
-              </div>
-            </div>
-          </div>
-          <div class="bump left">
-            <h3 class="no-margin"> The best blog for creators </h3>
-            <p>Finally! A blog website template that caters for all the business needs of creators and influencers. </p>
-            <p class="">↟↟↟</p>
-            <p class="date">Candy and the King</p>
-        </div>
-        </a>
-      </div>
-      
-    </div>
-  </section>
-</section> 
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[0]">
+        <span class="cms-editor-button"></span>
+      <style>
 
+    #content-blocks-0 .background-color
+      {background-color: ;}
+
+</style> 
+<section id="content-blocks-0">
+<section class="space-block background-color"></section>
+</section>
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[1]">
+        <span class="cms-editor-button"></span>
+      <style>
+
+    #content-blocks-1 .recent-blog-background-color
+      {background-color: ;}
+
+    #content-blocks-1 .blog-hover-overlay-color:hover 
+     {background-color: ;}
+
+     #content-blocks-1 .bump 
+     {
+     background-color: ;
+     border-top: solid 4px ;
+     border-left: solid 4px ;
+     }
+    
+    #content-blocks-1 p
+    {
+    font-family: ;
+    color: ;
+    }
+  
+        
+    #content-blocks-1 h2
+    {
+    font-size: 3rem;
+    font-family: ;
+    color: ;
+    }
+  
+    #content-blocks-1 h3 
+    {
+    font-size: 2rem;
+    font-family: ;
+    color: ;
+    }
+    
+    #content-blocks-1  h5
+    {
+    font-size: 2rem;
+    font-family: ;
+    }
+
+    #content-blocks-1 .blog-hover-overlay-color:hover
+    {
+    color: ;
+    }
+
+    
+    @media(max-width:576px) 
+    {
+    
+    #content-blocks-1 h3
+      {
+      font-size: 1.9rem;
+      }
+    }
+ </style>   
+
+<section id="content-blocks-1">
+  <section class="grid-center padded-sides recent-blog-background-color">
+    <h2 class="col-12 center recent-blog-background-color"></h2>
+    <div class="blog-loop blog-masonry">
+        
+        <div class="masonry-item ">
+            <a class="padded "href="/2021/12/02/bloggers-website-template.html">
+              <div class="hover-container" style="background-image:url('/images/blog/van-life.png')">
+                <div class="blog-hover-overlay blog-hover-overlay-color">
+                  <div class="hover-inner center">
+                    <h5 class="">Read More → </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="bump left">
+                <h3 class="no-margin"> The Underground Vans </h3>
+                <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service.</p>
+                <p class="">↟↟↟</p>
+                <p class="date">Candy and the King</p>
+            </div>
+            </a>
+          </div>
+        
+        <div class="masonry-item ">
+            <a class="padded "href="/2021/12/02/blog-template-for-creators.html">
+              <div class="hover-container" style="background-image:url('/images/blog/tips-for-working-online.png')">
+                <div class="blog-hover-overlay blog-hover-overlay-color">
+                  <div class="hover-inner center">
+                    <h5 class="">Read More → </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="bump left">
+                <h3 class="no-margin"> Tips for working online </h3>
+                <p>It's so easy to get distracted while traveling! Here are 8 tips that'll help you be more productive.</p>
+                <p class="">↟↟↟</p>
+                <p class="date">Candy and the King</p>
+            </div>
+            </a>
+          </div>
+        
+        <div class="masonry-item ">
+            <a class="padded "href="/2021/12/02/blog-website-for-creators.html">
+              <div class="hover-container" style="background-image:url('/images/blog/digital-nomad.png')">
+                <div class="blog-hover-overlay blog-hover-overlay-color">
+                  <div class="hover-inner center">
+                    <h5 class="">Read More → </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="bump left">
+                <h3 class="no-margin"> The best blog for creators </h3>
+                <p>Finally! A blog website template that caters for all the business needs of creators and influencers. </p>
+                <p class="">↟↟↟</p>
+                <p class="date">Candy and the King</p>
+            </div>
+            </a>
+          </div>
+        
+      </div>
+  </section>    
+</section>
+  
     
 
     <footer class="grid-center center padded-top footer-background-color featured-bg">
@@ -432,7 +837,7 @@
         <a href="https://www.kingcode.uk" class="padded-sides"> Website by King Code </a><a href="/" class="padded-right"> © Website for Content Creators</a>
       </p>
     </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
       <script src="/js/slick.js" type="text/javascript"></script>
 
