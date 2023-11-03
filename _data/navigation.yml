@@ -1,41 +1,54 @@
 dropdown:
-  link: 
-    textarea_html: <p class = "left"><a href="#">Destinations</a></p>
+  link:
+    textarea_html: <p class="left"><a href="#">Destinations</a></p>
   section-1:
-    link: 
-      textarea_html: <p>Asia</p>
+    link:
+      textarea_html: <p>Europe</p>
     cities:
-      textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+      textarea_html: "<p><a href=\"/\">Italy</a></p><p><a href=\"/\">Slovenia</a></p><p><a href=\"/\">Montenegro</a></p><p><a href=\"/\">Albania</a></p><p><a href=\"/\">Greece</a></p><p>\_</p>"
   section-2:
-    link: 
+    link:
       textarea_html: <p>Africa</p>
     cities:
       textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
+        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
+        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
+        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
   section-3:
-    link: 
+    link:
       textarea_html: <p>Middle East</p>
     cities:
       textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
+        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
+        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
+        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
   section-4:
-    link: 
+    link:
       textarea_html: <p>Europe</p>
     cities:
       textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
+        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
+        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
+        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
   section-5:
-    link: 
+    link:
       textarea_html: <p>Central and South America</p>
     cities:
       textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
+        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
+        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
+        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
 textarea_html: >-
-  <p><a href="#" class = "header-nav">About</a></p><p><a href="#" class = "header-nav">Travel Resources</a></p>
+  <p><a class="header-nav" href="#">About</a></p><p><a class="header-nav"
+  href="#">Travel Resources</a></p>
 mobile-menu:
-  textarea_html: >- 
-    <p><a href = "#">blogs</a></p><p><a href = "#">about</a></p><p><a href = "#">travel resources</a></p>
+  textarea_html: >-
+    <p><a href = "#">blogs</a></p><p><a href = "#">about</a></p><p><a href =
+    "#">travel resources</a></p>
 colors:
   hamburger-color: '#ffffff'
   background-color: '#859f9f'
