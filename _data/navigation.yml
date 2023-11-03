@@ -8,31 +8,19 @@ dropdown:
       textarea_html: "<p><a href=\"/\">Italy</a></p><p><a href=\"/\">Slovenia</a></p><p><a href=\"/\">Montenegro</a></p><p><a href=\"/\">Albania</a></p><p><a href=\"/\">Greece</a></p><p>\_</p>"
   section-2:
     link:
-      textarea_html: <p>Africa</p>
+      textarea_html: <p>CENTRAL AMERICA&nbsp;</p>
     cities:
-      textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
-        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
-        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
-        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+      textarea_html: "<p>\_</p><p><a href=\"/\">Guatemala</a></p><p><a href=\"/\">Nicaragua</a></p><p><a href=\"/\">Panama</a>&nbsp;</p><p><a href=\"/\">Colombia</a></p><p><a href=\"/\">Peru&nbsp;</a></p><p>\_</p>"
   section-3:
     link:
-      textarea_html: <p>Middle East</p>
+      textarea_html: <p>North America</p>
     cities:
-      textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
-        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
-        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
-        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+      textarea_html: <p><a href="/">Canada</a></p>
   section-4:
     link:
-      textarea_html: <p>Europe</p>
+      textarea_html: <p>Asia</p>
     cities:
-      textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
-        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
-        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
-        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+      textarea_html: <p><a href="/blog-categories/Indonesia">Indonesia</a></p>
   section-5:
     link:
       textarea_html: <p>Central and South America</p>
