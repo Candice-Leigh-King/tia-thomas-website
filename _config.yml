@@ -29,11 +29,23 @@ collections:
    enabled: true
    output: true
 categories:
-- asia
-- africa
-- middle-east
-- europe 
-- central-and-south
+- all
+- travel-resources
+- destinations
+- Italy
+- Slovenia
+- Montenegro
+- Albania
+- Greece
+- Guatemala
+- Nicaragua
+- Panama
+- Colombia
+- Peru 
+- Canada
+- Egypt
+- UAE 
+- Indonesia
 
 
 _inputs:
