@@ -23,13 +23,9 @@ dropdown:
       textarea_html: <p><a href="/blog-categories/Indonesia">Indonesia</a></p>
   section-5:
     link:
-      textarea_html: <p>Central and South America</p>
+      textarea_html: <p>Middle East</p>
     cities:
-      textarea_html: >-
-        <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href
-        = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href =
-        "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href =
-        "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
+      textarea_html: "<p>\_</p><p><a href=\"/\">Egypt</a></p><p><a href=\"/\">UAE&nbsp;</a></p><p>\_</p>"
 textarea_html: >-
   <p><a class="header-nav" href="#">About</a></p><p><a class="header-nav"
   href="#">Travel Resources</a></p>
