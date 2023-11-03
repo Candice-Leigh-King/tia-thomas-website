@@ -179,18 +179,25 @@ layout: connect-tree
 
       @media(max-width: 990px){
         .header-nav{font-size: 1.2rem;}
+
+        header h1{
+        font-family: Hoves Medium;
+        font-size: 1.5rem;
+        text-align: center;
+        color: black;
+      }
   }
     </style>
     <header class = "grid">
 
       <!-- Logo -->
-      <div class = "col-3 logo">
+      <div class = "col-3_sm-5 logo">
         <h1> TEE Travels</h1>
       </div>
 
       <!-- Desktop Nav -->
 
-      <nav class="col-9-middle grid-center mob-hide" id = "desktop-navigation">
+      <nav class="col-9-middle_sm-8 grid-center mob-hide" id = "desktop-navigation">
         
         <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
           {{site.data.navigation.dropdown.link.textarea_html}}
@@ -277,7 +284,7 @@ layout: connect-tree
 
       <!-- Mobile Nav -->
 
-      <nav class = "col-9 right mob-show grid-right">
+      <nav class = "col-7 right mob-show grid-right">
         <p class=" col-3 fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
         </p>
       </nav>

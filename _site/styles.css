@@ -28,7 +28,7 @@ font-family: 'Shrikhand', cursive;*/
 
 /* Temporary styles */
 
-div, section{
+/* div, section{
   border: 1px solid red;
 }
 
@@ -41,7 +41,7 @@ p{
 }
 
 img{ border: 1px solid purple;}
-  
+   */
 * 
   {
   padding: 0;
@@ -1018,7 +1018,7 @@ footer {
     top: -30px;
     font-size: 2rem;
     }
-    
+
   .mobile-menu {left: 20%;}  
   
   .medium-image
@@ -1079,11 +1079,12 @@ footer {
     display: none;
   }
 
-  header {margin-bottom: 0rem !important ;}
+  header {margin-bottom: -10rem !important ;
+  margin-top: 3% !important;}
   .hamburger 
     {
     right: 23px;
-    top: 25px;
+    top: 4px;
     font-size: 2.2rem;
    }
 
