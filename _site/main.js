@@ -19,36 +19,7 @@ $(document).ready(function() {
 
 // Dropdown content menu 
 
-		document.addEventListener("DOMContentLoaded", function () {
-			const dropdownLink = document.getElementById("destinations-dropdown");
-			const dropdownContent = document.getElementById("dropdown-content");
 		
-			dropdownLink.addEventListener("mouseenter", function () {
-			dropdownContent.style.display = "block"; // Display the dropdown immediately on hover
-			});
-		
-			dropdownLink.addEventListener("mouseleave", function () {
-			// Add a delay before hiding the dropdown
-			setTimeout(function () {
-				dropdownContent.style.display = "none";
-			}, 300); // Adjust the delay time (in milliseconds) as needed
-			});
-		});
-
-
-
-			$(document).ready(function(){
-					$('.one-time').slick({
-			dots: true,
-			infinite: true,
-			draggable: true,
-			speed: 1000,
-			slidesToShow: 1,
-			autoplay: false,
-			adaptiveHeight: true
-			});
-			});
-			});
 
 			// on scroll
 			// on scroll
@@ -90,3 +61,4 @@ $(document).ready(function() {
 				   $(this).slideToggle();
 				 }});
 			});
+		});

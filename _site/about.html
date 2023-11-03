@@ -300,6 +300,11 @@
         justify-content: center; /* Center horizontally */
         align-items: center; 
       }
+      #destinations-dropdown{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+      }
       header h1{
         font-family: Hoves Medium;
         font-size: 2rem;
@@ -310,22 +315,45 @@
       header nav{
         text-align: center;
       }
-      .header-nav p{
+
+      #desktop-navigation{
+        padding-right: 10%;
+      }
+
+      #destinations-dropdown p,
+      #desktop-navigation p{
         display: inline-block;
         text-transform: uppercase;
         font-family: Hoves Medium;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: black;
-        margin: 2% 3%;
-        padding: 0.2% 2%;
+
         transition: 0.7s all;
       }
+      #destinations-dropdown, 
+      #desktop-navigation p{
+        margin: 2% 2%;
+        padding: 0.2% 2%;
+      }
 
-      .header-nav:hover{
+
+      #destinations-dropdown p{
+        padding: 0.9% 12%;
+
+      }
+
+      #destinations-dropdown p:hover,
+      #desktop-navigation p:hover{
         border-radius: 5rem;
         background-color: #DDC7C1;
         color: black;
       }
+
+      /* .header-nav:hover{
+        border-radius: 5rem;
+        background-color: #DDC7C1;
+        color: black;
+      } */
 
       /* Hide the dropdown content by default */
       header nav .dropdown .dropdown-content {
@@ -346,6 +374,19 @@
       header .dropdown:hover .dropdown-content {
         display: block;
         width: 90%;
+      }
+
+      #dropdown-content p{
+        text-align: left;
+        padding: 1% 2%;
+        margin: 1%;
+        transition: 0.7s all;
+      }
+
+
+
+      .continent {
+        text-align: left;
       }
 
       .dropdown-content .countries{
@@ -388,6 +429,7 @@
 
 
 
+
       /* Media Queries */
 
       @media(max-width: 990px){
@@ -403,20 +445,23 @@
 
       <!-- Desktop Nav -->
 
-      <nav class="col-9-middle mob-hide">
+      <nav class="col-9-middle grid-center mob-hide" id = "desktop-navigation">
         
-        <div class="dropdown header-nav" id="destinations-dropdown">
+        <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
           <p class = "left"><a href="#">Destinations</a></p>
-          <div class="dropdown-content padded-s" id="dropdown-content">
+          <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
             <div class = "grid">
             <!-- Div one -->
             <div class = "col-6">
               <!-- Asia -->
               <div>
-                <p><h2><a href = "#">Asia</a></h2></p>
+                <div class = "continent">
+                  <p>Asia</p>
+                </div>
+                
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+                  <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
                 </div>
               </div>
               
@@ -424,20 +469,24 @@
               <!-- Africa -->
 
               <div>
-                <p><h2><a href = "#">Africa</a></h2></p>
+                <div class = "continent">
+                  <p>Africa</p>
+                </div>
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+                  <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
                 </div>
               </div>
 
               <!-- Middle East -->
 
               <div>
-                <p><h2><a href = "#">Middle East</a></h2></p>
+                <div class = "continent">
+                  <p>Middle East</p>
+                </div>
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+                  <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
                 </div>
               </div>
 
@@ -448,10 +497,12 @@
 
               <!-- Europe -->
               <div>
-                <p><h2><a href = "#">Europe</a></h2></p>
+                <div class = "continent">
+                  <p>Europe</p>
+                </div>
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+                  <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
                 </div>
               </div>
 
@@ -459,10 +510,12 @@
               <!-- Central & South America -->
 
               <div>
-                <p><h2><a href = "#">Central and South America</a></h2></p>
+                <div class = "continent">
+                  <p>Central and South America</p>
+                </div>
                 <hr>
                 <div class = "countries">
-                  <p>Bali</p><p>Cambodia</p><p>Georgia</p><p>India</p><p>Indonesia</p><p>Laos</p><p>Malaysia</p><p>Myanam</p>
+                  <p><a href = "#">Bali</a></p><p><a href = "#">Cambodia</a></p><p><a href = "#">Georgia</a></p><p><a href = "#">India</a></p><p><a href = "#">Indonesia</a></p><p><a href = "#">Laos</a></p><p><a href = "#">Malaysia</a></p><p><a href = "#">Myanam</a></p>
                 </div>
               </div>
               
@@ -474,6 +527,7 @@
           
         </div>
         <p><a href="#" class = "header-nav">About</a></p><p><a href="#" class = "header-nav">Travel Resources</a></p>
+        
       </nav>
 
       <!-- Mobile Nav -->
@@ -485,6 +539,11 @@
 
       <!-- Hidden -->
 
+      <!-- <nav class = "">
+
+
+      </nav> -->
+
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url(''); z-index: 100;">
         <p class="cross exit right col-12"> ╳
         </p>
@@ -495,7 +554,7 @@
               <img src="" alt="" />
             </a>
             <div class="col-12 padded-sides text-med exit navigation-links">
-              <p><p><a href="#" class = "header-nav">About</a></p><p><a href="#" class = "header-nav">Travel Resources</a></p></p>
+              <p><p><a href = "#">blogs</a></p><p><a href = "#">about</a></p><p><a href = "#">travel resources</a></p></p>
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="https://www.instagram.com/candy_and_the_king/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>

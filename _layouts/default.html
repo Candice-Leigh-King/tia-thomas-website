@@ -45,6 +45,11 @@ layout: connect-tree
         justify-content: center; /* Center horizontally */
         align-items: center; 
       }
+      #destinations-dropdown{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; 
+      }
       header h1{
         font-family: Hoves Medium;
         font-size: 2rem;
@@ -55,22 +60,45 @@ layout: connect-tree
       header nav{
         text-align: center;
       }
-      .header-nav p{
+
+      #desktop-navigation{
+        padding-right: 10%;
+      }
+
+      #destinations-dropdown p,
+      #desktop-navigation p{
         display: inline-block;
         text-transform: uppercase;
         font-family: Hoves Medium;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: black;
-        margin: 2% 3%;
-        padding: 0.2% 2%;
+
         transition: 0.7s all;
       }
+      #destinations-dropdown, 
+      #desktop-navigation p{
+        margin: 2% 2%;
+        padding: 0.2% 2%;
+      }
 
-      .header-nav:hover{
+
+      #destinations-dropdown p{
+        padding: 0.9% 12%;
+
+      }
+
+      #destinations-dropdown p:hover,
+      #desktop-navigation p:hover{
         border-radius: 5rem;
         background-color: #DDC7C1;
         color: black;
       }
+
+      /* .header-nav:hover{
+        border-radius: 5rem;
+        background-color: #DDC7C1;
+        color: black;
+      } */
 
       /* Hide the dropdown content by default */
       header nav .dropdown .dropdown-content {
@@ -91,6 +119,19 @@ layout: connect-tree
       header .dropdown:hover .dropdown-content {
         display: block;
         width: 90%;
+      }
+
+      #dropdown-content p{
+        text-align: left;
+        padding: 1% 2%;
+        margin: 1%;
+        transition: 0.7s all;
+      }
+
+
+
+      .continent {
+        text-align: left;
       }
 
       .dropdown-content .countries{
@@ -133,6 +174,7 @@ layout: connect-tree
 
 
 
+
       /* Media Queries */
 
       @media(max-width: 990px){
@@ -148,17 +190,20 @@ layout: connect-tree
 
       <!-- Desktop Nav -->
 
-      <nav class="col-9-middle mob-hide">
+      <nav class="col-9-middle grid-center mob-hide" id = "desktop-navigation">
         
-        <div class="dropdown header-nav" id="destinations-dropdown">
+        <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
           {{site.data.navigation.dropdown.link.textarea_html}}
-          <div class="dropdown-content padded-s" id="dropdown-content">
+          <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
             <div class = "grid">
             <!-- Div one -->
             <div class = "col-6">
               <!-- Asia -->
               <div>
-                {{site.data.navigation.dropdown.section-1.link.textarea_html}}
+                <div class = "continent">
+                  {{site.data.navigation.dropdown.section-1.link.textarea_html}}
+                </div>
+                
                 <hr>
                 <div class = "countries">
                   {{site.data.navigation.dropdown.section-1.cities.textarea_html}}
@@ -169,7 +214,9 @@ layout: connect-tree
               <!-- Africa -->
 
               <div>
-                {{site.data.navigation.dropdown.section-2.link.textarea_html}}
+                <div class = "continent">
+                  {{site.data.navigation.dropdown.section-2.link.textarea_html}}
+                </div>
                 <hr>
                 <div class = "countries">
                   {{site.data.navigation.dropdown.section-2.cities.textarea_html}}
@@ -179,7 +226,9 @@ layout: connect-tree
               <!-- Middle East -->
 
               <div>
-                {{site.data.navigation.dropdown.section-3.link.textarea_html}}
+                <div class = "continent">
+                  {{site.data.navigation.dropdown.section-3.link.textarea_html}}
+                </div>
                 <hr>
                 <div class = "countries">
                   {{site.data.navigation.dropdown.section-3.cities.textarea_html}}
@@ -193,7 +242,9 @@ layout: connect-tree
 
               <!-- Europe -->
               <div>
-                {{site.data.navigation.dropdown.section-4.link.textarea_html}}
+                <div class = "continent">
+                  {{site.data.navigation.dropdown.section-4.link.textarea_html}}
+                </div>
                 <hr>
                 <div class = "countries">
                   {{site.data.navigation.dropdown.section-4.cities.textarea_html}}
@@ -204,7 +255,9 @@ layout: connect-tree
               <!-- Central & South America -->
 
               <div>
-                {{site.data.navigation.dropdown.section-5.link.textarea_html}}
+                <div class = "continent">
+                  {{site.data.navigation.dropdown.section-5.link.textarea_html}}
+                </div>
                 <hr>
                 <div class = "countries">
                   {{site.data.navigation.dropdown.section-5.cities.textarea_html}}
@@ -219,6 +272,7 @@ layout: connect-tree
           
         </div>
         {{site.data.navigation.textarea_html}}
+        
       </nav>
 
       <!-- Mobile Nav -->
@@ -230,6 +284,11 @@ layout: connect-tree
 
       <!-- Hidden -->
 
+      <!-- <nav class = "">
+
+
+      </nav> -->
+
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url('{{site.data.colors.navigation-colors.navigation-background_image}}'); z-index: 100;">
         <p class="cross exit right col-12"> ╳
         </p>
@@ -240,7 +299,7 @@ layout: connect-tree
               <img src="{{site.data.general.basics.logo_image}}" alt="{{site.data.general.basics.logo-alt}}" />
             </a>
             <div class="col-12 padded-sides text-med exit navigation-links">
-              <p>{{site.data.navigation.textarea_html}}</p>
+              <p>{{site.data.navigation.mobile-menu.textarea_html}}</p>
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="{{site.data.general.social-links.instagram}}"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
