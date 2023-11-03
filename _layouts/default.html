@@ -54,7 +54,7 @@ layout: connect-tree
         font-family: Hoves Medium;
         font-size: 2rem;
         text-align: center;
-        color: {{page.logo-color}};
+        color: {{page.color.logo-color}};
       }
 
       header nav{
@@ -71,8 +71,7 @@ layout: connect-tree
         text-transform: uppercase;
         font-family: Hoves Medium;
         font-size: 1.2rem;
-        color: {{page.navigation-color}};
-
+        color: {{page.color.navigation-color}};
         transition: 0.7s all;
       }
       #destinations-dropdown, 
@@ -90,8 +89,8 @@ layout: connect-tree
       #destinations-dropdown p:hover,
       #desktop-navigation p:hover{
         border-radius: 5rem;
-        background-color: {{page.dropdown-background-color}};
-        color: {{page.dropdown-link-color}};
+        background-color: {{page.color.dropdown-background-color}};
+        color: {{page.color.dropdown-link-color}};
       }
 
       /* .header-nav:hover{
@@ -106,7 +105,7 @@ layout: connect-tree
         top: 6rem;
         position: absolute;
         left: 3rem;
-        background-color: #DDC7C1;
+        background-color: {{page.color.dropdown-background-color}};
         width: 90%;
         z-index: 1;
         border-radius: 2rem;
@@ -181,10 +180,8 @@ layout: connect-tree
         .header-nav{font-size: 1.2rem;}
 
         header h1{
-        font-family: Hoves Medium;
         font-size: 1.5rem;
-        text-align: center;
-        color: black;
+
       }
   }
     </style>
