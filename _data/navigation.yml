@@ -10,7 +10,7 @@ dropdown:
     link:
       textarea_html: <p>Central &amp; South America</p>
     countries:
-      textarea_html: "<p>\_</p><p><a href=\"/\">Guatemala</a></p><p><a href=\"/\">Nicaragua</a></p><p><a href=\"/\">Panama</a></p><p><a href=\"/\">Colombia</a></p><p><a href=\"/\">Peru&nbsp;</a></p><p>\_</p>"
+      textarea_html: "<p><a href=\"/\">Guatemala</a></p><p><a href=\"/\">Nicaragua</a></p><p><a href=\"/\">Panama</a></p><p><a href=\"/\">Colombia</a></p><p><a href=\"/\">Peru&nbsp;</a></p><p>\_</p>"
   section-3:
     link:
       textarea_html: <p>North America</p>
