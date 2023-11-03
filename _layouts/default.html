@@ -54,7 +54,7 @@ layout: connect-tree
         font-family: Hoves Medium;
         font-size: 2rem;
         text-align: center;
-        color: black;
+        color: {{page.logo-color}};
       }
 
       header nav{
@@ -71,7 +71,7 @@ layout: connect-tree
         text-transform: uppercase;
         font-family: Hoves Medium;
         font-size: 1.2rem;
-        color: black;
+        color: {{page.navigation-color}};
 
         transition: 0.7s all;
       }
@@ -90,8 +90,8 @@ layout: connect-tree
       #destinations-dropdown p:hover,
       #desktop-navigation p:hover{
         border-radius: 5rem;
-        background-color: #DDC7C1;
-        color: black;
+        background-color: {{page.dropdown-background-color}};
+        color: {{page.dropdown-link-color}};
       }
 
       /* .header-nav:hover{
