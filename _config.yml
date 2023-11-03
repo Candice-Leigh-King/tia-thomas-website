@@ -573,6 +573,9 @@ _select_data:
       - Raleway, sans-serif
       - Roboto, sans-serif
       - Hoves Medium
+      - Hoves Bold Outline
+      - Hoves Regular
+      - Hoves Thin
 
       #  description: >-
       #   If you would like that awesome scroll feature that happens when someone
