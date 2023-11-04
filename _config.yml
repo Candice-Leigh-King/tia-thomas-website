@@ -102,6 +102,8 @@ _array_structures:
           _section-type: textarea
           textarea_html:
           subheading_html:
+          link-background-color:
+          link-hover-background-color:
           colors:
             background-color: 
             text-color: 
