@@ -17,7 +17,7 @@ layout: default
     color: {{page.colors.text-color}};
     }
   
-    h1
+    #blog-title h1
     {
     font-size: 2.3rem;
     font-family: {{page.fonts.heading-font}};
@@ -45,7 +45,7 @@ layout: default
     }
 
 
-     h1 
+    #blog-title h1 
     {
         font-family: {{page.fonts.heading-font}};;
         line-height: 1.1;
@@ -108,7 +108,7 @@ layout: default
         
     }
 
- a{
+ /* a{
         display: block;
         margin-bottom: 1rem;
         color: {{page.link-color}};
@@ -117,7 +117,7 @@ layout: default
 
  a:hover{
         color: {{page.link-hover-color}};
-    }
+    } */
  p{
         line-height: 1.2;
     }
@@ -186,7 +186,7 @@ layout: default
         margin-top: -20%;
     }
 
- h1 
+    #blog-title h1 
     {
         font-size: 2rem;
     }
@@ -252,11 +252,11 @@ layout: default
   </section> -->
   
   <!-- New blog hero starts here -->
-  <section class = "grid-center padded-sides padded" id="{{item.content-block-link}}">
+  <section class = "grid-center" style = "padding: 10% 5%;">
 
     <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid" style="background-image: url('{{page.blog_image}}');">
         <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
-            <h1>{{page.title}}</h1>
+            <h1 id = "blog-title">{{page.title}}</h1>
         </div>
         
 
@@ -294,7 +294,7 @@ layout: default
 
 <!-- New blog hero ends here -->
 
- <section class="grid padded mob-bump desktop-hide blog-banner-mobile">
+ <!-- <section class="grid padded mob-bump desktop-hide blog-banner-mobile">
     <div class="grid padded-1 blog-title-card-color">
       <h1 class="col-12"> {{page.title}} </h1>
       <div class="col-12 grid">
@@ -317,7 +317,7 @@ layout: default
       </h4>
       </div>
     </div>
-  </section> 
+  </section>  -->
 
   {% for item in posts.content-blocks %}
   <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[{{ forloop.index0 }}]">

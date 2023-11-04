@@ -280,7 +280,7 @@
       }
 
       #destinations-dropdown a{
-        padding-bottom: 5rem !important;
+        padding-bottom: 2rem !important;
         /* padding-left: 10rem;
         padding-right: 10rem; */
       }
@@ -345,7 +345,7 @@
       /* Hide the dropdown content by default */
       header nav .dropdown .dropdown-content {
         display: none;
-        top: 6rem;
+        top: 4rem;
         position: absolute;
         left: 3rem;
         background-color: #DDC7C1;
@@ -447,7 +447,7 @@
 
       <nav class="col-9-middle_sm-8 grid-center mob-hide" id = "desktop-navigation">
         <p><a class="header-nav" href="/about">About</a></p>
-        <div class = "dropdown-container-wrapper" id = "dropdown-container-wrapper">
+        <!-- <div class = "dropdown-container-wrapper" id = "dropdown-container-wrapper"> -->
           <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
             <p class="left"><a href="/blog-categories/blogs">Destinations</a></p>
             <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
@@ -527,7 +527,7 @@
             </div>  
             
           </div>
-        </div>
+        <!-- </div> -->
         
 
         <p><a class="header-nav" href="/blog-categories/travel-resources">Travel Resources</a></p>
@@ -591,7 +591,7 @@
     color: #859f9f;
     }
   
-    h1
+    #blog-title h1
     {
     font-size: 2.3rem;
     font-family: Hoves Bold Outline;
@@ -619,7 +619,7 @@
     }
 
 
-     h1 
+    #blog-title h1 
     {
         font-family: Hoves Bold Outline;;
         line-height: 1.1;
@@ -682,7 +682,7 @@
         
     }
 
- a{
+ /* a{
         display: block;
         margin-bottom: 1rem;
         color: ;
@@ -691,7 +691,7 @@
 
  a:hover{
         color: ;
-    }
+    } */
  p{
         line-height: 1.2;
     }
@@ -760,7 +760,7 @@
         margin-top: -20%;
     }
 
- h1 
+    #blog-title h1 
     {
         font-size: 2rem;
     }
@@ -826,11 +826,11 @@
   </section> -->
   
   <!-- New blog hero starts here -->
-  <section class = "grid-center padded-sides padded" id="">
+  <section class = "grid-center" style = "padding: 10% 5%;">
 
     <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid" style="background-image: url('/images/mountain-image.webp');">
         <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
-            <h1>Test Blog</h1>
+            <h1 id = "blog-title">Test Blog</h1>
         </div>
         
 
@@ -868,7 +868,7 @@
 
 <!-- New blog hero ends here -->
 
- <section class="grid padded mob-bump desktop-hide blog-banner-mobile">
+ <!-- <section class="grid padded mob-bump desktop-hide blog-banner-mobile">
     <div class="grid padded-1 blog-title-card-color">
       <h1 class="col-12"> Test Blog </h1>
       <div class="col-12 grid">
@@ -891,7 +891,7 @@
       </h4>
       </div>
     </div>
-  </section> 
+  </section>  -->
 
   
 
