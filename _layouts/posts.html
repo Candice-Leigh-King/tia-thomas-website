@@ -47,19 +47,19 @@ layout: default
 
     #content-blocks-{{forloop.index0}} h1 
     {
-        font-family: Hoves Bold Outline;
+        font-family: {{page.fonts.heading-font}};;
         line-height: 1.1;
     }
 
     #content-blocks-{{forloop.index0}} .heading-container {
-            background: {{post.heading-background}}; /* Use rgba to set the background color with opacity */
+            background: {{posts.color.heading-background-color}}; /* Use rgba to set the background color with opacity */
             padding: 20px; /* Adjust the padding as needed */
             display: inline-block; /* Makes the container size fit the content (the heading) */
         }
 
     #content-blocks-{{forloop.index0}} .author-image{
         border-radius: 20rem;
-        background-image: url('{{post.author_image}}');
+        background-image: url('{{posts.author_image}}');
         padding-bottom: 4rem;
 
     }
@@ -74,22 +74,22 @@ layout: default
     #content-blocks-{{forloop.index0}} .blog-hero-grid-1{
         margin-right: 0.5%;
         margin-top: 2%;
-        background-image: url('{{post.blog-hero-grid-1_image}}');
+        background-image: url('{{posts.blog-hero-grid-1_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-2{
         margin-left: 0.5%;
         margin-top: 2%;
-        background-image: url('{{post.blog-hero-grid-2_image}}');
+        background-image: url('{{posts.blog-hero-grid-2_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-3{
         margin-top: 1%;
         margin-right: 0.5%;
-        background-image: url('{{post.blog-hero-grid-3_image}}');
+        background-image: url('{{posts.blog-hero-grid-3_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-4{
         margin-top: 1%;
         margin-left: 0.5%;
-        background-image: url('{{post.blog-hero-grid-4_image}}');
+        background-image: url('{{posts.blog-hero-grid-4_image}}');
     }
 
     /* #content-blocks-{{forloop.index0}} .blog-hero-grid-section{
@@ -98,25 +98,25 @@ layout: default
     
     #content-blocks-{{forloop.index0}} .blog-hero-bg{
         padding-bottom: 35rem;
-        background-image: url('{{post.blog_image}}');
+        background-image: url('{{posts.blog_image}}');
 
     }
 
     #content-blocks-{{forloop.index0}} .bg-author{
         width: 99%;
-        background-color: {{post.author-background-color}};
+        background-color: {{posts.author-background-color}};
         
     }
 
     #content-blocks-{{forloop.index0}} a{
         display: block;
         margin-bottom: 1rem;
-        color: {{post.link-color}};
+        color: {{posts.link-color}};
         transition: 0.7s all;
     }
 
     #content-blocks-{{forloop.index0}} a:hover{
-        color: {{post.link-hover-color}};
+        color: {{posts.link-hover-color}};
     }
     #content-blocks-{{forloop.index0}} p{
         line-height: 1.2;
@@ -256,7 +256,7 @@ layout: default
 
     <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid">
         <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
-            <h1>{{post.title}}</h1>
+            <h1>{{posts.title}}</h1>
         </div>
         
 
@@ -268,7 +268,7 @@ layout: default
 
             </div>
             <div class = "col-8_md-10_xs-5 center author-about">
-                {{post.blog-summary}}
+                {{posts.blog-summary}}
             </div>
         </div>
         
