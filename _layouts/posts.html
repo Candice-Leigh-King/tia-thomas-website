@@ -85,7 +85,49 @@ layout: default
    </div>
   </section>
   
-  <section class="grid padded mob-bump desktop-hide blog-banner-mobile">
+  <!-- New blog hero starts here -->
+  <section class = "grid-center padded-sides padded" id="{{item.content-block-link}}">
+
+    <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid">
+        <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
+            <h1>{{post.title}}</h1>
+        </div>
+        
+
+    </div>
+
+    <div class = "col-5_sm-12-center grid-center">
+        <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
+            <div class = "col-6_md-10_sm-7_xs-5 author-image bg-image ">
+
+            </div>
+            <div class = "col-8_md-10_xs-5 center author-about">
+                {{post.blog-summary}}
+            </div>
+        </div>
+        
+        <div class = "col-8_sm-6-middle_xs-12 grid-center-spaceAround blog-hero-grid-section margin-top-1 xs-hide">
+            <!-- <div class = "col-12 grid-center container"> -->
+                <!-- <a href = "{{site.data.general.social-links.instagram}}" class = "grid-link grid-center col-12"> -->
+                    <div class = "col-5 bg-image blog-hero-grid-1 ">
+                    </div>
+                    <div class = "col-5 bg-image blog-hero-grid-2 ">
+                    </div>
+                    <div class = "col-5 bg-image blog-hero-grid-3 ">
+                    </div>
+                    <div class = "col-5 bg-image blog-hero-grid-4">
+                    </div>
+                <!-- </a> -->
+            <!-- <p class = "overlay-text">Follow me</p>     -->
+            <!-- </div> -->
+            
+        </div>
+        
+    </div>
+</section>
+
+<!-- New blog hero ends here -->
+  <!-- <section class="grid padded mob-bump desktop-hide blog-banner-mobile">
     <div class="grid padded-1 blog-title-card-color">
       <h1 class="col-12"> {{page.title}} </h1>
       <div class="col-12 grid">
@@ -108,7 +150,7 @@ layout: default
       </h4>
       </div>
     </div>
-  </section>
+  </section> -->
 
   {% for item in posts.content-blocks %}
   <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[{{ forloop.index0 }}]">

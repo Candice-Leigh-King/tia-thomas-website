@@ -19,7 +19,24 @@ layout: connect-tree
         display: flex;
         justify-content: center; /* Center horizontally */
         align-items: center; 
+        /* position: relative;
+        z-index: 60; */
+
       }
+
+      #destinations-dropdown a{
+        padding-bottom: 5rem !important;
+        /* padding-left: 10rem;
+        padding-right: 10rem; */
+      }
+
+      /* #dropdown-container-wrapper{
+          display: inline-block;
+          position: relative;
+          z-index: 50;
+          padding: 40px 40px 40px;
+      } */
+
       header h1{
         font-family: Hoves Medium;
         font-size: 2rem;
@@ -108,14 +125,17 @@ layout: connect-tree
         text-align: left;
         margin-bottom: 2rem;
       }
-      .dropdown-content .countries p{
+      #dropdown-content .countries p{
         display: inline-block;
         font-size: 1rem;
-        padding: 0.5% 2%;
+        padding: 0.5% 2% ;
         margin: 1%;
         transition: 0.7s all;
-        
 
+      }
+
+      #dropdown-content .countries a{
+        padding: 0.5% 2% !important;
       }
 
 
@@ -162,93 +182,100 @@ layout: connect-tree
 
       <!-- Logo -->
       <div class = "col-3_sm-5 logo">
-        <h1> TEE Travels</h1>
+        <a href = "/">
+          <h1> TEE Travels</h1>
+        </a>
+        
       </div>
 
       <!-- Desktop Nav -->
 
       <nav class="col-9-middle_sm-8 grid-center mob-hide" id = "desktop-navigation">
-        
-        <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
-          {{site.data.navigation.dropdown.link.textarea_html}}
-          <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
-            <div class = "grid">
-            <!-- Div one -->
-            <div class = "col-6">
-              <!-- Asia -->
-              <div>
-                <div class = "continent">
-                  {{site.data.navigation.dropdown.section-1.link.textarea_html}}
+        {{site.data.navigation.header-navigation.link-1.textarea_html}}
+        <div class = "dropdown-container-wrapper" id = "dropdown-container-wrapper">
+          <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
+            {{site.data.navigation.header-navigation.dropdown-link-2.textarea_html}}
+            <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
+              <div class = "grid">
+              <!-- Div one -->
+              <div class = "col-6">
+                <!-- Asia -->
+                <div>
+                  <div class = "continent">
+                    {{site.data.navigation.dropdown.section-1.link.textarea_html}}
+                  </div>
+                  
+                  <hr>
+                  <div class = "countries">
+                    {{site.data.navigation.dropdown.section-1.countries.textarea_html}}
+                  </div>
                 </div>
                 
-                <hr>
-                <div class = "countries">
-                  {{site.data.navigation.dropdown.section-1.countries.textarea_html}}
+  
+                <!-- Africa -->
+  
+                <div>
+                  <div class = "continent">
+                    {{site.data.navigation.dropdown.section-2.link.textarea_html}}
+                  </div>
+                  <hr>
+                  <div class = "countries">
+                    {{site.data.navigation.dropdown.section-2.countries.textarea_html}}
+                  </div>
                 </div>
+  
+                <!-- Middle East -->
+  
+                <div>
+                  <div class = "continent">
+                    {{site.data.navigation.dropdown.section-3.link.textarea_html}}
+                  </div>
+                  <hr>
+                  <div class = "countries">
+                    {{site.data.navigation.dropdown.section-3.countries.textarea_html}}
+                  </div>
+                </div>
+  
+              </div>
+  
+                <!-- Div 2 -->
+              <div class = "col-6">
+  
+                <!-- Europe -->
+                <div>
+                  <div class = "continent">
+                    {{site.data.navigation.dropdown.section-4.link.textarea_html}}
+                  </div>
+                  <hr>
+                  <div class = "countries">
+                    {{site.data.navigation.dropdown.section-4.countries.textarea_html}}
+                  </div>
+                </div>
+  
+  
+                <!-- Central & South America -->
+  
+                <div>
+                  <div class = "continent">
+                    {{site.data.navigation.dropdown.section-5.link.textarea_html}}
+                  </div>
+                  <hr>
+                  <div class = "countries">
+                    {{site.data.navigation.dropdown.section-5.countries.textarea_html}}
+                  </div>
+                </div>
+                
               </div>
               
-
-              <!-- Africa -->
-
-              <div>
-                <div class = "continent">
-                  {{site.data.navigation.dropdown.section-2.link.textarea_html}}
-                </div>
-                <hr>
-                <div class = "countries">
-                  {{site.data.navigation.dropdown.section-2.countries.textarea_html}}
-                </div>
               </div>
-
-              <!-- Middle East -->
-
-              <div>
-                <div class = "continent">
-                  {{site.data.navigation.dropdown.section-3.link.textarea_html}}
-                </div>
-                <hr>
-                <div class = "countries">
-                  {{site.data.navigation.dropdown.section-3.countries.textarea_html}}
-                </div>
-              </div>
-
-            </div>
-
-              <!-- Div 2 -->
-            <div class = "col-6">
-
-              <!-- Europe -->
-              <div>
-                <div class = "continent">
-                  {{site.data.navigation.dropdown.section-4.link.textarea_html}}
-                </div>
-                <hr>
-                <div class = "countries">
-                  {{site.data.navigation.dropdown.section-4.countries.textarea_html}}
-                </div>
-              </div>
-
-
-              <!-- Central & South America -->
-
-              <div>
-                <div class = "continent">
-                  {{site.data.navigation.dropdown.section-5.link.textarea_html}}
-                </div>
-                <hr>
-                <div class = "countries">
-                  {{site.data.navigation.dropdown.section-5.countries.textarea_html}}
-                </div>
-              </div>
-              
-            </div>
+  
+            </div>  
             
-            </div>
-
-          </div>  
-          
+          </div>
         </div>
-        {{site.data.navigation.textarea_html}}
+        
+
+        {{site.data.navigation.header-navigation.link-3.textarea_html}}
         
       </nav>
 

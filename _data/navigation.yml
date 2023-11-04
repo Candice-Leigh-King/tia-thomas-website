@@ -1,11 +1,9 @@
 dropdown:
-  link:
-    textarea_html: <p class="left"><a href="#">Destinations</a></p>
   section-1:
     link:
       textarea_html: <p>Europe</p>
     countries:
-      textarea_html: "<p><a href=\"/\">Italy</a></p><p><a href=\"/\">Slovenia</a></p><p><a href=\"/\">Montenegro</a></p><p><a href=\"/\">Albania</a></p><p><a href=\"/\">Greece</a></p><p>\_</p>"
+      textarea_html: "<p><a href=\"/\">Italy</a></p><p><a href=\"/\">Slovenia</a></p><p><a href=\"/\">Montenegro</a></p><p><a href=\"/\">Albania</a></p><p><a href=\"/\">Greece</a></p>"
   section-2:
     link:
       textarea_html: <p>Central &amp; South America</p>
@@ -26,9 +24,16 @@ dropdown:
       textarea_html: <p>Middle East</p>
     countries:
       textarea_html: <p><a href="/">Egypt&nbsp;</a></p><p><a href="/">UAE</a></p>
-textarea_html: >-
-  <p><a class="header-nav" href="#">About</a></p><p><a class="header-nav"
-  href="#">Travel Resources</a></p>
+header-navigation:
+  link-1: 
+    textarea_html: >-
+      <p><a class="header-nav" href="/about">About</a></p>
+  dropdown-link-2:
+    textarea_html: >-
+       <p class="left"><a href="/blog-categories/blogs">Destinations</a></p>
+  link-3:
+    textarea_html: >-
+        <p><a class="header-nav" href="/blog-categories/travel-resources">Travel Resources</a></p>
 mobile-menu:
   textarea_html: >-
     <p><a href = "#">blogs</a></p><p><a href = "#">about</a></p><p><a href =
