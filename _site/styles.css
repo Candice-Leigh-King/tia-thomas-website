@@ -1167,7 +1167,7 @@ footer {
     display: none;
   }
 
-  header {margin-bottom: -10rem !important ;
+  header {margin-bottom: 0rem !important ;
   margin-top: 3% !important;}
   .hamburger 
     {
