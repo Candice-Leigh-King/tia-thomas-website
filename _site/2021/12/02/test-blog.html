@@ -619,94 +619,94 @@
     }
 
 
-    #content-blocks- h1 
+     h1 
     {
         font-family: Hoves Bold Outline;;
         line-height: 1.1;
     }
 
-    #content-blocks- .heading-container {
+    .heading-container {
             background: ; /* Use rgba to set the background color with opacity */
             padding: 20px; /* Adjust the padding as needed */
             display: inline-block; /* Makes the container size fit the content (the heading) */
         }
 
-    #content-blocks- .author-image{
+     .author-image{
         border-radius: 20rem;
-        background-image: url('/images/about-me.webp');
+        /* background-image: url('/images/about-me.webp'); */
         padding-bottom: 4rem;
 
     }
 
-    #content-blocks- .author-about{
+  .author-about{
         margin: 1rem;
         margin-bottom: 2rem;
         /* height: 15rem; */
 
     }
 
-    #content-blocks- .blog-hero-grid-1{
+    .blog-hero-grid-1{
         margin-right: 0.5%;
         margin-top: 2%;
-        background-image: url('/images/country-image.webp');
+        /* background-image: url('/images/country-image.webp'); */
     }
-    #content-blocks- .blog-hero-grid-2{
+    .blog-hero-grid-2{
         margin-left: 0.5%;
         margin-top: 2%;
-        background-image: url('/images/egypt.webp');
+        /* background-image: url('/images/egypt.webp'); */
     }
-    #content-blocks- .blog-hero-grid-3{
+.blog-hero-grid-3{
         margin-top: 1%;
         margin-right: 0.5%;
-        background-image: url('/images/greece.webp');
+        /* background-image: url('/images/greece.webp'); */
     }
-    #content-blocks- .blog-hero-grid-4{
+.blog-hero-grid-4{
         margin-top: 1%;
         margin-left: 0.5%;
-        background-image: url('/images/lake.webp');
+        /* background-image: url('/images/lake.webp'); */
     }
 
     /* #content-blocks- .blog-hero-grid-section{
         height: 5rem;
     } */
     
-    #content-blocks- .blog-hero-bg{
+ .blog-hero-bg{
         padding-bottom: 35rem;
-        background-image: url('/images/mountain-image.webp');
+        /* background-image: url('/images/mountain-image.webp'); */
 
     }
 
-    #content-blocks- .bg-author{
+.bg-author{
         width: 99%;
         background-color: ;
         
     }
 
-    #content-blocks- a{
+ a{
         display: block;
         margin-bottom: 1rem;
         color: ;
         transition: 0.7s all;
     }
 
-    #content-blocks- a:hover{
+ a:hover{
         color: ;
     }
-    #content-blocks- p{
+ p{
         line-height: 1.2;
     }
-    #content-blocks- .grid-link{
+.grid-link{
         text-align: center;
         display: inherit;
     }
 
-    #content-blocks- .container{
+.container{
         position: relative;
         display: inherit;
 
     }
 
-    #content-blocks- .container .grid-link{
+.container .grid-link{
         width: 5rem; /* Adjust the dimensions as needed */
         height: 20rem; /* Adjust the dimensions as needed */
         background-color: rgba(221, 199, 193, 0.4); /* Background color for the Instagram icon/image */
@@ -717,7 +717,7 @@
         font-size: 20px;
     }
 
-    #content-blocks- .container .overlay-text {
+.container .overlay-text {
         position: absolute;
         top: 0;
         left: 0;
@@ -732,7 +732,7 @@
         transition: opacity 0.3s; /* Smooth transition effect */
         }
 
-        #content-blocks- .container:hover .overlay-text {
+.container:hover .overlay-text {
         display: block; /* Show the overlay on hover */
         }
 
@@ -747,7 +747,7 @@
 
 @media(max-width: 768px){
 
-    #content-blocks- .blog-hero-bg{
+.blog-hero-bg{
         padding-bottom: 11rem;
 
     }
@@ -756,11 +756,11 @@
 
 @media(max-width: 660px){
 
-    #content-blocks- .bg-author {
+.bg-author {
         margin-top: -20%;
     }
 
-    #content-blocks- h1 
+ h1 
     {
         font-size: 2rem;
     }
@@ -768,7 +768,7 @@
 }
 
 @media(max-width: 550px){
-    #content-blocks- .bg-author {
+.bg-author {
         margin-top: 0%;
     }
 }
@@ -828,7 +828,7 @@
   <!-- New blog hero starts here -->
   <section class = "grid-center padded-sides padded" id="">
 
-    <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid">
+    <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid" style="background-image: url('/images/mountain-image.webp');">
         <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
             <h1>Test Blog</h1>
         </div>
@@ -838,7 +838,7 @@
 
     <div class = "col-5_sm-12-center grid-center">
         <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
-            <div class = "col-6_md-10_sm-7_xs-5 author-image bg-image ">
+            <div class = "col-6_md-10_sm-7_xs-5 author-image bg-image " style = " background-image: url('/images/about-me.webp');">
 
             </div>
             <div class = "col-8_md-10_xs-5 center author-about">
@@ -849,13 +849,13 @@
         <div class = "col-8_sm-6-middle_xs-12 grid-center-spaceAround blog-hero-grid-section margin-top-1 xs-hide">
             <!-- <div class = "col-12 grid-center container"> -->
                 <!-- <a href = "" class = "grid-link grid-center col-12"> -->
-                    <div class = "col-5 bg-image blog-hero-grid-1 ">
+                    <div class = "col-5 bg-image blog-hero-grid-1 " style = "background-image: url('/images/country-image.webp');">
                     </div>
-                    <div class = "col-5 bg-image blog-hero-grid-2 ">
+                    <div class = "col-5 bg-image blog-hero-grid-2 " style = "background-image: url('/images/egypt.webp');">
                     </div>
-                    <div class = "col-5 bg-image blog-hero-grid-3 ">
+                    <div class = "col-5 bg-image blog-hero-grid-3 " style = "background-image: url('/images/greece.webp');">
                     </div>
-                    <div class = "col-5 bg-image blog-hero-grid-4">
+                    <div class = "col-5 bg-image blog-hero-grid-4" style = "background-image: url('/images/lake.webp');">
                     </div>
                 <!-- </a> -->
             <!-- <p class = "overlay-text">Follow me</p>     -->
