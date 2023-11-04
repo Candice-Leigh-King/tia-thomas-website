@@ -15,6 +15,12 @@ $(document).ready(function() {
 				$(".page-nav").fadeToggle();
 			});
 
+			$(".category").click(function(){
+
+				$(this).toggleClass('active');
+				$(".blog-dropdown-content").fadeToggle();
+			});
+
 			// end hamburger menu
 
 // Dropdown content menu 

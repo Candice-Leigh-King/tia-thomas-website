@@ -1,7 +1,157 @@
---- 
-layout: default 
---- 
+---
+layout: default
+---
+<style>
+    .blog-background-color
+      {background-color: {{page.colors.background-color}};}
 
+    .blog-hover-overlay:hover 
+     {background-color: {{page.colors.blog-hover-overlay-color}};}
+
+    .bump 
+     {
+     background-color: {{page.colors.blog-title-card-color}};
+     border-top: solid 4px {{page.colors.blog-title-card-border-color}};
+     border-left: solid 4px {{page.colors.blog-title-card-border-color}};
+     }
+    
+    .border-top
+    {
+    border-top: 1px solid {{page.colors.categories-color}};  
+    }
+    
+    .blog-dropdown-content 
+    {
+    border-bottom:  1px solid {{page.colors.categories-color}};  
+    border-right:  1px solid {{page.colors.categories-color}};  
+    border-left:  1px solid {{page.colors.categories-color}};  
+    }
+
+    .category-font {font-family: {{page.fonts.category-font}};}
+
+    .border-bottom
+    {
+    border-bottom: 1px solid {{page.colors.categories-color}};  
+    }
+    
+    p
+    {
+    font-family: {{page.fonts.text-font}};
+    color: {{page.colors.text-color}};
+    }
+  
+        
+    h2 
+    {
+    font-size: 3rem;
+    font-family: {{page.fonts.heading-font}};
+    color: {{page.colors.heading-color}};
+    }
+  
+    h3 
+    {
+    font-size: 2rem;
+    font-family: {{page.fonts.subheading-font}};
+    color: {{page.colors.subheading-color}};
+    }
+    
+    h5
+    {
+    font-size: 2rem;
+    font-family: {{page.fonts.cta-font}};
+    }
+
+    .blog-hover-overlay:hover
+    {
+    color: {{page.colors.cta-color}};
+    }
+
+    .categories p
+    {
+    font-size: 1.3rem;
+    font-family: {{page.fonts.categories-font}};
+    color: {{page.colors.categories-color}};
+    }
+
+    .categories a:hover 
+    {color: {{page.colors.categories-hover-color}};}
+
+    .portfolio-arrow {color: {{page.colors.arrow-color}};}
+  
+    
+    .blog-nav a:hover {color: {{page.colors.categories-hover-color}};}
+    
+    @media(max-width:576px) 
+    {
+    
+      h3
+      {
+      font-size: 1.9rem;
+      }
+      
+      h2 {font-size: 2rem;}
+
+      .categories p 
+      {
+      font-size: 1rem;  
+      }
+      
+    }
+
+  </style> 
+<section class="blog-background-color">
+  <section class="grid padded-top">
+    <h2 class="brown-text col-12 center padded">{{page.heading}}</h2>
+  </section>
+  <section class="col-12 grid-middle bg-base category-font text-center border-top border-bottom">
+    <p class="col-12 center desktop-hide portfolio-arrow">⟵</p>
+    <nav class="col-9_xs-11-center-middle center blog-nav">
+            <a href="/blog-categories/blogs" class=" portfolio-link editable">All</a>
+            <div class="blog-dropdown category">
+                 <a class="  blog-dropdown-title blog-dropdown nav-link portfolio-link editable">Destinations</a>
+            </div>
+            
+            
+            <a href="/blog-categories/travel-resources" class=" portfolio-link editable">Travel Resources</a>
+
+           
+             
+    </nav>
+    <div class="blog-dropdown-content ">      
+        <!-- {{site.data.blogs.dropdown.textarea_html}} -->
+        <a class= "editable" href = "/blog-categories/italy" style ="border-radius: 0px 0px 10px 10px;">Italy</a>
+        <a class= "editable" href = "/blog-categories/slovenia" style="border-radius: 10px 10px 0px 0px;">Slovenia</a>
+        <hr style = "border-top: 1px solid {{page.colors.categories-color}}; text-align: center; width: 100%; margin-left: auto; margin-right: auto;">
+        <a class= "editable" href = "/blog-categories/montenegro">Montenegro</a>
+        <hr style = "border-top: 1px solid {{page.colors.categories-color}}; text-align: center; width: 100%; margin-left: auto; margin-right: auto;">
+        <a class= "editable" href = "/blog-categories/albania">Albania</a>
+        <hr style = "border-top: 1px solid {{page.colors.categories-color}}; text-align: center; width: 100%; margin-left: auto; margin-right: auto; ">
+        <a class= "editable" href = "/blog-categories/Greece" style ="border-radius: 0px 0px 10px 10px;">Greece</a>
+        <!-- <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; "> -->      
+        </div>    
+    
+  </section>
+   
+  {{content}}
+</section> 
+<!-- 
+Italy
+Slovenia
+Montenegro
+Albania
+Greece
+
+Guatemala
+Nicaragua
+Panama
+
+Colombia
+Peru 
+
+Canada
+
+Egypt
+UAE -->
 <!-- <style>
       .blog-navigation{
             margin-top: 5% !important;
@@ -34,7 +184,7 @@ layout: default
     </nav>
 </section> -->
 
-{{content}}
+
 
 <!-- {% for item in page.content-blocks %}
 <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[{{ forloop.index0 }}]">
