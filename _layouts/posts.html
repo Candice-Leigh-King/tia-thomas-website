@@ -44,6 +44,172 @@ layout: default
     font-family: {{page.fonts.social-share-text-font}};
     }
 
+
+    #content-blocks-{{forloop.index0}} h1 
+    {
+        font-family: Hoves Bold Outline;
+        line-height: 1.1;
+    }
+
+    #content-blocks-{{forloop.index0}} .heading-container {
+            background: {{item.heading-background}}; /* Use rgba to set the background color with opacity */
+            padding: 20px; /* Adjust the padding as needed */
+            display: inline-block; /* Makes the container size fit the content (the heading) */
+        }
+
+    #content-blocks-{{forloop.index0}} .author-image{
+        border-radius: 20rem;
+        background-image: url('{{item.author_image}}');
+        padding-bottom: 4rem;
+
+    }
+
+    #content-blocks-{{forloop.index0}} .author-about{
+        margin: 1rem;
+        margin-bottom: 2rem;
+        /* height: 15rem; */
+
+    }
+
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-1{
+        margin-right: 0.5%;
+        margin-top: 2%;
+        background-image: url('{{item.blog-hero-grid-1_image}}');
+    }
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-2{
+        margin-left: 0.5%;
+        margin-top: 2%;
+        background-image: url('{{item.blog-hero-grid-2_image}}');
+    }
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-3{
+        margin-top: 1%;
+        margin-right: 0.5%;
+        background-image: url('{{item.blog-hero-grid-3_image}}');
+    }
+    #content-blocks-{{forloop.index0}} .blog-hero-grid-4{
+        margin-top: 1%;
+        margin-left: 0.5%;
+        background-image: url('{{item.blog-hero-grid-4_image}}');
+    }
+
+    /* #content-blocks-{{forloop.index0}} .blog-hero-grid-section{
+        height: 5rem;
+    } */
+    
+    #content-blocks-{{forloop.index0}} .blog-hero-bg{
+        padding-bottom: 35rem;
+        background-image: url('{{item.banner_image}}');
+
+    }
+
+    #content-blocks-{{forloop.index0}} .bg-author{
+        width: 99%;
+        background-color: {{item.author-background-color}};
+        
+    }
+
+    #content-blocks-{{forloop.index0}} a{
+        display: block;
+        margin-bottom: 1rem;
+        color: {{item.link-color}};
+        transition: 0.7s all;
+    }
+
+    #content-blocks-{{forloop.index0}} a:hover{
+        color: {{item.link-hover-color}};
+    }
+    #content-blocks-{{forloop.index0}} p{
+        line-height: 1.2;
+    }
+    #content-blocks-{{forloop.index0}} .grid-link{
+        text-align: center;
+        display: inherit;
+    }
+
+    #content-blocks-{{forloop.index0}} .container{
+        position: relative;
+        display: inherit;
+
+    }
+
+    #content-blocks-{{forloop.index0}} .container .grid-link{
+        width: 5rem; /* Adjust the dimensions as needed */
+        height: 20rem; /* Adjust the dimensions as needed */
+        background-color: rgba(221, 199, 193, 0.4); /* Background color for the Instagram icon/image */
+        text-align: center;
+        line-height: 100px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    #content-blocks-{{forloop.index0}} .container .overlay-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none; /* Initially hidden */
+        background-color: rgba(0, 0, 0, 0.7); /* Background color for overlay with opacity */
+        color: white;
+        text-align: center;
+        line-height: 10rem;
+        font-size: 20px;
+        transition: opacity 0.3s; /* Smooth transition effect */
+        }
+
+        #content-blocks-{{forloop.index0}} .container:hover .overlay-text {
+        display: block; /* Show the overlay on hover */
+        }
+
+    /* Media Queries */
+@media(max-width: 1024px){
+
+}
+
+@media(max-width: 990px){
+    
+}
+
+@media(max-width: 768px){
+
+    #content-blocks-{{forloop.index0}} .blog-hero-bg{
+        padding-bottom: 11rem;
+
+    }
+    
+}
+
+@media(max-width: 660px){
+
+    #content-blocks-{{forloop.index0}} .bg-author {
+        margin-top: -20%;
+    }
+
+    #content-blocks-{{forloop.index0}} h1 
+    {
+        font-size: 2rem;
+    }
+    
+}
+
+@media(max-width: 550px){
+    #content-blocks-{{forloop.index0}} .bg-author {
+        margin-top: 0%;
+    }
+}
+
+@media(max-width: 450px){
+    
+}
+
+@media(max-width: 400px){
+    
+}
+
+@media(max-width: 350px){
+    
+}
 </style>
 
 <!-- <section class="grid-right blog-hero padded-top padded-sides bg-image-blog tall-100 grid center" style="background-image: url('{{page.blog_image}}');">
