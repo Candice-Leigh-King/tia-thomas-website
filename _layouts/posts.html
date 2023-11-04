@@ -52,14 +52,14 @@ layout: default
     }
 
     #content-blocks-{{forloop.index0}} .heading-container {
-            background: {{item.heading-background}}; /* Use rgba to set the background color with opacity */
+            background: {{post.heading-background}}; /* Use rgba to set the background color with opacity */
             padding: 20px; /* Adjust the padding as needed */
             display: inline-block; /* Makes the container size fit the content (the heading) */
         }
 
     #content-blocks-{{forloop.index0}} .author-image{
         border-radius: 20rem;
-        background-image: url('{{item.author_image}}');
+        background-image: url('{{post.author_image}}');
         padding-bottom: 4rem;
 
     }
@@ -74,22 +74,22 @@ layout: default
     #content-blocks-{{forloop.index0}} .blog-hero-grid-1{
         margin-right: 0.5%;
         margin-top: 2%;
-        background-image: url('{{item.blog-hero-grid-1_image}}');
+        background-image: url('{{post.blog-hero-grid-1_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-2{
         margin-left: 0.5%;
         margin-top: 2%;
-        background-image: url('{{item.blog-hero-grid-2_image}}');
+        background-image: url('{{post.blog-hero-grid-2_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-3{
         margin-top: 1%;
         margin-right: 0.5%;
-        background-image: url('{{item.blog-hero-grid-3_image}}');
+        background-image: url('{{post.blog-hero-grid-3_image}}');
     }
     #content-blocks-{{forloop.index0}} .blog-hero-grid-4{
         margin-top: 1%;
         margin-left: 0.5%;
-        background-image: url('{{item.blog-hero-grid-4_image}}');
+        background-image: url('{{post.blog-hero-grid-4_image}}');
     }
 
     /* #content-blocks-{{forloop.index0}} .blog-hero-grid-section{
@@ -98,25 +98,25 @@ layout: default
     
     #content-blocks-{{forloop.index0}} .blog-hero-bg{
         padding-bottom: 35rem;
-        background-image: url('{{item.banner_image}}');
+        background-image: url('{{post.blog_image}}');
 
     }
 
     #content-blocks-{{forloop.index0}} .bg-author{
         width: 99%;
-        background-color: {{item.author-background-color}};
+        background-color: {{post.author-background-color}};
         
     }
 
     #content-blocks-{{forloop.index0}} a{
         display: block;
         margin-bottom: 1rem;
-        color: {{item.link-color}};
+        color: {{post.link-color}};
         transition: 0.7s all;
     }
 
     #content-blocks-{{forloop.index0}} a:hover{
-        color: {{item.link-hover-color}};
+        color: {{post.link-hover-color}};
     }
     #content-blocks-{{forloop.index0}} p{
         line-height: 1.2;
