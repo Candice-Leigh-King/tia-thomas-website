@@ -1,0 +1,97 @@
+---
+layout: blog-categories
+seo:
+  title: Guatemala
+  description: >-
+    Website templates for content creators and influencers. This website comes
+    with a hidden media kit so creators can easily send media kits to prospect
+    brands.
+  keywords: websites for content creators, websites for influencers,
+  social-alt: >-
+    Website templates for content creators and influencers. This website comes
+    with a hidden media kit so creators can easily send media kits to prospect
+    brands.
+  url:
+  social-share_image: /images/website-for-creators-template-ultimate.png
+travel-guide:
+  heading: 'travel in'
+  country: Guatemala
+map_image: /images/europe-map.png
+travel-guide-country_image: /images/greece.webp
+info-block-1:
+  heading: Did you know?
+  textarea_html: >-
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris&nbsp;</p><p>Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris&nbsp;</p>
+  icon-background_image: /images/beige-blob.png
+  icon_image: /images/light-bulb.png
+info-block-2:
+  heading: Did you know?
+  textarea_html: >-
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris&nbsp;</p><p>Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris&nbsp;</p>
+  icon-background_image: /images/white-blob.png
+  icon_image: /images/compass.png
+colors:
+  background-color: '#ffffff'
+  blog-title-card-color: '#ddc7c1'
+  blog-title-card-border-color: '#ffffff'
+  blog-hover-overlay: rgba(210, 150, 109, 0.5)
+  text-color: '#000000'
+  arrow-color: '#000000'
+  heading-color: '#000000'
+  subheading-color: '#ffffff'
+  categories-color: '#000000'
+  categories-hover-color: '#ddc7c1'
+  travel-guide-featured-line-color: '#ddc7c1'
+  travel-guide-information-1-background-color: '#ffffff'
+  travel-guide-information-2-background-color: '#ddc7c1'
+  travel-guide-heading-color: '#000000'
+  travel-guide-information-1-heading-color: '#000000'
+  travel-guide-information-2-heading-color: '#000000'
+fonts:
+  text-font: Hoves Thin
+  travel-guide-heading-font: Hoves Medium
+  travel-guide-featured-heading-font: Hoves Bold Outline
+  travel-guide-information-1-heading-font: Hoves Medium
+  travel-guide-information-2-heading-font: Hoves Medium
+  subheading-font: Shrikhand, cursive
+  cta-font: Brushwell
+  category-font: Hoves Medium
+content-blocks:
+  - _section-type: space-block
+---
+<section class="blog-background-color">
+ 
+  <section class="padded-sides grid-center">
+    <div class="blog-loop blog-masonry padded-1">
+      {% for post in site.categories.guatemala%}
+      <div class="masonry-item ">
+        <a class="padded " href="{{post.url}}">
+          <div class="hover-container" style="background-image:url('{{post.blog_image}}')">
+            <div class="blog-hover-overlay">
+              <div class="hover-inner center">
+                <h5> {{post.cta}} </h5>
+              </div>
+            </div>
+          </div>
+          <div class="bump left">
+            <h3 class="no-margin"> {{post.title}} </h3>
+            <p>{{post.blog-summary}}</p>
+            <p>{{post.symbols}}</p>
+            <p class="date">{{post.author}}</p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</section> 
