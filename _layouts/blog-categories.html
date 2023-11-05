@@ -7,8 +7,7 @@ layout: default
 
         h1{
         line-height: 1.1;
-        font-family: {{page.fonts.travel-guide-heading-font}};
-        color: {{page.colors.travel-guide-heading-color}};
+
         }
 
         .info-1 h2{
@@ -88,7 +87,11 @@ layout: default
 
 <section class="padded-sides grid travel-guide">
     <div class = "col-7 travel-guide-heading">
-      <h1>{{page.travel-guide.heading}} <br> <span>{{page.travel-guide.country}}</span></h1>
+      <h1 style = "
+                font-family: {{page.fonts.travel-guide-heading-font}};
+                color: {{page.colors.travel-guide-heading-color}};
+        
+        ">{{page.travel-guide.heading}} <br> <span>{{page.travel-guide.country}}</span></h1>
     </div>
     <div class = "col-12 grid">
         <div class = "col-4_md-3 bg-map bg-image center">
