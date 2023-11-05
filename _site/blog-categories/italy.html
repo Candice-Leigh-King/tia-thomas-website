@@ -655,8 +655,148 @@
   
     
     .blog-nav a:hover {color: #DDC7C1;}
+
+    /* New styles start */
+
+
+.travel-guide{
+
+    margin-top: -10%;
+}
+h1{
+ line-height: 1.1;
+ font-family: ;
+ color: ;
+}
+
+.info-1 h2{
+    font-family: ;
+    font-size: 2rem;
+    color: ;
+}
+.info-2 h2{
+    font-family: ;
+    font-size: 2rem;
+    color: ;
+}
+
+p{
+    line-height: 1.1;
+}
+span{
+    font-family:  ;
+    text-transform: uppercase;
+    border-bottom: 3px solid ;
+    font-size: 8rem;
+}
+
+.bg-map{
+    margin-top: 15rem;
+    /* background-image: url('/images/europe-map.png'); */
+}
+
+.bg-map img{
+    width: 70%;
+}
+
+ .travel-guide-banner-bg{
+    background-image: url('');
+    padding-bottom: 40rem;
+    border-radius: 20rem 20rem 0 0;
+}
+
+.travel-guide-heading{
+    translate: 20% 80%;
+}
+
+
+.info-1{
+    background-color: ;
+}
+
+.info-2{
+    background-color: ;
+}
+
+.icon {
+  position: relative;
+}
+
+ .icon img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.icon img:last-child {
+  z-index: 2;
+  left: 30px; /* Adjust left position to layer the second image to the right */
+  top: 30px; /* Adjust top position to layer the second image lower */
+}
+
+
+
+
+    /* Old Styles end */
+
+    /* Media Queries */
+    @media(max-width: 1024px){
+
+#content-blocks- span {
+    font-size: 6rem;
+}
+#content-blocks- .travel-guide-heading {
+    translate: -2% 71%;
+}
+
+#content-blocks- .bg-map img{
+    width: 100%;
+}
+
+#content-blocks-  .icon img {
+    top: 10px;
+    left: 0px;
+}
+
+#content-blocks- .icon img:last-child {
+    left: 10px;
+    top: 15px;
+}
+}
+
+@media(max-width: 990px){
+
+}
+
+@media(max-width: 768px){
+#content-blocks- .travel-guide-banner-bg {
+    padding-bottom: 25rem;
+    margin-left: 37%;
+    margin-top: -61%;
+}
+#content-blocks- .bg-map img {
+    margin-top: -50%;
+    margin-right: -92%;
+}
+
+#content-blocks- .icon img {
+    top: -10px;
+    left: 71px;
+}
+
+#content-blocks- .icon img:last-child {
+    left: 80px;
+    top: -5px;
+}
+}
+
+@media(max-width: 660px){
+
+}
+
     
-    @media(max-width:576px) 
+@media(max-width:576px) 
     {
     
       h3
@@ -673,11 +813,110 @@
       
     }
 
+
+@media(max-width: 550px){
+
+#content-blocks- span {
+        font-size: 4rem;
+    }
+ #content-blocks-   .travel-guide-banner-bg {
+    margin-top: -90%;
+}
+
+}
+
+@media(max-width: 450px){
+
+#content-blocks- .travel-guide-banner-bg {
+padding-bottom: 20rem;
+}
+
+}
+
+@media(max-width: 400px){
+#content-blocks- span {
+font-size: 2rem;
+}
+
+#content-blocks- .travel-guide-banner-bg {
+padding-bottom: 10rem;
+margin-top: -78%;
+translate: 0 -41%;
+z-index: -1;
+}
+
+#content-blocks- .info-blocks{
+margin-top: -32%;
+}
+
+#content-blocks- .icon img {
+top: -18px;
+left: 129px;
+}
+
+#content-blocks- .icon img:last-child {
+left: 143px;
+top: -13px;
+}
+
+
+
+}
+
+@media(max-width: 350px){
+
+}
+
+
+
+
+
+
   </style> 
 <section class="blog-background-color">
-  <section class="grid padded-top">
-    <h2 class="brown-text col-12 center padded">Italy</h2>
+  <section class="padded-sides grid travel-guide">
+        <div class = "col-7 travel-guide-heading">
+          <h1>Italy <br> <span></span></h1>
+        </div>
+        <div class = "col-12 grid">
+            <div class = "col-4_md-3 bg-map bg-image center">
+                <img src = "" >
+            </div>
+            <div class = "col-8_md-9_sm-11_xs-12 grid">
+                <div class = "col-6_md-7 bg-image travel-guide-banner-bg">
+                </div>
+
+                <div class = "col-6_md-5_sm-12 grid info-blocks">
+                    <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
+                        <div class = "col-4_md-5 icon center">
+                            <img src="" width="80%">
+                            <img src=""  width="60%">
+
+                        </div>
+                        <div class = "col-8-bottom_md-12 text">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+
+                    </div>
+                    <div class = "col-12_sm-6_xs-12 info-2 grid-center padded">
+                        <div class = "col-4_md-5 icon">
+                            <img src="" width="80%">
+                            <img src=""  width="60%">
+                        </div>
+                        <div class = "col-8-bottom_md-12 text">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
   </section>
+
+
   <section class="col-12 grid-middle bg-base category-font text-center border-top border-bottom">
     <p class="col-12 center desktop-hide portfolio-arrow">⟵</p>
     <nav class="col-9_xs-11-center-middle grid-center center blog-nav">
@@ -697,8 +936,6 @@
                   <!-- <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; "> -->      
                   </div>    
             </div>
-            
-            
             <a href="/blog-categories/travel-resources" class=" portfolio-link editable">Travel Resources</a>
 
            
