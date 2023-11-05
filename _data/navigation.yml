@@ -3,7 +3,10 @@ dropdown:
     link:
       textarea_html: <p>Europe</p>
     countries:
-      textarea_html: "<p><a href=\"/\">Italy</a></p><p><a href=\"/\">Slovenia</a></p><p><a href=\"/\">Montenegro</a></p><p><a href=\"/\">Albania</a></p><p><a href=\"/\">Greece</a></p>"
+      textarea_html: >-
+        <p><a href="/">Italy</a></p><p><a href="/">Slovenia</a></p><p><a
+        href="/">Montenegro</a></p><p><a href="/">Albania</a></p><p><a
+        href="/">Greece</a></p>
   section-2:
     link:
       textarea_html: <p>Central &amp; South America</p>
@@ -25,23 +28,21 @@ dropdown:
     countries:
       textarea_html: <p><a href="/">Egypt&nbsp;</a></p><p><a href="/">UAE</a></p>
 header-navigation:
-  link-1: 
-    textarea_html: >-
-      <p><a class="header-nav" href="/about">About</a></p>
+  link-1:
+    textarea_html: <p><a class="header-nav" href="/about">About</a></p>
   dropdown-link-2:
-    textarea_html: >-
-       <p class="left"><a href="/blog-categories/blogs">Destinations</a></p>
+    textarea_html: <p class="left"><a href="/blog-categories/blogs">Destinations</a></p>
   link-3:
     textarea_html: >-
-        <p><a class="header-nav" href="/blog-categories/travel-resources">Travel Resources</a></p>
+      <p><a class="header-nav" href="/blog-categories/travel-resources">Travel
+      Resources</a></p>
 mobile-menu:
   textarea_html: >-
     <p><a href = "#">blogs</a></p><p><a href = "#">about</a></p><p><a href =
     "#">travel resources</a></p>
 blog-category-navigation:
   dropdown-content:
-    textarea_html: >- 
-      <p><a href = "/blog-categories/italy" style ="border-radius: 0px 0px 10px 10px;">Italy</a></p><p><a  href = "/blog-categories/slovenia" style="border-radius: 10px 10px 0px 0px;">Slovenia</a></p><p><a  href = "/blog-categories/montenegro">Montenegro</a></p><p><a  href = "/blog-categories/albania">Albania</a></p><p><a  href = "/blog-categories/Greece" style ="border-radius: 0px 0px 10px 10px;">Greece</a></p>
+    textarea_html: <p><a href="/blog-categories/indonesia">Indonesia</a></p>
 colors:
   hamburger-color: '#ffffff'
   background-color: '#859f9f'
