@@ -577,6 +577,20 @@
    
 
     <style>
+
+    .blog-hover-overlay-color:hover 
+    {
+        
+        background-color: rgba(221, 199, 193, 0.4);
+
+        /*  */
+    }
+
+    .blog-hover-overlay-color:hover
+    {
+        color: white
+    /* color: ; */
+    }
     .blog-title-card-color
      {
      background-color: #bccaca;
@@ -646,23 +660,23 @@
     }
 
     .blog-hero-grid-1{
-        margin-right: 0.5%;
-        margin-top: 2%;
+        margin-right: 0.5% !important;
+        margin-top: 2% !important;
         /* background-image: url('/images/country-image.webp'); */
     }
     .blog-hero-grid-2{
-        margin-left: 0.5%;
-        margin-top: 2%;
+        margin-left: 0.5% !important;
+        margin-top: 2% !important;
         /* background-image: url('/images/egypt.webp'); */
     }
 .blog-hero-grid-3{
-        margin-top: 1%;
-        margin-right: 0.5%;
+        margin-top: 2% !important;
+        margin-right: 0.5% !important;
         /* background-image: url('/images/greece.webp'); */
     }
 .blog-hero-grid-4{
-        margin-top: 1%;
-        margin-left: 0.5%;
+        margin-top: 2% !important;
+        margin-left: 0.5% !important;
         /* background-image: url('/images/lake.webp'); */
     }
 
@@ -735,6 +749,76 @@
 .container:hover .overlay-text {
         display: block; /* Show the overlay on hover */
         }
+
+
+
+        /* Image grid styles start */
+        .image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  background-size: cover; /* Maintain image aspect ratio */
+  background-position: center; /* Center the background image */
+  transition: transform 0.3s;
+}
+
+.image1 {
+  background-image: url('/images/country-image.webp');
+}
+
+.image2 {
+  background-image: url('/images/egypt.webp');
+}
+
+.image3 {
+  background-image: url('/images/greece.webp');
+}
+
+.image4 {
+  background-image: url('/images/lake.webp');
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1; /* Ensure it's above images */
+}
+
+.button-container {
+  text-align: center;
+}
+
+.instagram-button {
+  text-decoration: none;
+  color: ;
+  padding: 10px 20px;
+  background-color: ; /* Customize as needed */
+  border-radius: 5px;
+}
+
+.image-grid:hover .overlay {
+  opacity: 1;
+}
+
+
+        /* Image grid styles End */
 
     /* Media Queries */
 @media(max-width: 1024px){
@@ -846,23 +930,39 @@
             </div>
         </div>
         
-        <div class = "col-8_sm-6-middle_xs-12 grid-center-spaceAround blog-hero-grid-section margin-top-1 xs-hide">
-            <!-- <div class = "col-12 grid-center container"> -->
-                <!-- <a href = "" class = "grid-link grid-center col-12"> -->
-                    <div class = "col-5 bg-image blog-hero-grid-1 " style = "background-image: url('/images/country-image.webp');">
+        <!-- <div class = "col-8_sm-6-middle_xs-12 grid-center-spaceAround blog-hero-grid-section margin-top-1 xs-hide">
+                    <div class="hover-container">
+                        <div class="blog-hover-overlay blog-hover-overlay-color">
+                            <div class="follow-hover center">
+                                <a>Follow me</a>
+                                <div class = "col-5 bg-image blog-hero-grid-1 " style = "background-image: url('/images/country-image.webp');">
+                                </div>
+                                <div class = "col-5 bg-image blog-hero-grid-2 " style = "background-image: url('/images/egypt.webp');">
+                                </div>
+                                <div class = "col-5 bg-image blog-hero-grid-3 " style = "background-image: url('/images/greece.webp');">
+                                </div>
+                                <div class = "col-5 bg-image blog-hero-grid-4" style = "background-image: url('/images/lake.webp');">
+                                </div>
+
+                            </div>
+         
+                        </div>
                     </div>
-                    <div class = "col-5 bg-image blog-hero-grid-2 " style = "background-image: url('/images/egypt.webp');">
-                    </div>
-                    <div class = "col-5 bg-image blog-hero-grid-3 " style = "background-image: url('/images/greece.webp');">
-                    </div>
-                    <div class = "col-5 bg-image blog-hero-grid-4" style = "background-image: url('/images/lake.webp');">
-                    </div>
-                <!-- </a> -->
-            <!-- <p class = "overlay-text">Follow me</p>     -->
-            <!-- </div> -->
-            
-        </div>
+        </div> -->
         
+        
+            <div class="image-grid col-8_sm-6-middle_xs-12 margin-top-1 xs-hide">
+                <div class="overlay">
+                  <div class="button-container">
+                    <a href="https://www.instagram.com/your_instagram_username/" target="_blank" class="instagram-button">Visit Instagram</a>
+                  </div>
+                </div>
+                <div class="image-container bg-image image1"></div>
+                <div class="image-container bg-image image2"></div>
+                <div class="image-container bg-image image3"></div>
+                <div class="image-container bg-image image4"></div>
+              </div>
+          
     </div>
 </section>
 
