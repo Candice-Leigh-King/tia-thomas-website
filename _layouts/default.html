@@ -282,7 +282,7 @@ layout: connect-tree
       <!-- Mobile Nav -->
 
       <nav class = "col-7 right mob-show grid-right">
-        <p class=" col-3 fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
+        <p class=" col-3 fixed hamburger-color hamburger padded" style="z-index: 100; color: {{site.data.navigation.colors.hamburger-color}}"> ☰
         </p>
       </nav>
 
@@ -293,10 +293,10 @@ layout: connect-tree
 
       </nav> -->
 
-      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-image: url('{{site.data.colors.navigation-colors.navigation-background_image}}'); z-index: 100;">
+      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-color: {{site.data.navigation.colors.background-color}}; z-index: 100;">
         <p class="cross exit right col-12"> ╳
         </p>
-        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-image: url('{{site.data.colors.navigation-colors.navigation-arch-background_image}}');">
+        <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-color: {{site.data.navigation.navigation.colors.textarea-background-color}}">
          
           <div class=" col-12 grid-center  ">
             <a href="/" class="logo center grow col-12-middle exit"> 
