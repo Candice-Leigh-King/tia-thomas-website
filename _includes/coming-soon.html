@@ -6,28 +6,18 @@
     }
     #content-blocks-{{forloop.index0}} h1{
      line-height: 1.1;
-     font-family: Hoves Thin;
-     color: {{item.heading-color}};
-    }
-
-    #content-blocks-{{forloop.index0}} .info-1 h2{
-        font-family: Hoves Medium;
-        font-size: 2rem;
-        color: {{item.info-block-1.heading-color}};
-    }
-    #content-blocks-{{forloop.index0}} .info-2 h2{
-        font-family: Hoves Medium;
-        font-size: 2rem;
-        color: {{item.info-block-2.heading-color}};
+     font-family: {{item.fonts.heading-font}};
+     color: {{item.colors.heading-color}};
     }
 
     #content-blocks-{{forloop.index0}} p{
         line-height: 1.1;
+        font-family: {{item.fonts.text-font}};
     }
     #content-blocks-{{forloop.index0}} span{
-        font-family: Hoves Bold Outline ;
+        font-family: {{item.fonts.featured-text-font}} ;
         text-transform: uppercase;
-        border-bottom: 3px solid {{item.line-color}};
+        border-bottom: 3px solid {{item.colors.line-color}};
         font-size: 8rem;
     }
 
