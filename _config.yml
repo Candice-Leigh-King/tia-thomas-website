@@ -524,33 +524,6 @@ _array_structures:
               Contents: 
           textarea_html: >- 
               <ol><li><a href = "#">Item 1 lorem lalalala</a></li><li><a href = "#">Item 2 lorem lalalala</a></li><li><a href = "#">Item 3 lorem lalalala</a></li><li><a href = "#">Item 4 lorem lalalala</a></li><li><a href = "#">Item 5 lorem lalalala</a></li><li><a href = "#">Item 6 lorem lalalala</a></li><li><a href = "#">Item 7 lorem lalalala</a></li><li><a href = "#">Item 8 lorem lalalala</a></li><li><a href = "#">Item 9 lorem lalalala</a></li><li><a href = "#">Item 10 lorem lalalala</a></li><li><a href = "#">Item 11 lorem lalalala</a></li></ol>
-      - label: Travel Guide
-        icon:
-        value: 
-          _section-type: travel-guide 
-          heading: Travel in 
-          heading-color: 'black'
-          country: Europe
-          line-color: '#ddc7c1'
-          country_image: /images/media-kit-collab.jpg
-          map_image: /images/europe-map.png
-          info-block-1:
-              heading: Did you know?
-              heading-color: 'black'
-              textarea_html: >- 
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta alias praesentium, illum dolore iure magni debitis error quo voluptate, ut perspiciatis fugit atque beatae officiis voluptatum ex sit omnis.
-              background-color: 'white'
-              icon_image: /images/light-bulb.png
-              icon-background_image: /images/beige-blob.png
-          info-block-2:
-              heading: Did you know?
-              heading-color: 'black'
-              textarea_html: >- 
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus voluptate cumque magnam tempore quasi atque perspiciatis voluptates quibusdam temporibus commodi, voluptatem facere eos laudantium illum, impedit, eius dolorem est.
-              background-color: '#DDC7C1'
-              icon_image: /images/compass.png
-              icon-background_image: /images/white-blob.png
-
 fonts:
 _select_data:
   fonts:
@@ -587,3 +560,7 @@ _select_data:
       #   short word describing the section it is leading to. For example- about.
       #   If you don't want this section to link from the navigation, you can
       #   simply leave it out.
+
+
+
+      

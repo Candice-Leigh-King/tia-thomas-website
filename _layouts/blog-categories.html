@@ -2,7 +2,7 @@
 layout: default
 ---
 <style>
-    /* .blog-background-color
+.blog-background-color
       {background-color: {{page.colors.background-color}};}
 
     .blog-hover-overlay:hover 
@@ -64,7 +64,7 @@ layout: default
     .blog-hover-overlay:hover
     {
     color: {{page.colors.cta-color}};
-    } */
+    } 
 
     .categories p
     {
@@ -190,9 +190,6 @@ span{
 }
 }
 
-@media(max-width: 990px){
-
-}
 
 @media(max-width: 768px){
 #content-blocks-{{forloop.index0}} .travel-guide-banner-bg {
@@ -216,11 +213,7 @@ span{
 }
 }
 
-@media(max-width: 660px){
-
-}
-
-    
+  
 @media(max-width:576px) 
     {
     
@@ -288,15 +281,6 @@ top: -13px;
 
 }
 
-@media(max-width: 350px){
-
-}
-
-
-
-
-
-
   </style> 
 <section class="blog-background-color">
   <section class="padded-sides grid travel-guide">
@@ -307,10 +291,11 @@ top: -13px;
             <div class = "col-4_md-3 bg-map bg-image center">
                 <img src = "{{page.map_image}}" >
             </div>
+            <!-- image + info -->
             <div class = "col-8_md-9_sm-11_xs-12 grid">
                 <div class = "col-6_md-7 bg-image travel-guide-banner-bg">
                 </div>
-
+          <!-- info blocks section -->
                 <div class = "col-6_md-5_sm-12 grid info-blocks">
                     <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
                         <div class = "col-4_md-5 icon center">
@@ -342,7 +327,7 @@ top: -13px;
   </section>
 
 
-  <section class="col-12 grid-middle bg-base category-font text-center border-top border-bottom">
+  <section class="grid-middle bg-base category-font text-center border-top border-bottom">
     <p class="col-12 center desktop-hide portfolio-arrow">⟵</p>
     <nav class="col-9_xs-11-center-middle grid-center center blog-nav">
             <!-- <a href="/blog-categories/blogs" class=" portfolio-link editable">All</a> -->
