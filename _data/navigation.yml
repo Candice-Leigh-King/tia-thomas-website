@@ -60,10 +60,10 @@ border-radius:
 fonts:
   link-font: Hoves Medium;
 social-link-colors:
-  icon-color: '#859f9f'
+  icon-color: '#ddc7c1'
   background-color: '#ffffff'
-  border-color: '#d2966d'
-  icon-hover-color: '#d2966d'
+  border-color: '#e49a6f'
+  icon-hover-color: '#f69650'
 icons-border-radius:
   top-left-corner: 100px
   top-right-corner: 0px
