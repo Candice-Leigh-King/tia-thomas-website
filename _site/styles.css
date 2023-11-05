@@ -800,11 +800,10 @@ header
   {
   top: 300px;  
   right: 0px;
-  z-index: 3;
+  z-index: 300;
   position: fixed;
   padding: 1.5% 0.5% 1.5% 1.5%;
   border-radius: 0%;
-  color: #859F9F;
   line-height: 8px;
   margin: 0;
   background-color: white;
