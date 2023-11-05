@@ -1,0 +1,52 @@
+--- 
+layout: default 
+--- 
+
+<style>
+    
+</style>
+
+<!-- Travel Guide Section -->
+
+<section class="padded-sides grid travel-guide">
+    <div class = "col-7 travel-guide-heading">
+      <h1>{{page.travel-guide.heading}} <br> <span>{{page.travel-guide.country}}</span></h1>
+    </div>
+    <div class = "col-12 grid">
+        <div class = "col-4_md-3 bg-map bg-image center">
+            <img src = "{{page.map_image}}" >
+        </div>
+        <!-- image + info -->
+        <div class = "col-8_md-9_sm-11_xs-12 grid">
+            <div class = "col-6_md-7 bg-image travel-guide-banner-bg">
+            </div>
+      <!-- info blocks section -->
+            <div class = "col-6_md-5_sm-12 grid info-blocks">
+                <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
+                    <div class = "col-4_md-5 icon center">
+                        <img src="{{page.info-block-1.icon-background_image}}" width="80%">
+                        <img src="{{page.info-block-1.icon_image}}"  width="60%">
+
+                    </div>
+                    <div class = "col-8-bottom_md-12 text">
+                        <h2>{{page.info-block-1.heading}}</h2>
+                        <p>{{page.info-block-1.textarea_html}}</p>
+                    </div>
+
+                </div>
+                <div class = "col-12_sm-6_xs-12 info-2 grid-center padded">
+                    <div class = "col-4_md-5 icon">
+                        <img src="{{page.info-block-2.icon-background_image}}" width="80%">
+                        <img src="{{page.info-block-2.icon_image}}"  width="60%">
+                    </div>
+                    <div class = "col-8-bottom_md-12 text">
+                        <h2>{{page.info-block-2.heading}}</h2>
+                        <p>{{page.info-block-1.textarea_html}}</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
