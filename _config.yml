@@ -509,22 +509,6 @@ _array_structures:
           blog-hero-grid-2_image: /images/through-the-lyns-content.jpeg
           blog-hero-grid-3_image: /images/through-the-lyns-content.jpeg
           blog-hero-grid-4_image: /images/through-the-lyns-content.jpeg
-      - label: Blogs Coming Soon
-        icon: schedule 
-        value:
-          _section-type: coming-soon
-          heading-part-1: Coming
-          heading-part-2: Soon 
-          map_image:
-          image:
-          textarea_html: I had so much fun exploring italy, I'm looking forward to telling you all about it! if you want to know when my next blog comes up follow me here. 
-          colors:
-            heading-color:
-            line-color:
-          fonts:
-            heading-font: 
-            featured-text-font:
-            text-font:
       - label: Table of Contents
         icon: format_list_bullet
         value: 
