@@ -595,11 +595,16 @@
     border-top: 1px solid #000000;  
     }
     
+    
     .blog-dropdown-content 
     {
     border-bottom:  1px solid #000000;  
     border-right:  1px solid #000000;  
     border-left:  1px solid #000000;  
+    }
+
+    .blog-dropdown-content a{
+        border-bottom: 1px solid #000000
     }
 
     .category-font {font-family: Hoves Medium;}
@@ -608,6 +613,16 @@
     {
     border-bottom: 1px solid #000000;  
     }
+
+    .blog-dropdown-title{
+        text-decoration: none;
+        border-bottom: none;
+    }
+    .blog-dropdown-title:hover{
+        text-decoration: none;
+        border-bottom: none;
+    }
+    
     
     p
     {
@@ -636,6 +651,17 @@
     .blog-nav a:hover {color: #ddc7c1;}
 
     /* New styles start */
+
+.portfolio-link, .blog-dropdown{
+    display: inline-block;
+    padding: 2%;
+    margin: 1% 2%;
+}
+
+.blog-dropdown:hover .blog-dropdown-content {
+    display: block;
+    z-index: 20;
+} 
 
 
 h1{
@@ -849,7 +875,7 @@ top: -13px;
           <!-- info blocks section -->
                 <div class = "col-6_md-5_sm-12 grid info-blocks">
                     <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
-                        <div class = "col-4_md-5 icon center">
+                        <div class = "col-4_md-5_xs-2 icon center">
                             <img src="/images/beige-blob.png" width="80%">
                             <img src="/images/light-bulb.png"  width="60%">
 
@@ -861,7 +887,7 @@ top: -13px;
 
                     </div>
                     <div class = "col-12_sm-6_xs-12 info-2 grid-center padded">
-                        <div class = "col-4_md-5 icon">
+                        <div class = "col-4_md-5_xs-2 icon">
                             <img src="/images/white-blob.png" width="80%">
                             <img src="/images/compass.png"  width="60%">
                         </div>
@@ -879,25 +905,32 @@ top: -13px;
 
 
   <section class="grid-middle-center bg-base category-font text-center border-top border-bottom">
-    <p class="col-12 center desktop-hide portfolio-arrow">⟵</p>
+
     <nav class="col-9_xs-11-center-middle grid-center center blog-nav">
-            <a href="/blog-categories/blogs" class=" portfolio-link editable">All</a>
-            <div class="blog-dropdown category">
-                 <a href="/blog-categories/blogs" class="  blog-dropdown-title blog-dropdown nav-link portfolio-link editable">Destinations</a>
-                 <div class="blog-dropdown-content ">      
+
+                <a href="/blog-categories/blogs" class=" portfolio-link editable hover-effect">All</a>
+
+            
+            <div class="blog-dropdown category center hover-effect ">
+                 <a  class="  blog-dropdown-title portfolio-link blog-dropdown nav-link editable">Destinations</a>
+                 <div class="blog-dropdown-content "> 
+                    <p><a href = "/blog-categories/italy" style ="border-radius: 0px 0px 10px 10px;">Italy</a></p><p><a  href = "/blog-categories/slovenia" style="border-radius: 10px 10px 0px 0px;">Slovenia</a></p><p><a  href = "/blog-categories/montenegro">Montenegro</a></p><p><a  href = "/blog-categories/albania">Albania</a></p><p><a  href = "/blog-categories/Greece" style ="border-radius: 0px 0px 10px 10px;">Greece</a></p>     
                   <!--  -->
-                  <a class= "editable" href = "/blog-categories/italy" style ="border-radius: 0px 0px 10px 10px;">Italy</a>
-                  <a class= "editable" href = "/blog-categories/slovenia" style="border-radius: 10px 10px 0px 0px;">Slovenia</a>
+                  <!-- <a href = "/blog-categories/italy" style ="border-radius: 0px 0px 10px 10px;">Italy</a>
+                  <a  href = "/blog-categories/slovenia" style="border-radius: 10px 10px 0px 0px;">Slovenia</a>
                   <hr style = "border-top: 1px solid #000000; text-align: center; width: 100%; margin-left: auto; margin-right: auto;">
-                  <a class= "editable" href = "/blog-categories/montenegro">Montenegro</a>
+                  <a  href = "/blog-categories/montenegro">Montenegro</a>
                   <hr style = "border-top: 1px solid #000000; text-align: center; width: 100%; margin-left: auto; margin-right: auto;">
-                  <a class= "editable" href = "/blog-categories/albania">Albania</a>
+                  <a  href = "/blog-categories/albania">Albania</a>
                   <hr style = "border-top: 1px solid #000000; text-align: center; width: 100%; margin-left: auto; margin-right: auto; ">
-                  <a class= "editable" href = "/blog-categories/Greece" style ="border-radius: 0px 0px 10px 10px;">Greece</a>
+                  <a  href = "/blog-categories/Greece" style ="border-radius: 0px 0px 10px 10px;">Greece</a> -->
                   <!-- <hr style = "border-top: 4.5px solid #eee6de; text-align: center; width: 90%; margin-left: auto; margin-right: auto; "> -->      
                   </div>    
             </div>
-            <a href="/blog-categories/travel-resources" class=" portfolio-link editable">Travel Resources</a>
+           
+                <a href="/blog-categories/travel-resources" class=" portfolio-link editable hover-effect">Travel Resources</a>
+     
+            
 
            
              

@@ -38,6 +38,10 @@ mobile-menu:
   textarea_html: >-
     <p><a href = "#">blogs</a></p><p><a href = "#">about</a></p><p><a href =
     "#">travel resources</a></p>
+blog-category-navigation:
+  dropdown-content:
+    textarea_html: >- 
+      <p><a href = "/blog-categories/italy" style ="border-radius: 0px 0px 10px 10px;">Italy</a></p><p><a  href = "/blog-categories/slovenia" style="border-radius: 10px 10px 0px 0px;">Slovenia</a></p><p><a  href = "/blog-categories/montenegro">Montenegro</a></p><p><a  href = "/blog-categories/albania">Albania</a></p><p><a  href = "/blog-categories/Greece" style ="border-radius: 0px 0px 10px 10px;">Greece</a></p>
 colors:
   hamburger-color: '#ffffff'
   background-color: '#859f9f'
