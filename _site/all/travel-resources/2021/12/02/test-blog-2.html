@@ -1050,61 +1050,23 @@
 
     #content-blocks-1 .icon-right{
         margin-right: -18%;
+        background-image: url('/images/Stamp-1.png');
     }
 
     #content-blocks-1 .icon-left{
-        margin-top: 15%;
+        translate: 0 98%;
+        /* margin-top: 15%; */
+        background-image: url('/images/Stamp-2.png');
     }
 
-
-
-
-    /* Media Queries */
-    @media(max-width: 1024px){
-
-}
-
-@media(max-width: 990px){
-    
-}
-
-@media(max-width: 768px){
-
-    #content-blocks-1 .icon-left {
-    margin-top: 38%;
-}
-    
-}
-
-@media(max-width: 660px){
-    
-}
-
-@media(max-width: 500px){
-
-    #content-blocks-1  .icon-right {
-    margin-right: 4%;
-    margin-top: -60%;
-}
-    
-}
-
-@media(max-width: 450px){
-    
-}
-
-@media(max-width: 400px){
-    
-}
-
-@media(max-width: 350px){
-    
-}
+    #content-blocks-1 .table-of-contents{
+        padding-bottom: 12rem !important;
+    }
 
 </style>
 
 <section class = " padded-sides" id="content-blocks-1">
-    <section  class = "padded bg-colour padded-sides-lg grid" id="">
+    <section  class = "padded bg-colour padded-sides-lg grid table-of-contents" id="">
         <div class = "col-6_xs-12">
             <h2>Contents: </h2>
             <hr>
@@ -1114,13 +1076,14 @@
             
         </div>
 
-        <div class = "col-6_xs-12">
-            <div class = "right icon-right">
-                <img src = "/images/Stamp-1.png" width = "20%">
+        <div class = "col-6_xs-12 grid-right">
+            <div class = "left bg-image col-8 icon-left">
+                <!-- <img src = "/images/Stamp-2.png" width = "60%"> -->
             </div>
-            <div class = "left icon-left">
-                <img src = "/images/Stamp-2.png" width = "60%">
+            <div class = "right bg-image col-4 mob-hide icon-right">
+                <!-- <img src = "/images/Stamp-1.png" width = "20%"> -->
             </div>
+
         </div>
 
 
