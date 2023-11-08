@@ -42,7 +42,9 @@ mobile-menu:
     "#">travel resources</a></p>
 blog-category-navigation:
   dropdown-content:
-    textarea_html: <p><a href="/blog-categories/indonesia">Indonesia</a></p>
+    textarea_html: >-
+      <p><a href="/blog-categories/indonesia">Indonesia</a></p><p><a
+      href="/blog-categories/albania.html">Albania</a></p>
 colors:
   hamburger-color: '#ddc7c1'
   background-color: '#ddc7c1'
