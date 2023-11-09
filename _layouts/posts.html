@@ -247,6 +247,11 @@ layout: default
   opacity: 1;
 }
 
+a{
+  text-decoration: underline;
+  color: {{page.colors.author-link-color}}
+}
+
 
         /* Image grid styles End */
 
@@ -356,7 +361,7 @@ layout: default
 
             </div>
             <div class = "col-8_md-10_xs-12 center author-about">
-                {{page.blog-summary}}
+                {{page.blog-summary.textarea_html}}
             </div>
         </div>
         
