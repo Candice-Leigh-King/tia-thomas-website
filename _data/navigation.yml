@@ -38,7 +38,7 @@ header-navigation:
       Resources</a></p>
 mobile-menu:
   textarea_html: >-
-    <p><a href = "#">blogs</a></p><p><a href = "/about">about</a></p><p><a href =
+    <p><a href = "/blog-categories/blogs">blogs</a></p><p><a href = "/about">about</a></p><p><a href =
     "/blog-categories/travel-resources">travel resources</a></p>
 blog-category-navigation:
   dropdown-content:
