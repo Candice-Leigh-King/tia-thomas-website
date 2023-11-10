@@ -163,6 +163,9 @@ span{
   top: 30px; /* Adjust top position to layer the second image lower */
 }
 
+.img-1 {width: 80%;}
+.img-2 {width: 60%;}
+
 
 
 
@@ -244,6 +247,9 @@ span {
     margin-top: -90%;
 }
 
+.img-1 {width: 100%;}
+.img-2 {width: 80%;}
+
 }
 
 @media(max-width: 450px){
@@ -272,7 +278,7 @@ margin-top: -20% !important;
 
 .icon img {
 top: -18px;
-left: 129px;
+left: 134px;
 }
 
 .icon img:last-child {
@@ -302,8 +308,8 @@ top: -13px;
                 <div class = "col-6_md-5_sm-12 grid info-blocks">
                     <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
                         <div class = "col-4_md-5_xs-2 icon center">
-                            <img src="{{page.info-block-1.icon-background_image}}" width="80%">
-                            <img src="{{page.info-block-1.icon_image}}"  width="60%">
+                            <img class ="img-1" src="{{page.info-block-1.icon-background_image}}">
+                            <img class ="img-2" src="{{page.info-block-1.icon_image}}">
 
                         </div>
                         <div class = "col-8-bottom_md-12 text">
@@ -314,8 +320,8 @@ top: -13px;
                     </div>
                     <div class = "col-12_sm-6_xs-12 info-2 grid-center padded">
                         <div class = "col-4_md-5_xs-2 icon">
-                            <img src="{{page.info-block-2.icon-background_image}}" width="80%">
-                            <img src="{{page.info-block-2.icon_image}}"  width="60%">
+                            <img class ="img-1" src="{{page.info-block-2.icon-background_image}}">
+                            <img class ="img-2" src="{{page.info-block-2.icon_image}}">
                         </div>
                         <div class = "col-8-bottom_md-12 text">
                             <h2>{{page.info-block-2.heading}}</h2>
