@@ -37,10 +37,10 @@
       <meta name="twitter:image:alt" content="/images/blog/van-life.png" />
 
       <!-- link to browser icon tag -->
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
+      <link rel="icon" href="/uploads/pngtree-airplane-icon-png-image-1853955.jpg" type="image/x-icon" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/uploads/pngtree-airplane-icon-png-image-1853955.jpg" />
+      <link rel="icon" type="image/x-icon" sizes="32x32" href="/uploads/pngtree-airplane-icon-png-image-1853955.jpg" />
+      <link rel="icon" type="image/x-icon" sizes="16x16" href="/uploads/pngtree-airplane-icon-png-image-1853955.jpg" />
       <link rel="manifest" href="/site.webmanifest" />
 
       <!-- GOOGLE FONTS -->
@@ -578,19 +578,7 @@
 
     <style>
 
-    .blog-hover-overlay-color:hover 
-    {
-        
-        background-color: rgba(221, 199, 193, 0.4);
-
-        /*  */
-    }
-
-    .blog-hover-overlay-color:hover
-    {
-        color: white
-    /* color: ; */
-    }
+  
     .blog-title-card-color
      {
      background-color: #bccaca;
@@ -754,72 +742,85 @@
 
         /* Image grid styles start */
         .image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  position: relative;
-}
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 10px;
+          position: relative;
+        }
 
-.image-container {
-  position: relative;
-  overflow: hidden;
-  background-size: cover; /* Maintain image aspect ratio */
-  background-position: center; /* Center the background image */
-  transition: transform 0.3s;
-}
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        background-size: cover; /* Maintain image aspect ratio */
+        background-position: center; /* Center the background image */
+        transition: transform 0.6s;
+      }
 
-.image1 {
-  background-image: url('/images/country-image.webp');
-}
+      .image1 {
+        background-image: url('/images/country-image.webp');
+      }
 
-.image2 {
-  background-image: url('/images/egypt.webp');
-}
+      .image2 {
+        background-image: url('/images/egypt.webp');
+      }
 
-.image3 {
-  background-image: url('/images/greece.webp');
-}
+      .image3 {
+        background-image: url('/images/greece.webp');
+      }
 
-.image4 {
-  background-image: url('/images/lake.webp');
-}
+      .image4 {
+        background-image: url('/images/lake.webp');
+      }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(221, 199, 193, 0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 1; /* Ensure it's above images */
-}
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s, background-color 0.3s; /* Include background-color transition */
+        /* background-color: rgba(221, 199, 193, 0.4);  */
+        z-index: 1; /* Ensure it's above images */
+      }
 
-.button-container {
-  text-align: center;
-}
+      .button-container {
+        text-align: center;
+      }
 
-.instagram-button {
-  text-decoration: none;
-  color: #ddc7c1;
-  padding: 10px 20px;
-  background-color: white; /* Customize as needed */
-  border-radius: 5px;
-  transition: 0.6s all;
-}
-.instagram-button:hover{
-    color: black;
-}
+      .instagram-button {
+        text-decoration: none;
+        color: #ddc7c1;
+        padding: 10px 20px;
+        background-color: white; /* Customize as needed */
+        border-radius: 5px;
+        transition: 0.6s all;
+      }
+      .instagram-button:hover{ 
+          background-color:  #ddc7c1;
+          color: black;
+      }
 
-.image-grid:hover .overlay {
-  opacity: 1;
-}
+      /* .instagram-button:hover .overlay{
+        opacity: 1;
+        background-color: rgba(221, 199, 193, 0.4);
+      } */
+
+      .image-grid:hover .overlay {
+        opacity: 1;
+      }
+
+
+      .author-about a{
+        display: inline-block;
+        text-decoration: underline;
+        color: ;
+      }
 
 
         /* Image grid styles End */
@@ -926,11 +927,11 @@
 
     <div class = "col-5_sm-12-center grid-center">
         <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
-            <div class = "col-6_md-10_sm-7_xs-5 author-image bg-image " style = " background-image: url('/images/about-me.webp');">
+            <div class = "col-6_md-10_sm-7_xs-12 author-image bg-image " style = " background-image: url('/images/about-me.webp');">
 
             </div>
-            <div class = "col-8_md-10_xs-5 center author-about">
-                An awesome company that provides a digital nomad space on wheels! Plus they have great service.
+            <div class = "col-8_md-10_xs-12 center author-about">
+                <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service</p><p><a>Read More</a></p>
             </div>
         </div>
         
