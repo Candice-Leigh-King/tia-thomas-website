@@ -1,0 +1,20 @@
+<style>
+
+    #content-blocks-{{forloop.index0}} .heading-color
+     {color: {{item.heading-color}};}
+    
+    #content-blocks-{{forloop.index0}} .heading-font
+      {font-family: {{item.heading-font}};}
+
+    #content-blocks-{{forloop.index0}} .background-color {background-color: {{item.background-color}};}
+  
+  </style>
+  
+  <section id="content-blocks-{{forloop.index0}}" class="center">
+    <section id="{{.item.content-block-link}}"  class=" padded-sides background-color banner grid center"> 
+        <div class="col-12">
+            <h3 class="heading-color heading-font">{{item.heading}}</h3>
+<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/686eb0d8566c59bcaf8a40da25255af4.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    </div>
+  </section>
+    </section>
