@@ -275,6 +275,10 @@ img{ border: 1px solid purple;} */
   p, ul 
     {
     margin-top: 0;  
+    line-height: 1,1;
+    }
+
+  p:last-child{
     margin-bottom: 0.8rem;
     }
   
