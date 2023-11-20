@@ -37,9 +37,22 @@ $(document).ready(function() {
 	$("#dropdown-btn a").click(function() {
 	  $("#mobile-dropdown-content").slideToggle(); // Toggles the visibility with a sliding animation
 	});
-	$("#mobile-continent a").click(function() {
-		$('#mobile-countries').slideToggle();
+	$("#mobile-continent-1 ").click(function() {
+		$('#mobile-countries-1').slideToggle();
 	  });
+	$("#mobile-continent-2 ").click(function() {
+	$('#mobile-countries-2').slideToggle();
+	});
+	$("#mobile-continent-3 ").click(function() {
+	$('#mobile-countries-3').slideToggle();
+	});
+	$("#mobile-continent-4 ").click(function() {
+	$('#mobile-countries-4').slideToggle();
+	});
+	$("#mobile-continent-5 ").click(function() {
+	$('#mobile-countries-5').slideToggle();
+	});
+
 
 
 		
