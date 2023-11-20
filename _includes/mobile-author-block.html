@@ -1,0 +1,207 @@
+<style>
+
+
+
+#content-blocks-{{forloop.index0}} p
+{
+font-family: {{item.fonts.text-font}};
+color: {{item.colors.text-color}};
+}
+
+
+
+#content-blocks-{{forloop.index0}} .author-image{
+    border-radius: 20rem;
+    padding-bottom: 20rem;
+
+}
+
+#content-blocks-{{forloop.index0}} .author-about{
+    margin: 1rem;
+    margin-bottom: 2rem;
+    /* height: 15rem; */
+
+}
+
+
+
+#content-blocks-{{forloop.index0}} .bg-author{
+    width: 99%;
+    background-color: {{item.colors.author-background-color}};
+    
+}
+
+#content-blocks-{{forloop.index0}} p{
+    line-height: 1.2;
+}
+#content-blocks-{{forloop.index0}} .grid-link{
+    text-align: center;
+    display: inherit;
+}
+
+#content-blocks-{{forloop.index0}} .container{
+    position: relative;
+    display: inherit;
+
+}
+
+#content-blocks-{{forloop.index0}} .container .grid-link{
+    width: 5rem; /* Adjust the dimensions as needed */
+    height: 20rem; /* Adjust the dimensions as needed */
+    background-color: rgba(221, 199, 193, 0.4); /* Background color for the Instagram icon/image */
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#content-blocks-{{forloop.index0}} .container .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for overlay with opacity */
+    color: white;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 20px;
+    transition: opacity 0.3s; /* Smooth transition effect */
+    }
+
+    #content-blocks-{{forloop.index0}} .container:hover .overlay-text {
+    display: block; /* Show the overlay on hover */
+    }
+
+
+
+    /* Image grid styles start */
+    #content-blocks-{{forloop.index0}} .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      position: relative;
+    }
+
+    #content-blocks-{{forloop.index0}} .image-container {
+    position: relative;
+    overflow: hidden;
+    background-size: cover; /* Maintain image aspect ratio */
+    background-position: center; /* Center the background image */
+    transition: transform 0.6s;
+  }
+
+  #content-blocks-{{forloop.index0}} .image1 {
+    background-image: url('{{item.blog-hero-grid-1_image}}');
+  }
+
+  #content-blocks-{{forloop.index0}} .image2 {
+    background-image: url('{{item.blog-hero-grid-2_image}}');
+  }
+
+  #content-blocks-{{forloop.index0}} .image3 {
+    background-image: url('{{item.blog-hero-grid-3_image}}');
+  }
+
+  #content-blocks-{{forloop.index0}}  .image4 {
+    background-image: url('{{item.blog-hero-grid-4_image}}');
+  }
+
+  #content-blocks-{{forloop.index0}} .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+    transition: opacity 0.3s, background-color 0.3s; /* Include background-color transition */
+    /* background-color: {{item.colors.image-grid-hover-overlay}};  */
+    z-index: 1; /* Ensure it's above images */
+  }
+
+  #content-blocks-{{forloop.index0}} .button-container {
+    text-align: center;
+  }
+
+  #content-blocks-{{forloop.index0}} .instagram-button {
+    text-decoration: none;
+    color: {{item.colors.image-grid-hover-button-color}};
+    padding: 10px 20px;
+    background-color: {{item.colors.image-grid-hover-button-background-color}}; /* Customize as needed */
+    border-radius: 5px;
+    transition: 0.6s all;
+  }
+  #content-blocks-{{forloop.index0}} .instagram-button:hover{ 
+      background-color:  {{item.colors.image-grid-hover-button-background-color-on-hover}};
+      color: {{item.colors.image-grid-hover-button-color-on-hover}};
+  }
+
+
+  #content-blocks-{{forloop.index0}} .image-grid:hover .overlay {
+    opacity: 1;
+  }
+
+
+  #content-blocks-{{forloop.index0}} .author-about a{
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 1rem;
+    color: {{item.colors.author-link-color}};
+    transition: 1s all;
+  }
+
+  #content-blocks-{{forloop.index0}}  .author-about a:hover{
+    color: {{item.colors.author-link-hover-color}};
+  }
+
+
+    /* Image grid styles End */
+
+
+
+@media(max-width: 660px){
+
+  #content-blocks-{{forloop.index0}} .bg-author {
+    margin-top: -20%;
+}
+
+}
+
+@media(max-width: 550px){
+  #content-blocks-{{forloop.index0}} .bg-author {
+    margin-top: 0%;
+}
+}
+
+
+
+</style> 
+<section id="content-blocks-{{forloop.index0}}">
+<section class="space-block padded-top background-color grid">
+
+  <div class = "col-12-center grid-center mob-show">
+    <div class = "col-12 bg-author grid-center padded">
+        <div class = "col-6_md-10_sm-7_xs-12 author-image bg-image " style = " background-image: url('{{item.author_image}}');"></div>
+        <div class = "col-8_md-10_xs-12 center author-about">{{item.about.textarea_html}}</div>
+    </div>
+    <div class="image-grid col-12 margin-top-1 xs-hide">
+      <div class="overlay">
+        <div class="button-container">
+          <a href="https://www.instagram.com/your_instagram_username/" target="_blank" class="instagram-button">Visit Instagram</a>
+        </div>
+      </div>
+      <div class="image-container bg-image image1"></div>
+      <div class="image-container bg-image image2"></div>
+      <div class="image-container bg-image image3"></div>
+      <div class="image-container bg-image image4"></div>
+    </div>
+  </div>
+</section>
+</section>

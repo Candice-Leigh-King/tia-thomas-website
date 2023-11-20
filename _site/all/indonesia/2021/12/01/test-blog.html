@@ -924,7 +924,7 @@
   <!-- New blog hero starts here -->
   <section class = "grid-center" style = "padding: 10% 5% 0% 5%;">
 
-    <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid" style="background-image: url('/images/mountain-image.webp');">
+    <div class = "col-7_sm-12-center bg-image blog-hero-bg padded-s grid" style="background-image: url('/images/mountain-image.webp'); min-height: 55vh;">
         <div class ="col-7_sm-9 margin-top-2 heading-container margin-left-2">
             <h1 id = "blog-title">Test Blog 1</h1>
         </div>
@@ -1009,16 +1009,6 @@
 
   
 
-      <!-- Shown on mobile hidden on desktop -->
-      <div class = "col-5_sm-12-center grid-center mob-show">
-        <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
-            <div class = "col-6_md-10_sm-7_xs-12 author-image bg-image " style = " background-image: url('/images/about-me.webp');">
-
-            </div>
-            <div class = "col-8_md-10_xs-12 center author-about">
-                <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service</p><p><a href="/about">Read More</a></p>
-            </div>
-    </div>
 
     
     <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[0]">
@@ -1146,6 +1136,216 @@
       </div>
     </section>
   </section>  
+    
+    <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[3]">
+        <span class="cms-editor-button"></span>
+      <style>
+
+
+
+#content-blocks-3 p
+{
+font-family: Hoves Medium;
+color: ;
+}
+
+
+
+#content-blocks-3 .author-image{
+    border-radius: 20rem;
+    padding-bottom: 20rem;
+
+}
+
+#content-blocks-3 .author-about{
+    margin: 1rem;
+    margin-bottom: 2rem;
+    /* height: 15rem; */
+
+}
+
+
+
+#content-blocks-3 .bg-author{
+    width: 99%;
+    background-color: #ffffff;
+    
+}
+
+#content-blocks-3 p{
+    line-height: 1.2;
+}
+#content-blocks-3 .grid-link{
+    text-align: center;
+    display: inherit;
+}
+
+#content-blocks-3 .container{
+    position: relative;
+    display: inherit;
+
+}
+
+#content-blocks-3 .container .grid-link{
+    width: 5rem; /* Adjust the dimensions as needed */
+    height: 20rem; /* Adjust the dimensions as needed */
+    background-color: rgba(221, 199, 193, 0.4); /* Background color for the Instagram icon/image */
+    text-align: center;
+    line-height: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#content-blocks-3 .container .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color for overlay with opacity */
+    color: white;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 20px;
+    transition: opacity 0.3s; /* Smooth transition effect */
+    }
+
+    #content-blocks-3 .container:hover .overlay-text {
+    display: block; /* Show the overlay on hover */
+    }
+
+
+
+    /* Image grid styles start */
+    #content-blocks-3 .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      position: relative;
+    }
+
+    #content-blocks-3 .image-container {
+    position: relative;
+    overflow: hidden;
+    background-size: cover; /* Maintain image aspect ratio */
+    background-position: center; /* Center the background image */
+    transition: transform 0.6s;
+  }
+
+  #content-blocks-3 .image1 {
+    background-image: url('/images/country-image.webp');
+  }
+
+  #content-blocks-3 .image2 {
+    background-image: url('/images/egypt.webp');
+  }
+
+  #content-blocks-3 .image3 {
+    background-image: url('/images/greece.webp');
+  }
+
+  #content-blocks-3  .image4 {
+    background-image: url('/images/lake.webp');
+  }
+
+  #content-blocks-3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0; */
+    transition: opacity 0.3s, background-color 0.3s; /* Include background-color transition */
+    /* background-color: rgba(221, 199, 193, 0.4);  */
+    z-index: 1; /* Ensure it's above images */
+  }
+
+  #content-blocks-3 .button-container {
+    text-align: center;
+  }
+
+  #content-blocks-3 .instagram-button {
+    text-decoration: none;
+    color: #ddc7c1;
+    padding: 10px 20px;
+    background-color: white; /* Customize as needed */
+    border-radius: 5px;
+    transition: 0.6s all;
+  }
+  #content-blocks-3 .instagram-button:hover{ 
+      background-color:  #ddc7c1;
+      color: black;
+  }
+
+
+  #content-blocks-3 .image-grid:hover .overlay {
+    opacity: 1;
+  }
+
+
+  #content-blocks-3 .author-about a{
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 1rem;
+    color: #dbc4bd;
+    transition: 1s all;
+  }
+
+  #content-blocks-3  .author-about a:hover{
+    color: #000000;
+  }
+
+
+    /* Image grid styles End */
+
+
+
+@media(max-width: 660px){
+
+  #content-blocks-3 .bg-author {
+    margin-top: -20%;
+}
+
+}
+
+@media(max-width: 550px){
+  #content-blocks-3 .bg-author {
+    margin-top: 0%;
+}
+}
+
+
+
+</style> 
+<section id="content-blocks-3">
+<section class="space-block padded-top background-color grid">
+
+  <div class = "col-12-center grid-center mob-show">
+    <div class = "col-12 bg-author grid-center padded">
+        <div class = "col-6_md-10_sm-7_xs-12 author-image bg-image " style = " background-image: url('/images/about-me.webp');"></div>
+        <div class = "col-8_md-10_xs-12 center author-about"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p><p><a href="/about">Read More</a></p></div>
+    </div>
+    <div class="image-grid col-12 margin-top-1 xs-hide">
+      <div class="overlay">
+        <div class="button-container">
+          <a href="https://www.instagram.com/your_instagram_username/" target="_blank" class="instagram-button">Visit Instagram</a>
+        </div>
+      </div>
+      <div class="image-container bg-image image1"></div>
+      <div class="image-container bg-image image2"></div>
+      <div class="image-container bg-image image3"></div>
+      <div class="image-container bg-image image4"></div>
+    </div>
+  </div>
+</section>
+</section>
     
 
     <footer class="grid-center center padded-top footer-background-color featured-bg">
