@@ -417,6 +417,26 @@
         color: #dbc4bd !important;
       }
 
+      #mobile-dropdown-content {
+        display: none;
+        /* Hide the content by default */
+        /* Additional styling for appearance */
+        padding: 10px;
+      }
+
+      #mobile-dropdown-content #mobile-countries{
+        display: none;
+      }
+
+      .navigation-links{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: left;
+      }
+
+      .navigation-links p{
+        margin: 0.2rem 0;
+      }
 
 
 
@@ -458,7 +478,7 @@
                 <!-- Asia -->
                 <div>
                   <div class = "continent">
-                    <p>Europe</p>
+                    <p><a>Europe</a></p>
                   </div>
                   
                   <hr>
@@ -472,7 +492,7 @@
   
                 <div>
                   <div class = "continent">
-                    <p>Central &amp; South America</p>
+                    <p><a>Central &amp; South America</a></p>
                   </div>
                   <hr>
                   <div class = "countries">
@@ -484,7 +504,7 @@
   
                 <div>
                   <div class = "continent">
-                    <p>North America</p>
+                    <p><a>North America</a></p>
                   </div>
                   <hr>
                   <div class = "countries">
@@ -500,7 +520,7 @@
                 <!-- Europe -->
                 <div>
                   <div class = "continent">
-                    <p>Asia</p>
+                    <p><a>Asia</a></p>
                   </div>
                   <hr>
                   <div class = "countries">
@@ -513,7 +533,7 @@
   
                 <div>
                   <div class = "continent">
-                    <p>Middle East</p>
+                    <p><a>Middle East</a></p>
                   </div>
                   <hr>
                   <div class = "countries">
@@ -542,12 +562,6 @@
         </p>
       </nav>
 
-      <!-- Hidden -->
-
-      <!-- <nav class = "">
-
-
-      </nav> -->
 
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-color: #ddc7c1; z-index: 100;">
         <p class="cross exit right col-12"> ╳
@@ -558,14 +572,99 @@
             <a href="/" class="logo center grow col-12-middle exit"> 
               <img src="" alt="" />
             </a>
-            <div class="col-12 padded-sides text-med exit navigation-links">
-              <p><p><a href = "/blog-categories/blogs">blogs</a></p><p><a href = "/about">about</a></p><p><a href = "/blog-categories/travel-resources">travel resources</a></p></p>
+            <div class="col-12 padded-sides text-med  navigation-links">
+
+              <div class = "exit left"><p><a class="" href="/about">About</a></p></div>
+              
+
+                <div class="" id="dropdown-btn"><p><a>Destinations</a></p></div>
+                  <div class="" id="mobile-dropdown-content">
+                    <div class = "grid">
+                    <!-- Div one -->
+                    <div class = "col-12">
+                      <!-- Asia -->
+                      <div>
+                        <div class = "continent" id = "mobile-continent"  >
+                          <p><a>Europe</a></p>
+                        </div>
+                        
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          <p><a href="/">Italy</a></p><p><a href="/">Slovenia</a></p><p><a href="/">Montenegro</a></p><p><a href="/">Albania</a></p><p><a href="/">Greece</a></p>
+                        </div>
+                      </div>
+                      
+        
+                      <!-- Africa -->
+        
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          <p><a>Central &amp; South America</a></p>
+                        </div>
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          <p><a href="/">Guatemala</a></p><p><a href="/">Nicaragua</a></p><p><a href="/">Panama</a></p><p><a href="/">Colombia</a></p><p><a href="/">Peru&nbsp;</a></p><p> </p>
+                        </div>
+                      </div>
+        
+                      <!-- Middle East -->
+        
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          <p><a>North America</a></p>
+                        </div>
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          <p><a href="/">Canada</a></p>
+                        </div>
+                      </div>
+        
+                    </div>
+        
+                      <!-- Div 2 -->
+                    <div class = "col-12">
+        
+                      <!-- Europe -->
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          <p><a>Asia</a></p>
+                        </div>
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          <p><a href="/blog-categories/Indonesia">Indonesia</a></p>
+                        </div>
+                      </div>
+        
+        
+                      <!-- Central & South America -->
+        
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          <p><a>Middle East</a></p>
+                        </div>
+                        <hr>
+                        <div class = "countries exit" id = "mobile-countries">
+                          <p><a href="/">Egypt&nbsp;</a></p><p><a href="/">UAE</a></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                    </div>
+        
+                  </div>  
+                  
+                
+           
+              
+              <div class = "exit"><p><a class="" href="/blog-categories/travel-resources">Travel Resources</a></p></div>
+              
+              
+              <!-- <p></p> -->
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href=""><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
-              <a class="padded-s" href=""><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
-              <a class="padded-s" href=""><span class="iconify" data-icon="brandico:facebook"></span></a>
-              <a class="padded-s" href=""><span class="iconify" data-icon="dashicons:youtube"></span></a> 
+
 
           </div>
             

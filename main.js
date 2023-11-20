@@ -23,9 +23,30 @@ $(document).ready(function() {
 
 			// end hamburger menu
 
-// Dropdown content menu 
+// Mobile Dropdown content menu 
+
+// document.getElementById("dropdown-btn").addEventListener("click", function() {
+// 	var dropdownContent = document.getElementById("mobile-dropdown-content");
+// 	if (dropdownContent.style.display == "none") {
+// 	  dropdownContent.style.display = "block";
+// 	} else {
+// 	  dropdownContent.style.display = "none";
+// 	}
+//   });
+
+	$("#dropdown-btn a").click(function() {
+	  $("#mobile-dropdown-content").slideToggle(); // Toggles the visibility with a sliding animation
+	});
+	$("#mobile-continent a").click(function() {
+		$('#mobile-countries').slideToggle();
+	  });
+
 
 		
+//   $(document).ready(function() {
+// 	// Toggle countries when clicking on a continent
+
+//   });
 
 			// on scroll
 			// on scroll

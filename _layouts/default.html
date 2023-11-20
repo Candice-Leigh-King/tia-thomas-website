@@ -162,6 +162,26 @@ layout: connect-tree
         color: #dbc4bd !important;
       }
 
+      #mobile-dropdown-content {
+        display: none;
+        /* Hide the content by default */
+        /* Additional styling for appearance */
+        padding: 10px;
+      }
+
+      #mobile-dropdown-content #mobile-countries{
+        display: none;
+      }
+
+      .navigation-links{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: left;
+      }
+
+      .navigation-links p{
+        margin: 0.2rem 0;
+      }
 
 
 
@@ -287,12 +307,6 @@ layout: connect-tree
         </p>
       </nav>
 
-      <!-- Hidden -->
-
-      <!-- <nav class = "">
-
-
-      </nav> -->
 
       <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-color: {{site.data.navigation.colors.background-color}}; z-index: 100;">
         <p class="cross exit right col-12"> ╳
@@ -303,14 +317,99 @@ layout: connect-tree
             <a href="/" class="logo center grow col-12-middle exit"> 
               <img src="{{site.data.general.basics.logo_image}}" alt="{{site.data.general.basics.logo-alt}}" />
             </a>
-            <div class="col-12 padded-sides text-med exit navigation-links">
-              <p>{{site.data.navigation.mobile-menu.textarea_html}}</p>
+            <div class="col-12 padded-sides text-med  navigation-links">
+
+              <div class = "exit left">{{site.data.navigation.mobile-menu.link-1.textarea_html}}</div>
+              
+
+                <div class="" id="dropdown-btn">{{site.data.navigation.mobile-menu.dropdown-link-2.textarea_html}}</div>
+                  <div class="" id="mobile-dropdown-content">
+                    <div class = "grid">
+                    <!-- Div one -->
+                    <div class = "col-12">
+                      <!-- Asia -->
+                      <div>
+                        <div class = "continent" id = "mobile-continent"  >
+                          {{site.data.navigation.dropdown.section-1.link.textarea_html}}
+                        </div>
+                        
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          {{site.data.navigation.dropdown.section-1.countries.textarea_html}}
+                        </div>
+                      </div>
+                      
+        
+                      <!-- Africa -->
+        
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          {{site.data.navigation.dropdown.section-2.link.textarea_html}}
+                        </div>
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          {{site.data.navigation.dropdown.section-2.countries.textarea_html}}
+                        </div>
+                      </div>
+        
+                      <!-- Middle East -->
+        
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          {{site.data.navigation.dropdown.section-3.link.textarea_html}}
+                        </div>
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          {{site.data.navigation.dropdown.section-3.countries.textarea_html}}
+                        </div>
+                      </div>
+        
+                    </div>
+        
+                      <!-- Div 2 -->
+                    <div class = "col-12">
+        
+                      <!-- Europe -->
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          {{site.data.navigation.dropdown.section-4.link.textarea_html}}
+                        </div>
+                        <hr>
+                        <div class = "countries exit"  id = "mobile-countries">
+                          {{site.data.navigation.dropdown.section-4.countries.textarea_html}}
+                        </div>
+                      </div>
+        
+        
+                      <!-- Central & South America -->
+        
+                      <div>
+                        <div class = "continent" id = "mobile-continent">
+                          {{site.data.navigation.dropdown.section-5.link.textarea_html}}
+                        </div>
+                        <hr>
+                        <div class = "countries exit" id = "mobile-countries">
+                          {{site.data.navigation.dropdown.section-5.countries.textarea_html}}
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                    </div>
+        
+                  </div>  
+                  
+                
+           
+              
+              <div class = "exit">{{site.data.navigation.mobile-menu.link-3.textarea_html}}</div>
+              
+              
+              <!-- <p>{{site.data.navigation.mobile-menu.textarea_html}}</p> -->
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
               <a class="padded-s" href="{{site.data.general.social-links.instagram}}"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
-              <a class="padded-s" href="{{site.data.general.social-links.tiktok}}"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
-              <a class="padded-s" href="{{site.data.general.social-links.facebook}}"><span class="iconify" data-icon="brandico:facebook"></span></a>
-              <a class="padded-s" href="{{site.data.general.social-links.youtube}}"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
+
 
           </div>
             

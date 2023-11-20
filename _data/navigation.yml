@@ -1,7 +1,7 @@
 dropdown:
   section-1:
     link:
-      textarea_html: <p>Europe</p>
+      textarea_html: <p><a>Europe</a></p>
     countries:
       textarea_html: >-
         <p><a href="/">Italy</a></p><p><a href="/">Slovenia</a></p><p><a
@@ -9,22 +9,22 @@ dropdown:
         href="/">Greece</a></p>
   section-2:
     link:
-      textarea_html: <p>Central &amp; South America</p>
+      textarea_html: <p><a>Central &amp; South America</a></p>
     countries:
       textarea_html: "<p><a href=\"/\">Guatemala</a></p><p><a href=\"/\">Nicaragua</a></p><p><a href=\"/\">Panama</a></p><p><a href=\"/\">Colombia</a></p><p><a href=\"/\">Peru&nbsp;</a></p><p>\_</p>"
   section-3:
     link:
-      textarea_html: <p>North America</p>
+      textarea_html: <p><a>North America</a></p>
     countries:
       textarea_html: <p><a href="/">Canada</a></p>
   section-4:
     link:
-      textarea_html: <p>Asia</p>
+      textarea_html: <p><a>Asia</a></p>
     countries:
       textarea_html: <p><a href="/blog-categories/Indonesia">Indonesia</a></p>
   section-5:
     link:
-      textarea_html: <p>Middle East</p>
+      textarea_html: <p><a>Middle East</a></p>
     countries:
       textarea_html: <p><a href="/">Egypt&nbsp;</a></p><p><a href="/">UAE</a></p>
 header-navigation:
@@ -37,9 +37,14 @@ header-navigation:
       <p><a class="header-nav" href="/blog-categories/travel-resources">Travel
       Resources</a></p>
 mobile-menu:
-  textarea_html: >-
-    <p><a href = "/blog-categories/blogs">blogs</a></p><p><a href = "/about">about</a></p><p><a href =
-    "/blog-categories/travel-resources">travel resources</a></p>
+  link-1:
+    textarea_html: <p><a class="" href="/about">About</a></p>
+  dropdown-link-2:
+    textarea_html: <p><a>Destinations</a></p>
+  link-3:
+    textarea_html: >-
+      <p><a class="" href="/blog-categories/travel-resources">Travel
+      Resources</a></p>
 blog-category-navigation:
   dropdown-content:
     textarea_html: >-
