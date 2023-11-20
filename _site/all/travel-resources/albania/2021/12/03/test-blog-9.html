@@ -820,7 +820,7 @@
       .author-about a{
         display: inline-block;
         text-decoration: underline;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         color: #dbc4bd;
         transition: 1s all;
       }
@@ -932,7 +932,9 @@
 
     </div>
 
-    <div class = "col-5_sm-12-center grid-center">
+
+    <!-- Shown on desktop hidden on mobile -->
+    <div class = "col-5_sm-12-center grid-center mob-hide">
         <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
             <div class = "col-6_md-10_sm-7_xs-12 author-image bg-image " style = " background-image: url('/images/about-me.webp');">
 
@@ -940,7 +942,7 @@
             <div class = "col-8_md-10_xs-12 center author-about">
                 <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service</p><p><a href="/about">Read More</a></p>
             </div>
-        </div>
+    </div>
         
         <!-- <div class = "col-8_sm-6-middle_xs-12 grid-center-spaceAround blog-hero-grid-section margin-top-1 xs-hide">
                     <div class="hover-container">
@@ -1006,6 +1008,17 @@
   </section>  -->
 
   
+
+      <!-- Shown on mobile hidden on desktop -->
+      <div class = "col-5_sm-12-center grid-center mob-show">
+        <div class = "col-8_sm-6_xs-12 bg-author grid-center padded">
+            <div class = "col-6_md-10_sm-7_xs-12 author-image bg-image " style = " background-image: url('/images/about-me.webp');">
+
+            </div>
+            <div class = "col-8_md-10_xs-12 center author-about">
+                <p>An awesome company that provides a digital nomad space on wheels! Plus they have great service</p><p><a href="/about">Read More</a></p>
+            </div>
+    </div>
 
     
     <div class="cms-editor-link" data-cms-editor-link="cloudcannon:#content-blocks[0]">
