@@ -138,6 +138,304 @@ img{ border: 1px solid purple;}  */
   font-family: Brushwell;
   src: url(/fonts/brushwell.otf);
   }
+
+  /* Georgia Pro */
+
+  @font-face 
+  {
+  font-family: Georgia Pro Black;
+  src: url(/fonts/GeorgiaPro-Black.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Black Italic;
+  src: url(fonts/GeorgiaPro-BlackItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Bold;
+  src: url(/fonts/GeorgiaPro-Bold.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Bold Italic;
+  src: url(/fonts/GeorgiaPro-BoldItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondBlack;
+  src: url(/fonts/GeorgiaPro-CondBlack.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondBlack Italic;
+  src: url(/fonts/GeorgiaPro-CondBlackItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georigia Pro CondBold;
+  src: url(/fonts/GeorgiaPro-CondBold.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondBold Italic;
+  src: url(/fonts/GeorgiaPro-CondBoldItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondItalic;
+  src: url(/fonts/GeorgiaPro-CondItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondLight;
+  src: url(/fonts/GeorgiaPro-CondLight.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondLight Italic;
+  src: url(/fonts/GeorgiaPro-CondLightItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondRegular;
+  src: url(/fonts/GeorgiaPro-CondRegular.ttf);
+  }
+
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondSemi Bold;
+  src: url(/fonts/GeorgiaPro-CondSemibold.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro CondSemi Bold Italic;
+  src: url(/fonts/GeorgiaPro-CondSemiboldItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Italic;
+  src: url(/fonts/GeorgiaPro-Italic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Light;
+  src: url(/fonts/GeorgiaPro-Light.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Light Italic;
+  src: url(/fonts/GeorgiaPro-LightItalic.ttf);
+  }
+
+  @font-face 
+  {
+  font-family: Georgia Pro Semi Bold;
+  src: url(/fonts/GeorgiaPro-Semibold.ttf);
+  }
+
+
+  /* NeueMontreal */
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Bold;
+  src: url(/fonts/NeueMontreal-Bold.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Bold Italic;
+  src: url(/fonts/NeueMontreal-BoldItalic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Italic;
+  src: url(/fonts/NeueMontreal-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Light;
+  src: url(/fonts/NeueMontreal-Light.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Light Italic;
+  src: url(/fonts/NeueMontreal-LightItalic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Medium;
+  src: url(/fonts/NeueMontreal-Medium.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Medium Italic;
+  src: url(/fonts/NeueMontreal-MediumItalic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Nueue Montreal Regular;
+  src: url(/fonts/NeueMontreal-Regular.otf);
+  }
+
+  /* Millard */
+
+  @font-face 
+  {
+  font-family: Millard Bold Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Black-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Bold;
+  src: url(/fonts/Rene-Bieder-Milliard-Black.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Book Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Book-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Book;
+  src: url(/fonts/Rene-Bieder-Milliard-Book.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Extra Bold Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-ExtraBold-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Extra Bold;
+  src: url(/fonts/Rene-Bieder-Milliard-ExtraBold.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Extra Light Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-ExtraLight-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Extra Light;
+  src: url(/fonts/Rene-Bieder-Milliard-ExtraLight.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Hairline Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Hairline-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Hairline;
+  src: url(/fonts/Rene-Bieder-Milliard-Hairline.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Heavy Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Heavy-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Heavy Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Heavy.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Light Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Light-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Light;
+  src: url(/fonts/Rene-Bieder-Milliard-Light.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Medium Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Medium-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Medium;
+  src: url(/fonts/Rene-Bieder-Milliard-Medium.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard SemiBold Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-SemiBold-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Semi Bold;
+  src: url(/fonts/Rene-Bieder-Milliard-SemiBold.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Thin Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Thin-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Thin;
+  src: url(/fonts/Rene-Bieder-Milliard-Thin.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Black Italic;
+  src: url(/fonts/Rene-Bieder-Milliard-Black-Italic.otf);
+  }
+
+  @font-face 
+  {
+  font-family: Millard Black;
+  src: url(/fonts/Rene-Bieder-Milliard-Black.otf);
+  }
+
+
   
   body {
   font-family: 'Poppins', sans-serif;
