@@ -129,7 +129,7 @@
         .navigation-links a
           {
           color: var(--linkColor);
-          font-family: var(--linkFont);
+          font-family: Georgia Pro Black;
           } 
 
         .navigation-links a:hover {color: var(--HoverLinkColor);} 
@@ -262,7 +262,7 @@
   
     <style>
       header{
-        position: relative;
+        /* position: relative; */
         z-index: 100;
       }
       .logo{
@@ -383,6 +383,7 @@
         text-align: left;
         margin-bottom: 2rem;
       }
+      
       #dropdown-content .countries p{
         display: inline-block;
         font-size: 1rem;
@@ -447,6 +448,10 @@
 
 
 
+      #mobile-nav-link p,
+      #dropdown-btn p{
+        font-family: Georgia Pro Semi Bold;
+      }
 
       /* Media Queries */
 
@@ -461,7 +466,7 @@
       }
   }
     </style>
-    <header class = "grid">
+    <header class = "grid-middle">
 
       <!-- Logo -->
       <div class = "col-3_sm-5 logo">
@@ -578,7 +583,7 @@
       </nav>
 
 
-      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-color: #ddc7c1; z-index: 100;">
+      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner center" style="background-color: #ddc7c1; z-index: 100;">
         <p class="cross exit right col-12"> ╳
         </p>
         <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-color: ">
@@ -589,10 +594,10 @@
             </a>
             <div class="col-12 padded-sides text-med  navigation-links">
 
-              <div class = "exit left"><p><a class="" href="/about">About</a></p></div>
+              <div class = "exit center" id = "mobile-nav-link"><p><a class="" href="/about">About</a></p></div>
               
 
-                <div class="" id="dropdown-btn"><p><a>Destinations</a></p></div>
+                <div class="center" id="dropdown-btn"><p><a>Destinations</a></p></div>
                   <div class="" id="mobile-dropdown-content">
                     <div class = "grid">
                     <!-- Div one -->
@@ -672,7 +677,7 @@
                 
            
               
-              <div class = "exit"><p><a class="" href="/blog-categories/travel-resources">Travel Resources</a></p></div>
+              <div class = "exit center" id = "mobile-nav-link"><p><a class="" href="/blog-categories/travel-resources">Travel Resources</a></p></div>
               
               
               <!-- <p></p> -->

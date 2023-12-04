@@ -7,7 +7,7 @@ layout: connect-tree
   
     <style>
       header{
-        position: relative;
+        /* position: relative; */
         z-index: 100;
       }
       .logo{
@@ -128,6 +128,7 @@ layout: connect-tree
         text-align: left;
         margin-bottom: 2rem;
       }
+      
       #dropdown-content .countries p{
         display: inline-block;
         font-size: 1rem;
@@ -192,6 +193,10 @@ layout: connect-tree
 
 
 
+      #mobile-nav-link p,
+      #dropdown-btn p{
+        font-family: Georgia Pro Semi Bold;
+      }
 
       /* Media Queries */
 
@@ -206,7 +211,7 @@ layout: connect-tree
       }
   }
     </style>
-    <header class = "grid">
+    <header class = "grid-middle">
 
       <!-- Logo -->
       <div class = "col-3_sm-5 logo">
@@ -323,7 +328,7 @@ layout: connect-tree
       </nav>
 
 
-      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner" style="background-color: {{site.data.navigation.colors.background-color}}; z-index: 100;">
+      <nav class="grid-middle navigation-background-color page-nav mobile-menu banner center" style="background-color: {{site.data.navigation.colors.background-color}}; z-index: 100;">
         <p class="cross exit right col-12"> ╳
         </p>
         <div class=" textarea-background-color radius-arch banner col-12 grid-middle" style="background-color: {{site.data.navigation.navigation.colors.textarea-background-color}}">
@@ -334,10 +339,10 @@ layout: connect-tree
             </a>
             <div class="col-12 padded-sides text-med  navigation-links">
 
-              <div class = "exit left">{{site.data.navigation.mobile-menu.link-1.textarea_html}}</div>
+              <div class = "exit center" id = "mobile-nav-link">{{site.data.navigation.mobile-menu.link-1.textarea_html}}</div>
               
 
-                <div class="" id="dropdown-btn">{{site.data.navigation.mobile-menu.dropdown-link-2.textarea_html}}</div>
+                <div class="center" id="dropdown-btn">{{site.data.navigation.mobile-menu.dropdown-link-2.textarea_html}}</div>
                   <div class="" id="mobile-dropdown-content">
                     <div class = "grid">
                     <!-- Div one -->
@@ -417,7 +422,7 @@ layout: connect-tree
                 
            
               
-              <div class = "exit">{{site.data.navigation.mobile-menu.link-3.textarea_html}}</div>
+              <div class = "exit center" id = "mobile-nav-link">{{site.data.navigation.mobile-menu.link-3.textarea_html}}</div>
               
               
               <!-- <p>{{site.data.navigation.mobile-menu.textarea_html}}</p> -->
