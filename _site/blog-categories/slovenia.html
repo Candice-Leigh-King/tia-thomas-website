@@ -311,7 +311,6 @@
       #desktop-navigation p{
         display: inline-block;
         text-transform: uppercase;
-        font-family: Hoves Medium;
         font-size: 1.2rem;
         color: black;
 
@@ -323,6 +322,10 @@
         padding: 0.2% 2%;
       }
 
+      #header-nav-link p{
+        font-family: Georgia Pro Black;
+        white-space: nowrap;
+      }
 
       #destinations-dropdown p{
         padding: 0.9% 12%;
@@ -451,7 +454,7 @@
         .header-nav{font-size: 1.2rem;}
 
         header h1{
-        font-family: Hoves Medium;
+        font-family: Georgia Pro Semi Bold;
         font-size: 1.5rem;
         text-align: center;
         color: black;
@@ -471,10 +474,16 @@
       <!-- Desktop Nav -->
 
       <nav class="col-9-middle_sm-8 grid-center mob-hide" id = "desktop-navigation">
-        <p><a class="header-nav" href="/about">About</a></p>
+        <div id = "header-nav-link">
+          <p><a class="header-nav" href="/about">About</a></p>
+        </div>
+        
         <!-- <div class = "dropdown-container-wrapper" id = "dropdown-container-wrapper"> -->
           <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
-            <p class="left"><a href="/blog-categories/blogs">Destinations</a></p>
+            <div id = "header-nav-link">
+              <p class="left"><a href="/blog-categories/blogs">Destinations</a></p>
+            </div>
+            
             <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
               <div class = "grid">
               <!-- Div one -->
@@ -553,9 +562,11 @@
             
           </div>
         <!-- </div> -->
-        
+        <div id = "header-nav-link">
+          <p><a class="header-nav" href="/blog-categories/travel-resources">Travel Resources</a></p>
+        </div>
 
-        <p><a class="header-nav" href="/blog-categories/travel-resources">Travel Resources</a></p>
+        
         
       </nav>
 

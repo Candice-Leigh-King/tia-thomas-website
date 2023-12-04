@@ -56,7 +56,6 @@ layout: connect-tree
       #desktop-navigation p{
         display: inline-block;
         text-transform: uppercase;
-        font-family: Hoves Medium;
         font-size: 1.2rem;
         color: black;
 
@@ -68,6 +67,10 @@ layout: connect-tree
         padding: 0.2% 2%;
       }
 
+      #header-nav-link p{
+        font-family: Georgia Pro Black;
+        white-space: nowrap;
+      }
 
       #destinations-dropdown p{
         padding: 0.9% 12%;
@@ -196,7 +199,7 @@ layout: connect-tree
         .header-nav{font-size: 1.2rem;}
 
         header h1{
-        font-family: Hoves Medium;
+        font-family: Georgia Pro Semi Bold;
         font-size: 1.5rem;
         text-align: center;
         color: black;
@@ -216,10 +219,16 @@ layout: connect-tree
       <!-- Desktop Nav -->
 
       <nav class="col-9-middle_sm-8 grid-center mob-hide" id = "desktop-navigation">
-        {{site.data.navigation.header-navigation.link-1.textarea_html}}
+        <div id = "header-nav-link">
+          {{site.data.navigation.header-navigation.link-1.textarea_html}}
+        </div>
+        
         <!-- <div class = "dropdown-container-wrapper" id = "dropdown-container-wrapper"> -->
           <div class="dropdown header-nav dropdown-container" id="destinations-dropdown">
-            {{site.data.navigation.header-navigation.dropdown-link-2.textarea_html}}
+            <div id = "header-nav-link">
+              {{site.data.navigation.header-navigation.dropdown-link-2.textarea_html}}
+            </div>
+            
             <div class="dropdown-content dropdown-menu padded-s" id="dropdown-content">
               <div class = "grid">
               <!-- Div one -->
@@ -298,9 +307,11 @@ layout: connect-tree
             
           </div>
         <!-- </div> -->
-        
+        <div id = "header-nav-link">
+          {{site.data.navigation.header-navigation.link-3.textarea_html}}
+        </div>
 
-        {{site.data.navigation.header-navigation.link-3.textarea_html}}
+        
         
       </nav>
 
