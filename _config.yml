@@ -105,6 +105,7 @@ _array_structures:
           link-color:
           link-background-color:
           link-hover-background-color:
+          content-block-link:
           colors:
             background-color: 
             text-color: 
@@ -412,6 +413,7 @@ _array_structures:
             heading-font: 
             subheading-font: 
             text-font:
+          content-block-link:
       - label: Text and Image
         icon: art_track
         value:
@@ -427,6 +429,7 @@ _array_structures:
             heading-font: 
             subheading-font: 
             text-font:
+          content-block-link:  
       - label: Space
         icon: block
         value:
@@ -464,6 +467,7 @@ _array_structures:
             heading-font: 
             subheading-font: 
             cta-font:
+          content-block-link:
       - label: Google Map
         icon: place
         value:
@@ -491,7 +495,8 @@ _array_structures:
           colors:
             heading-color:
             border-color:
-            background-color:  
+            background-color: 
+          content-block-link:
       - label: Blog Hero
         icon: star
         value:
