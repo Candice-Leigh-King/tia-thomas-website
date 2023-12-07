@@ -1095,7 +1095,7 @@ img{ border: 1px solid purple;}  */
   {display: none;}
 
 .logo img 
-  {max-width: 7rem;}
+  {max-width: 10rem;}
 
 .fixed-socials
   {
@@ -1379,6 +1379,9 @@ footer {
 
 /* Smaller than laptop */
 @media(max-width:768px) {
+  
+  .logo img 
+  {max-width: 7rem;}
 
   header {
     margin-bottom: 1rem !important ;
