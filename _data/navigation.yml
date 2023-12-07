@@ -21,16 +21,14 @@ dropdown:
       textarea_html: <p><a href="/blog-categories/canada.html">Canada</a></p>
   section-4:
     link:
-      textarea_html: <p><a>Asia</a></p>
-    countries:
-      textarea_html: <p><a href="/blog-categories/indonesia.html">Indonesia</a></p>
-  section-5:
-    link:
       textarea_html: <p><a>Middle East</a></p>
     countries:
-      textarea_html: >-
-        <p><a href="/blog-categories/egypt.html">Egypt&nbsp;</a></p><p><a
-        href="/blog-categories/uae.html">UAE</a></p>
+      textarea_html: "<p>\_</p><p><a href=\"/blog-categories/egypt.html\">Egypt&nbsp;</a></p><p><a href=\"/blog-categories/uae.html\">UAE</a></p><p>\_</p>"
+  section-5:
+    link:
+      textarea_html: ''
+    countries:
+      textarea_html: "<p>\_</p><p>\_</p>"
 header-navigation:
   link-1:
     textarea_html: <p><a class="header-nav" href="/about">About</a></p>
