@@ -2,6 +2,7 @@ dropdown:
   section-1:
     link:
       textarea_html: <p><a>Europe</a></p>
+      continent-underline-color: '#dbc4bd'
     countries:
       textarea_html: >-
         <p><a href="/blog-categories/italy.html">Italy</a></p><p><a
@@ -12,21 +13,25 @@ dropdown:
   section-2:
     link:
       textarea_html: <p><a>Central &amp; South America</a></p>
+      continent-underline-color: '#dbc4bd'
     countries:
       textarea_html: "<p><a href=\"/blog-categories/guatemala.html\">Guatemala</a></p><p><a href=\"/blog-categories/nicaragua.html\">Nicaragua</a></p><p><a href=\"/blog-categories/panama.html\">Panama</a></p><p><a href=\"/blog-categories/colombia.html\">Colombia</a></p><p><a href=\"/blog-categories/peru.html\">Peru&nbsp;</a></p><p>\_</p>"
   section-3:
     link:
       textarea_html: <p><a>North America</a></p>
+      continent-underline-color: '#dbc4bd'
     countries:
       textarea_html: <p><a href="/blog-categories/canada.html">Canada</a></p>
   section-4:
     link:
       textarea_html: <p><a>Middle East</a></p>
+      continent-underline-color: '#dbc4bd'
     countries:
       textarea_html: "<p>\_</p><p><a href=\"/blog-categories/egypt.html\">Egypt&nbsp;</a></p><p><a href=\"/blog-categories/uae.html\">UAE</a></p><p>\_</p>"
   section-5:
     link:
       textarea_html: ''
+      continent-underline-color: '#fff'
     countries:
       textarea_html: "<p>\_</p><p>\_</p>"
 header-navigation:
