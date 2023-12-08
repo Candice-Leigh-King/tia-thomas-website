@@ -554,8 +554,11 @@ _array_structures:
           textarea_html: >- 
               <ol><li><a href = "#">Item 1 lorem lalalala</a></li><li><a href = "#">Item 2 lorem lalalala</a></li><li><a href = "#">Item 3 lorem lalalala</a></li><li><a href = "#">Item 4 lorem lalalala</a></li><li><a href = "#">Item 5 lorem lalalala</a></li><li><a href = "#">Item 6 lorem lalalala</a></li><li><a href = "#">Item 7 lorem lalalala</a></li><li><a href = "#">Item 8 lorem lalalala</a></li><li><a href = "#">Item 9 lorem lalalala</a></li><li><a href = "#">Item 10 lorem lalalala</a></li><li><a href = "#">Item 11 lorem lalalala</a></li></ol>
           colors:
+            heading-color:
+            subheading-color: 'black'
             link-color: 'black'
             link-hover-color: 'white'
+            line-color:
           fonts:
             heading-font: Hoves Medium
             subheading-fonts: Hoves Medium
