@@ -576,19 +576,14 @@ _array_structures:
           travel-guide:
             heading: travel in
             country: Albania
-            map_image: /images/europe-map.png
-            travel-guide-country_image: /images/greece.webp
-            info-block-1:
-              heading: Did you know?
-              textarea_html: >-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris&nbsp;</p><p>Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris&nbsp;</p>
-              icon-background_image: /images/beige-blob.png
-              icon_image: /images/light-bulb.png
+          map_image: /images/europe-map.png
+          travel-guide-country_image: /images/greece.webp
+          info-block-1:
+            heading: Did you know?
+            textarea_html: >-
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&nbsp;</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris&nbsp;</p>
+            icon-background_image: /images/beige-blob.png
+            icon_image: /images/light-bulb.png
             info-block-2:
               heading: Did you know?
               textarea_html: >-
