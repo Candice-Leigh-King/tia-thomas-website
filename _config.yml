@@ -541,7 +541,7 @@ _array_structures:
             text-font: Hoves Medium
             social-share-text-font: Hoves Thin
       - label: Table of Contents
-        icon: format_list_bullet
+        icon: format_list_bulleted
         value: 
           - _section-type: table-of-contents
             right-icon_image: /images/Stamp-1.png
