@@ -569,10 +569,10 @@ _array_structures:
               heading-font: Hoves Medium
               subheading-fonts: Hoves Medium
               text-fonts: Hoves Regular
-      - label: Albania Blogs
-        icon: draw
+      - label: Travel Guide
+        icon: menu_book
         value:
-          _section-type: albania-blogs
+          _section-type: travel-guide.html
           travel-guide:
             heading: travel in
             country: Albania
