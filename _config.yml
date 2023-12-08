@@ -626,6 +626,10 @@ _array_structures:
               subheading-font:
               cta-font: 
               category-font: 
+      - label: Albania Blogs
+        icon: draw
+        value:
+          _section-type: albania-blogs.html
 fonts:
 _select_data:
   fonts:
