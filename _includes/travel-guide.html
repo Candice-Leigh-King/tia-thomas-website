@@ -1,40 +1,40 @@
 <style>
 #content-block-{{forloop.index0}} .blog-background-color
-      {background-color: {{page.colors.background-color}};}
+      {background-color: {{item.colors.background-color}};}
 
  #content-block-{{forloop.index0}}   .blog-hover-overlay:hover 
-     {background-color: {{page.colors.blog-hover-overlay-color}};}
+     {background-color: {{item.colors.blog-hover-overlay-color}};}
 
  #content-block-{{forloop.index0}}   .bump 
      {
-     background-color: {{page.colors.blog-title-card-color}};
-     border-top: solid 4px {{page.colors.blog-title-card-border-color}};
-     border-left: solid 4px {{page.colors.blog-title-card-border-color}};
+     background-color: {{item.colors.blog-title-card-color}};
+     border-top: solid 4px {{item.colors.blog-title-card-border-color}};
+     border-left: solid 4px {{item.colors.blog-title-card-border-color}};
      }
     
  #content-block-{{forloop.index0}}   .border-top
     {
-    border-top: 1px solid {{page.colors.categories-color}};  
+    border-top: 1px solid {{item.colors.categories-color}};  
     }
     
     
  #content-block-{{forloop.index0}}   .blog-dropdown-content 
     {
-    border-bottom:  1px solid {{page.colors.categories-color}};  
-    border-right:  1px solid {{page.colors.categories-color}};  
-    border-left:  1px solid {{page.colors.categories-color}};  
+    border-bottom:  1px solid {{item.colors.categories-color}};  
+    border-right:  1px solid {{item.colors.categories-color}};  
+    border-left:  1px solid {{item.colors.categories-color}};  
     }
 
  #content-block-{{forloop.index0}}   .blog-dropdown-content a{
         margin: 3px;
-        border-bottom: 1px solid {{page.colors.categories-color}}
+        border-bottom: 1px solid {{item.colors.categories-color}}
     }
 
-  #content-block-{{forloop.index0}}  .category-font {font-family: {{page.fonts.category-font}};}
+  #content-block-{{forloop.index0}}  .category-font {font-family: {{item.fonts.category-font}};}
     
   #content-block-{{forloop.index0}}  .border-bottom
     {
-    border-bottom: 1px solid {{page.colors.categories-color}};  
+    border-bottom: 1px solid {{item.colors.categories-color}};  
     }
 
   #content-block-{{forloop.index0}}  .blog-dropdown-title{
@@ -61,17 +61,17 @@
   #content-block-{{forloop.index0}}  .categories p
     {
     font-size: 1.3rem;
-    font-family: {{page.fonts.categories-font}};
-    color: {{page.colors.categories-color}};
+    font-family: {{item.fonts.categories-font}};
+    color: {{item.colors.categories-color}};
     }
 
   #content-block-{{forloop.index0}}  .categories a:hover 
     {color: {{page.colors.categories-hover-color}};}
 
-  #content-block-{{forloop.index0}}  .portfolio-arrow {color: {{page.colors.arrow-color}};}
+  #content-block-{{forloop.index0}}  .portfolio-arrow {color: {{item.colors.arrow-color}};}
   
     
- #content-block-{{forloop.index0}}   .blog-nav a:hover {color: {{page.colors.categories-hover-color}};}
+ #content-block-{{forloop.index0}}   .blog-nav a:hover {color: {{item.colors.categories-hover-color}};}
 
     /* New styles start */
 
@@ -89,19 +89,19 @@
 
 #content-block-{{forloop.index0}} h1{
  line-height: 1.1;
- font-family: {{page.fonts.travel-guide-heading-font}};
- color: {{page.colors.travel-guide-heading-color}};
+ font-family: {{item.fonts.travel-guide-heading-font}};
+ color: {{item.colors.travel-guide-heading-color}};
 }
 
 #content-block-{{forloop.index0}} .info-1 h2{
-    font-family: {{page.fonts.travel-guide-information-1-heading-font}};
+    font-family: {{item.fonts.travel-guide-information-1-heading-font}};
     font-size: 2rem;
-    color: {{page.colors.travel-guide-information-1-heading-color}};
+    color: {{item.colors.travel-guide-information-1-heading-color}};
 }
 #content-block-{{forloop.index0}} .info-2 h2{
-    font-family: {{page.fonts.travel-guide-information-2-heading-font}};
+    font-family: {{item.fonts.travel-guide-information-2-heading-font}};
     font-size: 2rem;
-    color: {{page.colors.travel-guide-information-2-heading-color}};
+    color: {{item.colors.travel-guide-information-2-heading-color}};
 }
 
 #content-block-{{forloop.index0}} p{
@@ -111,8 +111,8 @@
 
     text-transform: uppercase;
     font-size: 8rem;
-    border-bottom: 3px solid {{page.colors.travel-guide-featured-line-color}};
-    font-family: {{page.fonts.travel-guide-featured-heading-font}} ;
+    border-bottom: 3px solid {{item.colors.travel-guide-featured-line-color}};
+    font-family: {{item.fonts.travel-guide-featured-heading-font}} ;
 }
 
 #content-block-{{forloop.index0}} .bg-map{
@@ -125,7 +125,7 @@
 }
 
 #content-block-{{forloop.index0}} .travel-guide-banner-bg{
-    background-image: url('{{page.travel-guide-country_image}}');
+    background-image: url('{{item.travel-guide-country_image}}');
     padding-bottom: 40rem;
     border-radius: 20rem 20rem 0 0;
 }
