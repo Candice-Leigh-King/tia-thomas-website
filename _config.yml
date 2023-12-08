@@ -543,23 +543,23 @@ _array_structures:
       - label: Table of Contents
         icon: format_list_bulleted
         value: 
-          - _section-type: table-of-contents
-            right-icon_image: /images/Stamp-1.png
-            left-icon_image: /images/Stamp-2.png
-            heading: Contents
-            textarea_html: >-
-              <ol><li><a href="#overview">Overview</a></li><li><a href="#where-to-visit">Where to visit</a></li><li><a href="#things-to-do">Things to do</a></li><li><a href="#itineraries">Itineraries</a></li><li><a href="#budget">Budget</a></li><li><a href="#where-to-stay">Where to stay</a></li><li><a href="#when-to-go">When to go</a></li><li><a href="#how-to-get-around">How to get around</a></li><li><a href="#how-to-stay-safe">How to stay safe</a></li><li><a href="#related-blogs">Related blogs</a></li></ol>
-            colors:
-              heading-color: ''
-              subheading-color: 'white'
-              link-color: '#000000'
-              link-hover-color: '#ffffff'
-              line-color: 'white'
-              background-color: '#ddc7c1'
-            fonts: 
-              heading-font: Hoves Medium
-              subheading-fonts: Hoves Medium
-              text-fonts: Hoves Regular
+          _section-type: table-of-contents
+          right-icon_image: /images/Stamp-1.png
+          left-icon_image: /images/Stamp-2.png
+          heading: Contents
+          textarea_html: >-
+            <ol><li><a href="#overview">Overview</a></li><li><a href="#where-to-visit">Where to visit</a></li><li><a href="#things-to-do">Things to do</a></li><li><a href="#itineraries">Itineraries</a></li><li><a href="#budget">Budget</a></li><li><a href="#where-to-stay">Where to stay</a></li><li><a href="#when-to-go">When to go</a></li><li><a href="#how-to-get-around">How to get around</a></li><li><a href="#how-to-stay-safe">How to stay safe</a></li><li><a href="#related-blogs">Related blogs</a></li></ol>
+          colors:
+            heading-color: ''
+            subheading-color: 'white'
+            link-color: '#000000'
+            link-hover-color: '#ffffff'
+            line-color: 'white'
+            background-color: '#ddc7c1'
+          fonts: 
+            heading-font: Hoves Medium
+            subheading-fonts: Hoves Medium
+            text-fonts: Hoves Regular
       - label: Travel Guide
         icon: menu_book
         value:
