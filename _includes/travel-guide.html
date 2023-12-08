@@ -1,0 +1,338 @@
+<style>
+.blog-background-color
+      {background-color: {{page.colors.background-color}};}
+
+    .blog-hover-overlay:hover 
+     {background-color: {{page.colors.blog-hover-overlay-color}};}
+
+    .bump 
+     {
+     background-color: {{page.colors.blog-title-card-color}};
+     border-top: solid 4px {{page.colors.blog-title-card-border-color}};
+     border-left: solid 4px {{page.colors.blog-title-card-border-color}};
+     }
+    
+    .border-top
+    {
+    border-top: 1px solid {{page.colors.categories-color}};  
+    }
+    
+    
+    .blog-dropdown-content 
+    {
+    border-bottom:  1px solid {{page.colors.categories-color}};  
+    border-right:  1px solid {{page.colors.categories-color}};  
+    border-left:  1px solid {{page.colors.categories-color}};  
+    }
+
+    .blog-dropdown-content a{
+        margin: 3px;
+        border-bottom: 1px solid {{page.colors.categories-color}}
+    }
+
+    .category-font {font-family: {{page.fonts.category-font}};}
+    
+    .border-bottom
+    {
+    border-bottom: 1px solid {{page.colors.categories-color}};  
+    }
+
+    .blog-dropdown-title{
+        text-decoration: none;
+        border-bottom: none;
+    }
+    .blog-dropdown-title:hover{
+        text-decoration: none;
+        border-bottom: none;
+    }
+    
+    
+    p
+    {
+    font-family: {{page.fonts.text-font}};
+    color: {{page.colors.text-color}};
+    }
+
+    .blog-hover-overlay:hover
+    {
+    color: {{page.colors.cta-color}};
+    } 
+
+    .categories p
+    {
+    font-size: 1.3rem;
+    font-family: {{page.fonts.categories-font}};
+    color: {{page.colors.categories-color}};
+    }
+
+    .categories a:hover 
+    {color: {{page.colors.categories-hover-color}};}
+
+    .portfolio-arrow {color: {{page.colors.arrow-color}};}
+  
+    
+    .blog-nav a:hover {color: {{page.colors.categories-hover-color}};}
+
+    /* New styles start */
+
+.portfolio-link, .blog-dropdown{
+    display: inline-block;
+    padding: 2%;
+    margin: 1% 2%;
+}
+
+.blog-dropdown:hover .blog-dropdown-content {
+    display: block;
+    z-index: 20;
+} 
+
+
+h1{
+ line-height: 1.1;
+ font-family: {{page.fonts.travel-guide-heading-font}};
+ color: {{page.colors.travel-guide-heading-color}};
+}
+
+.info-1 h2{
+    font-family: {{page.fonts.travel-guide-information-1-heading-font}};
+    font-size: 2rem;
+    color: {{page.colors.travel-guide-information-1-heading-color}};
+}
+.info-2 h2{
+    font-family: {{page.fonts.travel-guide-information-2-heading-font}};
+    font-size: 2rem;
+    color: {{page.colors.travel-guide-information-2-heading-color}};
+}
+
+p{
+    line-height: 1.1;
+}
+span{
+
+    text-transform: uppercase;
+    font-size: 8rem;
+    border-bottom: 3px solid {{page.colors.travel-guide-featured-line-color}};
+    font-family: {{page.fonts.travel-guide-featured-heading-font}} ;
+}
+
+.bg-map{
+    margin-top: 15rem;
+    /* background-image: url('/images/europe-map.png'); */
+}
+
+.bg-map img{
+    width: 70%;
+}
+
+.travel-guide-banner-bg{
+    background-image: url('{{page.travel-guide-country_image}}');
+    padding-bottom: 40rem;
+    border-radius: 20rem 20rem 0 0;
+}
+
+.travel-guide-heading{
+    translate: 20% 80%;
+    /*z-index: 1;*/
+}
+
+
+.info-1{
+    background-color: {{page.colors.travel-guide-information-1-background-color}};
+}
+
+.info-2{
+    background-color: {{page.colors.travel-guide-information-2-background-color}};
+}
+
+.icon {
+  position: relative;
+}
+
+ .icon img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.icon img:last-child {
+  z-index: 2;
+  left: 30px; /* Adjust left position to layer the second image to the right */
+  top: 30px; /* Adjust top position to layer the second image lower */
+}
+
+.img-1 {width: 80%;}
+.img-2 {width: 60%;}
+
+
+
+
+    /* Old Styles end */
+
+    /* Media Queries */
+    @media(max-width: 1024px){
+
+span {
+    font-size: 6rem;
+}
+.travel-guide-heading {
+    translate: -2% 71%;
+}
+
+.bg-map img{
+    width: 100%;
+}
+
+ .icon img {
+    top: 10px;
+    left: 0px;
+}
+
+.icon img:last-child {
+    left: 10px;
+    top: 15px;
+}
+}
+
+
+@media(max-width: 768px){
+ .travel-guide-banner-bg {
+    padding-bottom: 25rem;
+    margin-left: 37%;
+    margin-top: -61%;
+}
+ .bg-map img {
+    margin-top: -50%;
+    margin-right: -92%;
+}
+
+.icon img {
+    top: -10px;
+    left: 155px;
+}
+
+.img-1 {width: 40%;}
+.img-2 {width: 30%;}
+
+ .icon img:last-child {
+    left: 159px;
+    top: -8px;
+}
+}
+}
+
+  
+@media(max-width:576px) 
+    {
+    
+      h3
+      {
+      font-size: 1.9rem;
+      }
+      
+      h2 {font-size: 2rem;}
+
+      .categories p 
+      {
+      font-size: 1rem;  
+      }
+      
+    }
+
+
+@media(max-width: 550px){
+
+ span {
+        font-size: 4rem;
+    }
+ .travel-guide-banner-bg {
+    margin-top: -90%;
+}
+
+.img-1 {width: 100%;}
+.img-2 {width: 80%;}
+
+}
+
+@media(max-width: 450px){
+
+.travel-guide-banner-bg {
+padding-bottom: 20rem;
+}
+
+}
+
+@media(max-width: 400px){
+span {
+font-size: 2rem;
+}
+
+.travel-guide-banner-bg {
+padding-bottom: 10rem;
+margin-top: -78%;
+translate: 0 -41%;
+z-index: 0;
+}
+
+.info-blocks{
+margin-top: -20% !important;
+}
+
+.icon img {
+top: -18px;
+left: 134px;
+}
+
+.icon img:last-child {
+left: 143px;
+top: -13px;
+}
+
+
+
+}
+
+  </style> 
+<section class="blog-background-color">
+  <section class="padded-sides grid travel-guide">
+        <div class = "col-7 travel-guide-heading">
+          <h1>{{page.travel-guide.heading}} <br> <span>{{page.travel-guide.country}}</span></h1>
+        </div>
+        <div class = "col-12 grid">
+            <div class = "col-4_md-3 bg-map bg-image center">
+                <img src = "{{page.map_image}}" >
+            </div>
+            <!-- image + info -->
+            <div class = "col-8_md-9_sm-11_xs-12 grid">
+                <div class = "col-6_md-7 bg-image travel-guide-banner-bg">
+                </div>
+          <!-- info blocks section -->
+                <div class = "col-6_md-5_sm-12 grid info-blocks">
+                    <div class = "col-12_sm-6_xs-12 info-1 grid-center padded">
+                        <div class = "col-4_md-5_xs-2 icon center">
+                            <img class ="img-1" src="{{page.info-block-1.icon-background_image}}">
+                            <img class ="img-2" src="{{page.info-block-1.icon_image}}">
+
+                        </div>
+                        <div class = "col-8-bottom_md-12 text">
+                            <h2>{{page.info-block-1.heading}}</h2>
+                            <p>{{page.info-block-1.textarea_html}}</p>
+                        </div>
+
+                    </div>
+                    <div class = "col-12_sm-6_xs-12 info-2 grid-center padded">
+                        <div class = "col-4_md-5_xs-2 icon">
+                            <img class ="img-1" src="{{page.info-block-2.icon-background_image}}">
+                            <img class ="img-2" src="{{page.info-block-2.icon_image}}">
+                        </div>
+                        <div class = "col-8-bottom_md-12 text">
+                            <h2>{{page.info-block-2.heading}}</h2>
+                            <p>{{page.info-block-1.textarea_html}}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+  </section>
