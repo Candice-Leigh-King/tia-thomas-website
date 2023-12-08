@@ -543,23 +543,28 @@ _array_structures:
       - label: Table of Contents
         icon: format_list_bullet
         value: 
-          _section-type: table-of-contents 
-          background-color: '#DDC7C1'
-          heading-color: 'black'
-          line-color: 'white'
+          - _section-type: table-of-contents
           right-icon_image: /images/Stamp-1.png
           left-icon_image: /images/Stamp-2.png
-          heading: >- 
-              Contents: 
-          textarea_html: >- 
-              <ol><li><a href = "#">Item 1 lorem lalalala</a></li><li><a href = "#">Item 2 lorem lalalala</a></li><li><a href = "#">Item 3 lorem lalalala</a></li><li><a href = "#">Item 4 lorem lalalala</a></li><li><a href = "#">Item 5 lorem lalalala</a></li><li><a href = "#">Item 6 lorem lalalala</a></li><li><a href = "#">Item 7 lorem lalalala</a></li><li><a href = "#">Item 8 lorem lalalala</a></li><li><a href = "#">Item 9 lorem lalalala</a></li><li><a href = "#">Item 10 lorem lalalala</a></li><li><a href = "#">Item 11 lorem lalalala</a></li></ol>
+          heading: 'Contents: '
+          textarea_html: >-
+            <ol><li><a href="#overview">Overview</a></li><li><a
+            href="#where-to-visit">Where to visit</a></li><li><a
+            href="#things-to-do">Things to do</a></li><li><a
+            href="#itineraries">Itineraries</a></li><li><a
+            href="#budget">Budget</a></li><li><a href="#where-to-stay">Where to
+            stay</a></li><li><a href="#when-to-go">When to go</a></li><li><a
+            href="#how-to-get-around">How to get around</a></li><li><a
+            href="#how-to-stay-safe">How to stay safe</a></li><li><a
+            href="#related-blogs">Related blogs</a></li></ol>
           colors:
-            heading-color:
-            subheading-color: 'black'
-            link-color: 'black'
-            link-hover-color: 'white'
-            line-color:
-          fonts:
+            heading-color: ''
+            subheading-color: 'white'
+            link-color: '#000000'
+            link-hover-color: '#ffffff'
+            line-color: 'white'
+            background-color: '#ddc7c1'
+          fonts: 
             heading-font: Hoves Medium
             subheading-fonts: Hoves Medium
             text-fonts: Hoves Regular
