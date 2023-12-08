@@ -37,13 +37,25 @@
         margin: 0;
         text-align: left;
     }
-    #content-blocks-{{forloop.index0}} a{
+    #content-blocks-{{forloop.index0}} a 
+      {
         text-decoration: none;
         color: {{item.colors.link-color}};
         display: inline-block;
         margin-bottom: 0.8rem;
         transition: 0.7s all;
-    }
+        font-family: {{item.fonts.text-font}};
+     }
+     
+      #content-blocks-{{forloop.index0}} p 
+      {
+        text-decoration: none;
+        color: {{item.colors.text-color}};
+        display: inline-block;
+        margin-bottom: 0.8rem;
+        transition: 0.7s all;
+        font-family: {{item.fonts.text-font}};
+     }
 
     #content-blocks-{{forloop.index0}} a:hover{
         color: {{item.color.link-hover-color}};
