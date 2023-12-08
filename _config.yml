@@ -555,34 +555,66 @@ _array_structures:
               Contents: 
           textarea_html: >- 
               <ol><li><a href = "#">Item 1 lorem lalalala</a></li><li><a href = "#">Item 2 lorem lalalala</a></li><li><a href = "#">Item 3 lorem lalalala</a></li><li><a href = "#">Item 4 lorem lalalala</a></li><li><a href = "#">Item 5 lorem lalalala</a></li><li><a href = "#">Item 6 lorem lalalala</a></li><li><a href = "#">Item 7 lorem lalalala</a></li><li><a href = "#">Item 8 lorem lalalala</a></li><li><a href = "#">Item 9 lorem lalalala</a></li><li><a href = "#">Item 10 lorem lalalala</a></li><li><a href = "#">Item 11 lorem lalalala</a></li></ol>
+      - label: Albania Blogs
+        icon: draw
+        value:
+          _section-type: albania-blogs
+          travel-guide:
+            heading: travel in
+            country: Albania
+            map_image: /images/europe-map.png
+            travel-guide-country_image: /images/greece.webp
+            info-block-1:
+              heading: Did you know?
+              textarea_html: >-
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris&nbsp;</p><p>Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris&nbsp;</p>
+              icon-background_image: /images/beige-blob.png
+              icon_image: /images/light-bulb.png
+            info-block-2:
+              heading: Did you know?
+              textarea_html: >-
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris&nbsp;</p><p>Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris&nbsp;</p>
+              icon-background_image: /images/white-blob.png
+              icon_image: /images/compass.png
+            colors:
+              background-color: '#ffffff'
+              blog-title-card-color: '#ddc7c1'
+              blog-title-card-border-color: '#ffffff'
+              blog-hover-overlay: rgba(210, 150, 109, 0.5)
+              text-color: '#000000'
+              arrow-color: '#000000'
+              heading-color: '#000000'
+              subheading-color: '#ffffff'
+              categories-color: '#000000'
+              categories-hover-color: '#ddc7c1'
+              travel-guide-featured-line-color: '#ddc7c1'
+              travel-guide-information-1-background-color: '#ffffff'
+              travel-guide-information-2-background-color: '#ddc7c1'
+              travel-guide-heading-color: '#000000'
+              travel-guide-information-1-heading-color: '#000000'
+              travel-guide-information-2-heading-color: '#000000'
+            fonts:
+              text-font: Georgia Pro CondRegular
+              travel-guide-heading-font: Hoves Medium
+              travel-guide-featured-heading-font: Millard Book
+              travel-guide-information-1-heading-font: Millard Book
+              travel-guide-information-2-heading-font: Millard Book
+              subheading-font:
+              cta-font: 
+              category-font: 
 fonts:
 _select_data:
   fonts:
-      - Cyrene
-      - La Obrige
-      - Lineal Simples
-      - Maglony
-      - Mak
-      - Misto
-      - Brushwell
-      - Open Sans, sans-serif
-      - Shrikhand, cursive
-      - Dream Avenue
-      - Amatic SC, cursive
-      - Barlow Condensed, sans-serif
-      - Belleza, sans-serif
-      - Kaushan Script, cursive
-      - Montserrat, sans-serif
-      - Oooh Baby, cursive
-      - Playfair Display, serif
-      - Poppins, sans-serif
-      - Quicksand, sans-serif
-      - Raleway, sans-serif
-      - Roboto, sans-serif
-      - Hoves Medium
-      - Hoves Bold Outline
-      - Hoves Regular
-      - Hoves Thin
       - Georgia Pro Black
       - Georgia Pro Black Italic
       - Georgia Pro Bold
