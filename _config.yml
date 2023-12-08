@@ -560,6 +560,7 @@ _array_structures:
             colors:
               heading-color: ''
               subheading-color: 'white'
+              text-color: ''
               link-color: '#000000'
               link-hover-color: '#ffffff'
               line-color: 'white'
