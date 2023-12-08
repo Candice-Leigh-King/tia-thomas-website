@@ -611,20 +611,20 @@ _array_structures:
         icon: draw
         value:
           _section-type: albania-blogs
-          colors:
+           colors:
             background-color: 'white'
             blog-hover-overlay-color: '#6b8c9ea3'
             blog-title-card-border-color: ''
             blog-title-card-border-color: ''
-            text-color:''
+            text-color: ''
             heading-color: ''
             subheading-color: ''
             cta-color: ''
           fonts:
-            heading-font: 
-            subheading-font: 
-            text-font: 
-            cta-font: 
+            heading-font: Hoves Medium
+            subheading-font: Hoves Medium
+            text-font: Hoves Medium
+            cta-font: Hoves Medium
 fonts:
 _select_data:
   fonts:
