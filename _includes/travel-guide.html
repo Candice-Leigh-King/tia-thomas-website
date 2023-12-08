@@ -1,113 +1,113 @@
 <style>
-.blog-background-color
+#content-block-{{forloop.index0}} .blog-background-color
       {background-color: {{page.colors.background-color}};}
 
-    .blog-hover-overlay:hover 
+ #content-block-{{forloop.index0}}   .blog-hover-overlay:hover 
      {background-color: {{page.colors.blog-hover-overlay-color}};}
 
-    .bump 
+ #content-block-{{forloop.index0}}   .bump 
      {
      background-color: {{page.colors.blog-title-card-color}};
      border-top: solid 4px {{page.colors.blog-title-card-border-color}};
      border-left: solid 4px {{page.colors.blog-title-card-border-color}};
      }
     
-    .border-top
+ #content-block-{{forloop.index0}}   .border-top
     {
     border-top: 1px solid {{page.colors.categories-color}};  
     }
     
     
-    .blog-dropdown-content 
+ #content-block-{{forloop.index0}}   .blog-dropdown-content 
     {
     border-bottom:  1px solid {{page.colors.categories-color}};  
     border-right:  1px solid {{page.colors.categories-color}};  
     border-left:  1px solid {{page.colors.categories-color}};  
     }
 
-    .blog-dropdown-content a{
+ #content-block-{{forloop.index0}}   .blog-dropdown-content a{
         margin: 3px;
         border-bottom: 1px solid {{page.colors.categories-color}}
     }
 
-    .category-font {font-family: {{page.fonts.category-font}};}
+  #content-block-{{forloop.index0}}  .category-font {font-family: {{page.fonts.category-font}};}
     
-    .border-bottom
+  #content-block-{{forloop.index0}}  .border-bottom
     {
     border-bottom: 1px solid {{page.colors.categories-color}};  
     }
 
-    .blog-dropdown-title{
+  #content-block-{{forloop.index0}}  .blog-dropdown-title{
         text-decoration: none;
         border-bottom: none;
     }
-    .blog-dropdown-title:hover{
+  #content-block-{{forloop.index0}}  .blog-dropdown-title:hover{
         text-decoration: none;
         border-bottom: none;
     }
     
     
-    p
+  #content-block-{{forloop.index0}}  p
     {
     font-family: {{page.fonts.text-font}};
     color: {{page.colors.text-color}};
     }
 
-    .blog-hover-overlay:hover
+  #content-block-{{forloop.index0}}  .blog-hover-overlay:hover
     {
     color: {{page.colors.cta-color}};
     } 
 
-    .categories p
+  #content-block-{{forloop.index0}}  .categories p
     {
     font-size: 1.3rem;
     font-family: {{page.fonts.categories-font}};
     color: {{page.colors.categories-color}};
     }
 
-    .categories a:hover 
+  #content-block-{{forloop.index0}}  .categories a:hover 
     {color: {{page.colors.categories-hover-color}};}
 
-    .portfolio-arrow {color: {{page.colors.arrow-color}};}
+  #content-block-{{forloop.index0}}  .portfolio-arrow {color: {{page.colors.arrow-color}};}
   
     
-    .blog-nav a:hover {color: {{page.colors.categories-hover-color}};}
+ #content-block-{{forloop.index0}}   .blog-nav a:hover {color: {{page.colors.categories-hover-color}};}
 
     /* New styles start */
 
-.portfolio-link, .blog-dropdown{
+#content-block-{{forloop.index0}} .portfolio-link, .blog-dropdown{
     display: inline-block;
     padding: 2%;
     margin: 1% 2%;
 }
 
-.blog-dropdown:hover .blog-dropdown-content {
+#content-block-{{forloop.index0}} .blog-dropdown:hover .blog-dropdown-content {
     display: block;
     z-index: 20;
 } 
 
 
-h1{
+#content-block-{{forloop.index0}} h1{
  line-height: 1.1;
  font-family: {{page.fonts.travel-guide-heading-font}};
  color: {{page.colors.travel-guide-heading-color}};
 }
 
-.info-1 h2{
+#content-block-{{forloop.index0}} .info-1 h2{
     font-family: {{page.fonts.travel-guide-information-1-heading-font}};
     font-size: 2rem;
     color: {{page.colors.travel-guide-information-1-heading-color}};
 }
-.info-2 h2{
+#content-block-{{forloop.index0}} .info-2 h2{
     font-family: {{page.fonts.travel-guide-information-2-heading-font}};
     font-size: 2rem;
     color: {{page.colors.travel-guide-information-2-heading-color}};
 }
 
-p{
+#content-block-{{forloop.index0}} p{
     line-height: 1.1;
 }
-span{
+#content-block-{{forloop.index0}} span{
 
     text-transform: uppercase;
     font-size: 8rem;
@@ -115,54 +115,54 @@ span{
     font-family: {{page.fonts.travel-guide-featured-heading-font}} ;
 }
 
-.bg-map{
+#content-block-{{forloop.index0}} .bg-map{
     margin-top: 15rem;
     /* background-image: url('/images/europe-map.png'); */
 }
 
-.bg-map img{
+#content-block-{{forloop.index0}} .bg-map img{
     width: 70%;
 }
 
-.travel-guide-banner-bg{
+#content-block-{{forloop.index0}} .travel-guide-banner-bg{
     background-image: url('{{page.travel-guide-country_image}}');
     padding-bottom: 40rem;
     border-radius: 20rem 20rem 0 0;
 }
 
-.travel-guide-heading{
+#content-block-{{forloop.index0}} .travel-guide-heading{
     translate: 20% 80%;
     /*z-index: 1;*/
 }
 
 
-.info-1{
+#content-block-{{forloop.index0}} .info-1{
     background-color: {{page.colors.travel-guide-information-1-background-color}};
 }
 
-.info-2{
+#content-block-{{forloop.index0}} .info-2{
     background-color: {{page.colors.travel-guide-information-2-background-color}};
 }
 
-.icon {
+#content-block-{{forloop.index0}} .icon {
   position: relative;
 }
 
- .icon img {
+#content-block-{{forloop.index0}} .icon img {
   position: absolute;
   top: 20px;
   left: 20px;
   z-index: 1;
 }
 
-.icon img:last-child {
+#content-block-{{forloop.index0}} .icon img:last-child {
   z-index: 2;
   left: 30px; /* Adjust left position to layer the second image to the right */
   top: 30px; /* Adjust top position to layer the second image lower */
 }
 
-.img-1 {width: 80%;}
-.img-2 {width: 60%;}
+#content-block-{{forloop.index0}} .img-1 {width: 80%;}
+#content-block-{{forloop.index0}} .img-2 {width: 60%;}
 
 
 
@@ -172,23 +172,23 @@ span{
     /* Media Queries */
     @media(max-width: 1024px){
 
-span {
+#content-block-{{forloop.index0}} span {
     font-size: 6rem;
 }
-.travel-guide-heading {
+#content-block-{{forloop.index0}} .travel-guide-heading {
     translate: -2% 71%;
 }
 
-.bg-map img{
+#content-block-{{forloop.index0}} .bg-map img{
     width: 100%;
 }
 
- .icon img {
+#content-block-{{forloop.index0}} .icon img {
     top: 10px;
     left: 0px;
 }
 
-.icon img:last-child {
+#content-block-{{forloop.index0}} .icon img:last-child {
     left: 10px;
     top: 15px;
 }
@@ -196,25 +196,25 @@ span {
 
 
 @media(max-width: 768px){
- .travel-guide-banner-bg {
+#content-block-{{forloop.index0}} .travel-guide-banner-bg {
     padding-bottom: 25rem;
     margin-left: 37%;
     margin-top: -61%;
 }
- .bg-map img {
+#content-block-{{forloop.index0}} .bg-map img {
     margin-top: -50%;
     margin-right: -92%;
 }
 
-.icon img {
+#content-block-{{forloop.index0}} .icon img {
     top: -10px;
     left: 155px;
 }
 
-.img-1 {width: 40%;}
-.img-2 {width: 30%;}
+#content-block-{{forloop.index0}} .img-1 {width: 40%;}
+#content-block-{{forloop.index0}} .img-2 {width: 30%;}
 
- .icon img:last-child {
+ #content-block-{{forloop.index0}} .icon img:last-child {
     left: 159px;
     top: -8px;
 }
@@ -225,14 +225,14 @@ span {
 @media(max-width:576px) 
     {
     
-      h3
+ #content-block-{{forloop.index0}}     h3
       {
       font-size: 1.9rem;
       }
       
-      h2 {font-size: 2rem;}
+ #content-block-{{forloop.index0}}     h2 {font-size: 2rem;}
 
-      .categories p 
+ #content-block-{{forloop.index0}}     .categories p 
       {
       font-size: 1rem;  
       }
@@ -242,48 +242,48 @@ span {
 
 @media(max-width: 550px){
 
- span {
+ #content-block-{{forloop.index0}} span {
         font-size: 4rem;
     }
- .travel-guide-banner-bg {
+ #content-block-{{forloop.index0}} .travel-guide-banner-bg {
     margin-top: -90%;
 }
 
-.img-1 {width: 100%;}
-.img-2 {width: 80%;}
+#content-block-{{forloop.index0}} .img-1 {width: 100%;}
+#content-block-{{forloop.index0}} .img-2 {width: 80%;}
 
 }
 
 @media(max-width: 450px){
 
-.travel-guide-banner-bg {
+#content-block-{{forloop.index0}} .travel-guide-banner-bg {
 padding-bottom: 20rem;
 }
 
 }
 
 @media(max-width: 400px){
-span {
+#content-block-{{forloop.index0}} span {
 font-size: 2rem;
 }
 
-.travel-guide-banner-bg {
+#content-block-{{forloop.index0}} .travel-guide-banner-bg {
 padding-bottom: 10rem;
 margin-top: -78%;
 translate: 0 -41%;
 z-index: 0;
 }
 
-.info-blocks{
+#content-block-{{forloop.index0}} .info-blocks{
 margin-top: -20% !important;
 }
 
-.icon img {
+#content-block-{{forloop.index0}} .icon img {
 top: -18px;
 left: 134px;
 }
 
-.icon img:last-child {
+#content-block-{{forloop.index0}} .icon img:last-child {
 left: 143px;
 top: -13px;
 }
