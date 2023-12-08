@@ -56,30 +56,29 @@
     }
  </style>   
 
-<section id="content-blocks-{{forloop.index0}}">
-  <section class="grid-center padded-sides recent-blog-background-color">
-    <h2 class="col-12 center recent-blog-background-color">{{item.heading}}</h2>
-    <div class="blog-loop blog-masonry">
-        {% for post in site.categories.africa  %}
-        <div class="masonry-item ">
-            <a class="padded "href="{{post.url}}">
-              <div class="hover-container" style="background-image:url('{{post.blog_image}}')">
-                <div class="blog-hover-overlay blog-hover-overlay-color">
-                  <div class="hover-inner center">
-                    <h5 class="">{{post.cta}} </h5>
-                  </div>
-                </div>
+<section class="blog-background-color">
+ 
+  <section class="padded-sides grid-center">
+    <div class="blog-loop blog-masonry padded-1">
+      {% for post in site.categories.albania%}
+      <div class="masonry-item ">
+        <a class="padded " href="{{post.url}}">
+          <div class="hover-container" style="background-image:url('{{post.blog_image}}')">
+            <div class="blog-hover-overlay">
+              <div class="hover-inner center">
+                <h5> {{post.cta}} </h5>
               </div>
-              <div class="bump left">
-                <h3 class="no-margin"> {{post.title}} </h3>
-                <p>{{post.blog-summary}}</p>
-                <p class="">{{post.symbols}}</p>
-                <p class="date">{{post.author}}</p>
             </div>
-            </a>
           </div>
-        {% endfor %}
+          <div class="bump left">
+            <h3 class="no-margin"> {{post.title}} </h3>
+            <p>{{post.blog-summary}}</p>
+            <p>{{post.symbols}}</p>
+            <p class="date">{{post.author}}</p>
+          </div>
+        </a>
       </div>
-  </section>    
-</section>
-  
+      {% endfor %}
+    </div>
+  </section>
+</section> 
